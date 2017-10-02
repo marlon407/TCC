@@ -36,11 +36,12 @@
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Estudo de Caso}}{34}{chapter.4}
 \contentsline {section}{\numberline {4.1}Hip\IeC {\'o}teses}{35}{section.4.1}
 \contentsline {section}{\numberline {4.2}Cen\IeC {\'a}rios}{36}{section.4.2}
-\contentsline {section}{\numberline {4.3}Expess.JS}{36}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Detalhes implementa\IeC {\c c}\IeC {\~a}o REST}{37}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Detalhes implementa\IeC {\c c}\IeC {\~a}o GraphQL}{39}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}M\IeC {\'e}tricas}{40}{section.4.4}
-\contentsline {section}{\numberline {4.5}Resultados}{42}{section.4.5}
+\contentsline {subsection}{\numberline {4.2.1}Ferramentas utilizadas}{36}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Ambiente}{37}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Detalhes implementa\IeC {\c c}\IeC {\~a}o REST}{37}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Detalhes implementa\IeC {\c c}\IeC {\~a}o GraphQL}{39}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}M\IeC {\'e}tricas}{40}{section.4.3}
+\contentsline {section}{\numberline {4.4}Resultados}{42}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Resultados}}{43}{chapter.5}
 \vspace {\cftbeforechapterskip }
@@ -48,7 +49,7 @@
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{44}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{45}{section*.22}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{45}{section*.24}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

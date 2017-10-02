@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 OCT 2017 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 OCT 2017 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1253,7 +1253,7 @@ O/LIB/EXE/FETCH.PHP?MEDIA=SO:SO-
 
 [17
 
-] <figuras/ipc.png, id=231, 587.19376pt x 346.29375pt>
+] <figuras/ipc.png, id=237, 587.19376pt x 346.29375pt>
 File: figuras/ipc.png Graphic file (type png)
 
 <use figuras/ipc.png>
@@ -1267,7 +1267,7 @@ a-das, \T1/lmr/m/it/12 (-20) Re-mote Pro-ce-dure Calls\T1/lmr/m/n/12 (-20) (RPC
  []
 
 [18 <./figuras/ipc.png>] [19]) (./comunicacao.tex [20]
-<figuras/How-RPC-Works.png, id=272, 192.72pt x 112.7412pt>
+<figuras/How-RPC-Works.png, id=278, 192.72pt x 112.7412pt>
 File: figuras/How-RPC-Works.png Graphic file (type png)
 
 <use figuras/How-RPC-Works.png>
@@ -1282,7 +1282,7 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 29.
  [21
 
-] [22 <./figuras/How-RPC-Works.png>] <figuras/soap-st.png, id=298, 566.115pt x 
+] [22 <./figuras/How-RPC-Works.png>] <figuras/soap-st.png, id=304, 566.115pt x 
 315.1775pt>
 File: figuras/soap-st.png Graphic file (type png)
 
@@ -1290,7 +1290,7 @@ File: figuras/soap-st.png Graphic file (type png)
 Package pdftex.def Info: figuras/soap-st.png used on input line 69.
 (pdftex.def)             Requested size: 455.0pt x 253.32059pt.
  [23] [24 <./figuras/soap-st.png>] [25] [26] [27]
-<figuras/rest-maturity-model.jpg, id=345, 144.54pt x 119.7273pt>
+<figuras/rest-maturity-model.jpg, id=351, 144.54pt x 119.7273pt>
 File: figuras/rest-maturity-model.jpg Graphic file (type jpg)
 
 <use figuras/rest-maturity-model.jpg>
@@ -1298,13 +1298,13 @@ Package pdftex.def Info: figuras/rest-maturity-model.jpg used on input line 150
 .
 (pdftex.def)             Requested size: 227.5pt x 188.45638pt.
  [28 <./figuras/rest-maturity-model.jpg>]
-[29] [30] [31] <figuras/cache-http.png, id=379, 350.30875pt x 253.94875pt>
+[29] [30] [31] <figuras/cache-http.png, id=385, 350.30875pt x 253.94875pt>
 File: figuras/cache-http.png Graphic file (type png)
 
 <use figuras/cache-http.png>
 Package pdftex.def Info: figuras/cache-http.png used on input line 244.
 (pdftex.def)             Requested size: 227.5pt x 164.92522pt.
- [32]) (./estudo.tex [33 <./figuras/cache-http.png>] <figuras/model.png, id=398
+ [32]) (./estudo.tex [33 <./figuras/cache-http.png>] <figuras/model.png, id=404
 , 734.745pt x 462.72874pt>
 File: figuras/model.png Graphic file (type png)
  <use figuras/model.png>
@@ -1314,18 +1314,18 @@ Package pdftex.def Info: figuras/model.png used on input line 14.
 [34
 
  <./figuras/model.png>]
-<figuras/rack.jpg, id=405, 311.66437pt x 182.93344pt>
+<figuras/rack.jpg, id=411, 311.66437pt x 182.93344pt>
 File: figuras/rack.jpg Graphic file (type jpg)
  <use figuras/rack.jpg>
 Package pdftex.def Info: figuras/rack.jpg used on input line 27.
 (pdftex.def)             Requested size: 318.49861pt x 186.94691pt.
 
 [35 <./figuras/rack.jpg>] [36] [37]
-<figuras/uml-sequence.png, id=423, 357.27846pt x 355.24268pt>
+<figuras/uml-sequence.png, id=433, 357.27846pt x 355.24268pt>
 File: figuras/uml-sequence.png Graphic file (type png)
 
 <use figuras/uml-sequence.png>
-Package pdftex.def Info: figuras/uml-sequence.png used on input line 117.
+Package pdftex.def Info: figuras/uml-sequence.png used on input line 132.
 (pdftex.def)             Requested size: 227.5pt x 226.2108pt.
  [38 <./figuras/uml-sequence.png>]
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
@@ -1337,14 +1337,14 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 File: figuras/uml-sequence.png Graphic file (type png)
 
 <use figuras/uml-sequence.png>
-Package pdftex.def Info: figuras/uml-sequence.png used on input line 164.
+Package pdftex.def Info: figuras/uml-sequence.png used on input line 179.
 (pdftex.def)             Requested size: 227.5pt x 226.2108pt.
  [39]
-<figuras/metricas.PNG, id=456, 374.90062pt x 249.93375pt>
+<figuras/metricas.PNG, id=466, 374.90062pt x 249.93375pt>
 File: figuras/metricas.PNG Graphic file (type png)
 
 <use figuras/metricas.PNG>
-Package pdftex.def Info: figuras/metricas.PNG used on input line 180.
+Package pdftex.def Info: figuras/metricas.PNG used on input line 195.
 (pdftex.def)             Requested size: 364.00139pt x 242.68333pt.
  [40] [41 <./figuras/metricas.PNG>])
 (./resultados.tex [42]) (./conclusao.tex [43
@@ -1388,10 +1388,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
  ) 
 Here is how much of TeX's memory you used:
- 15629 strings out of 492995
- 228640 string characters out of 6132704
- 558880 words of memory out of 5000000
- 18573 multiletter control sequences out of 15000+600000
+ 15644 strings out of 492995
+ 228804 string characters out of 6132704
+ 561015 words of memory out of 5000000
+ 18583 multiletter control sequences out of 15000+600000
  96890 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,13n,38p,986b,1534s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1412,10 +1412,10 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-d
 ist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on TCC-IFC.pdf (48 pages, 625212 bytes).
+Output written on TCC-IFC.pdf (48 pages, 625988 bytes).
 PDF statistics:
- 763 PDF objects out of 1000 (max. 8388607)
- 675 compressed objects within 7 object streams
- 182 named destinations out of 1000 (max. 500000)
- 30614 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 777 PDF objects out of 1000 (max. 8388607)
+ 689 compressed objects within 7 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 30622 words of extra memory for PDF output out of 35830 (max. 10000000)
 

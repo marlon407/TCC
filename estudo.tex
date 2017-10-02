@@ -58,59 +58,74 @@ A escolha das ferramentas a serem usadas na implementação foi uma das partes m
 
 As APIs foram escritas em Javascript, com vista  com auxilio da ferramente Node.jS em conjunto do Express.Js, que permitiu a construção das APIs REST e GraphQL. Foi utilizado como banco de dados o MongoBD, com dados pop0lados via script  composta por X \textit{schemas} que se relacionam entre si, para a avaliação da busca e retorno da mensagem em cada API. As duas APIs foram executadas em um servidor local no sistema operacional XX25.
 
-\section{Expess.JS}
+\subsection{Ferramentas utilizadas}
+
+\subsubsection*{Expess.JS}
 
 Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy. Express provides a thin layer of fundamental web application features, without obscuring Node.js features that you know and love.
 
-\section*{MongoDB}
+\subsubsection*{MongoDB}
 
 MongoDB is an open source database that uses a document-oriented data model. MongoDB is one of several database types to arise in the mid-2000s under the NoSQL banner. Instead of using tables and rows as in relational databases, MongoDB is built on an architecture of collections and documents.
 
 A configuração da máquina utilizada para o teste de desempenho local é descrita na Tabela 2. As APIs REST e GraphQL foram construídas para responder as requisições recebidas retornando respostas no formato JSON, a fim de gerar um fator de medição de desempenho da execução dos testes.
 
-\section*{Mongoose}
+\subsubsection*{Mongoose}
 
 MongoDB is an open source database that uses a document-oriented data model. MongoDB is one of several database types to arise in the mid-2000s under the NoSQL banner. Instead of using tables and rows as in relational databases, MongoDB is built on an architecture of collections and documents.
 
-A configuração da máquina utilizada para o teste de desempenho local é descrita na Tabela 2. As APIs REST e GraphQL foram construídas para responder as requisições recebidas retornando respostas no formato JSON, a fim de gerar um fator de medição de desempenho da execução dos testes.
+\subsubsection*{Ferrametas clientes}
+
+Postman, wrk.
 
 
-\begin{center}
-\begin{tabular}{| l | l |}
-\hline
-\textbf{Item} & \textbf{Descrição} \\ \hline
-Marca/Modelo & Mac \\ \hline
-Processador & Intel \\ \hline
-Memória &  X GB  \\ \hline
-Disco rígido & SSD 128  \\ \hline
-Quantidade núcleos & 4  \\ \hline
-\end{tabular}
-\end{center}
+\subsection{Ambiente}
+
+A configuração da máquina utilizada para o teste de desempenho local é descrita na Tabela \ref{tab:host}. As APIs REST e GraphQL foram construídas para responder as requisições recebidas retornando respostas no formato JSON, a fim de gerar um fator de medição de desempenho da execução dos testes.
+
+Foi dado uma atenção especial para que apenas os softwares necessários para o experimento estarem em ativos no momento da execução dos testes. Portanto, ao executar as buscas, o servidor REST ou GraphQL estará ativo, além do servidor de banco, as aplicações clientes, e as aplicações de coleta das métricas.
+
+\begin{table}
+    \centering
+    \begin{tabular}{| l | l |}
+        \hline
+        \textbf{Item} & \textbf{Descrição} \\ \hline
+        Marca/Modelo & Mac \\ \hline
+        Processador & Intel \\ \hline
+        Memória &  X GB  \\ \hline
+        Disco rígido & SSD 128  \\ \hline
+        Quantidade núcleos & 4  \\ \hline
+    \end{tabular}
+    \caption{Configuração do Ambiente} \label{tab:host}
+\end{table}
 
 \subsection{Detalhes implementação REST}
 
 O servidor REST consiste em um servidor HTTP escrito em Node.js que escuta as requisições HTTP recebidas. Dependendo do método e URL da requisição, rooteia-o para o \textit{controller} correspondente. O \textit{controller} faz a consulta na base de dados do MongoDB. Ao realizar o gerenciamento das rotas, o servidor realiza os devidos logs de latência . Após a consulta, a resposta desejada é enviada de volta para o cliente. Esse fluxo acontece em qualquer cenário, independente do numero de requisições desejadas.
 
-\begin{center}
-\begin{tabular}{| l | l |}
-\hline
-\textbf{URI} & \textbf{Descrição} \\ \hline
-/item & Consulta lista de itens \\ \hline
-/item/:id & Consulta item pelo id \\ \hline
-/pallet & Consulta lista de pallets  \\ \hline
-/pallet/:id & Consulta pallet pelo id  \\ \hline
-/address & Consulta lista de endereços \\ \hline
-/address/:id & Consulta endereço pelo id \\ \hline
-/slot & Consulta lista de prateleiras \\ \hline
-/slot/:id & Consulta prateleira pelo id \\ \hline
-/row & Consulta lista de linhas \\ \hline
-/row/:id & Consulta linha pelo id \\ \hline
-/level & Consulta lista de nível \\ \hline
-/level/:id & Consulta nível pelo id \\ \hline
-\end{tabular}
-\end{center}
+\begin{table}
+    \centering
+    \begin{tabular}{| l | l |}
+        \hline
+        \textbf{URI} & \textbf{Descrição} \\ \hline
+        /item & Consulta lista de itens \\ \hline
+        /item/:id & Consulta item pelo id \\ \hline
+        /pallet & Consulta lista de pallets  \\ \hline
+        /pallet/:id & Consulta pallet pelo id  \\ \hline
+        /address & Consulta lista de endereços \\ \hline
+        /address/:id & Consulta endereço pelo id \\ \hline
+        /slot & Consulta lista de prateleiras \\ \hline
+        /slot/:id & Consulta prateleira pelo id \\ \hline
+        /row & Consulta lista de linhas \\ \hline
+        /row/:id & Consulta linha pelo id \\ \hline
+        /level & Consulta lista de nível \\ \hline
+        /level/:id & Consulta nível pelo id \\ \hline
+    \end{tabular}
+    \caption{Servidor REST} \label{tab:rest-url}
+\end{table}
 
-No presente trabalho, como o objetivo é apenas medir o desempenho de consultas utilizando REST, todas as requisições utilizarão o método HTTP GET. Para as medições da API REST, a aplicação cliente irá enviar uma requisição para recuperar todos os itens por exemplo. Para isso, é necessário executar uma busca do tipo localhost:8080/item, que irá ser interpretado pelo servidor REST, identificando qual é a rota responsável por essa requisição, e consultará a base de dados e retornando uma resposta no formato JSON, com a listagem de todos os itens cadastrados na API. Esse fluxo é ilustrado na figura \ref{fig:rest-uml}
+
+No presente trabalho, como o objetivo é apenas medir o desempenho de consultas utilizando REST, todas as requisições utilizarão o método HTTP GET. Para as medições da API REST, a aplicação cliente irá enviar uma requisição para recuperar todos os itens cadastrados por exemplo. Como pode ser observado da tabela \ref{tab:rest-url}, é necessário executar uma busca do tipo localhost:8080/item, que irá ser interpretado pelo servidor REST, identificando qual é a rota responsável por essa requisição, e consultará a base de dados e retornando uma resposta no formato JSON, com a listagem de todos os itens cadastrados na API. Esse fluxo é ilustrado na figura \ref{fig:rest-uml}
 
 \begin{figure}[htbp]
 \centering
@@ -141,15 +156,15 @@ A consulta acima retorna com resposta lista de todos os itens cadastrados na bas
 {
     "data": [
          {
-        	"id": 1
+        	"id": 22B12
             "description": "Flat screen",
         },
         {
-        	"id": 2
+        	"id": 21C44
             "description": "Computer screen",
         },
         {
-        	"id": 3
+        	"id": 43F12
             "description": "Smartphone screen",
         },
     ]
