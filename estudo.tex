@@ -7,12 +7,12 @@
 
 Para obter um exemplo relevante do mundo real, o estudo de caso foi projetado com base em uma aplicação de WMS (\textit{Warehouse Management System}). \citeonline{wms-definition} explica que um sistema de WMS é um software que auxilia as operações do dia-a-dia em um armazém. Os sistemas WMS permitem o gerenciamento centralizado de tarefas, como o rastreamento de níveis de inventário e locais de estoque. Os sistemas WMS podem ser  um aplicativo independente ou parte de um sistema de ERP.
 
-Com o intuito de realizar consultas relevantes, foi modelado um esquema contendo seis entidades, capazes de representar consultas reais, e ainda produzirem informações pertinentes para a comparação de desempenho. A construção das APIs seguiram os princípios do ciclo tradicional do desenvolvimento de software, portanto a modelagem foi elaborada antes do início da implementação das APIs. Isso assegura que nenhuma decisão de tecnologia afetou a modelagem das entidades, que pode ser observadas na figura \ref{fig:my-model}
+Com o intuito de realizar consultas relevantes, foi modelado um esquema contendo seis entidades, capazes de representar consultas reais, e ainda produzirem informações pertinentes para a comparação de desempenho. A construção das APIs seguiram os princípios do ciclo tradicional do desenvolvimento de software, portanto a modelagem foi elaborada antes do início da implementação das APIs. Isso assegura que nenhuma decisão de tecnologia afetou a modelagem das entidades, que pode ser observadas na figura \ref{fig:wms-model}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1\textwidth]{figuras/model.png}
-\label{fig:my-model}
+\label{fig:wms-model}
 \caption{Modelagem WMS}
 \author{fonte: Autor}
 \end{figure}
@@ -56,13 +56,16 @@ Com o propósito de validar as hipóteses definidas, foram determinadas duas per
 
 A escolha das ferramentas a serem usadas na implementação foi uma das partes mais importantes no planejamento do estudo de caso. Foi necessário pensar em uma especificação que apresentasse uma curva rápida de aprendizagem, um fluxo de execução replicável e agnóstico à plataforma, e uma documentação madura em relação a implementação das APIs.
 
-As APIs foram escritas em Javascript, com vista  com auxilio da ferramente Node.jS em conjunto do Express.Js, que permitiu a construção das APIs REST e GraphQL. Foi utilizado como banco de dados o MongoBD, com dados pop0lados via script  composta por X \textit{schemas} que se relacionam entre si, para a avaliação da busca e retorno da mensagem em cada API. As duas APIs foram executadas em um servidor local no sistema operacional XX25.
+As APIs foram escritas na linguagem de programação Javascript, utilizando a especificação do ECMAScript 5. Foi escolhido esta linguagem com vista ao fácil acesso a bons frameworks para construção de serviços WEB, como o Node.js. Node.js é uma plataforma para desenvolvimento de servidores web baseadas em rede utilizando JavaScript e o V8 JavaScript Engine, ou seja, com Node.js podemos criar uma variedade de aplicações Web utilizando código em JavaScript \citeonline{node-definition}. A figura \ref{fig:my-metrics} ilustra o sistema como um todo.
+
 
 \subsection{Ferramentas utilizadas}
 
+Node.js dispões de inúmeros recursos e ferramentas que possibilitam a construção de APIs. Mesmo assim, o ecosistema de bibliotecas no Node.js conta com ferramentas que simplificam ainda mais a construção de aplicações para servidores Web. Nesta sessão serão citados algumas nessas bibliotecas que foram utilizadas para construir tanto a API REST quando a API GraphQL.
+
 \subsubsection*{Expess.JS}
 
-Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy. Express provides a thin layer of fundamental web application features, without obscuring Node.js features that you know and love.
+Expess é um \textit{framework} para Node.js extremamente flexisível, que forcene um conjunto robusto de feramentas para a construção de aplicações Web e Moveis. Conta com um robusto sistema de roteamento, facilitando o desenvolvimento de APIs. O Express forcene uma fina camada de abstração nas principais funcionalidade do Node.js, sem sobrepor os recursos no Node.
 
 \subsubsection*{MongoDB}
 
@@ -193,7 +196,7 @@ Para o presente trabalho, será utilizado cinco métricas diferentes: Utilizaç�
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{figuras/metricas.PNG}
-\label{fig:my-model}
+\label{fig:my-metrics}
 \caption{Arquitetura das APIs e diferentes pontos de medidas (REFAZER)}
 \author{fonte: Autor}
 \end{figure}
