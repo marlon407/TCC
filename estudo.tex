@@ -1,0 +1,226 @@
+% ----------------------------------------------------------
+% Protocolos de comunicaçào
+% ----------------------------------------------------------
+\chapter[Estudo de Caso]{Estudo de Caso}
+%\addcontentsline{toc}{chapter}{Protocolos de Comunicação}
+% ----------------------------------------------------------
+
+Para obter um exemplo relevante do mundo real, o estudo de caso foi projetado com base em uma aplicação de WMS (\textit{Warehouse Management System}). \citeonline{wms-definition} explica que um sistema de WMS é um software que auxilia as operações do dia-a-dia em um armazém. Os sistemas WMS permitem o gerenciamento centralizado de tarefas, como o rastreamento de níveis de inventário e locais de estoque. Os sistemas WMS podem ser  um aplicativo independente ou parte de um sistema de ERP.
+
+Com o intuito de realizar consultas relevantes, foi modelado um esquema contendo seis entidades, capazes de representar consultas reais, e ainda produzirem informações pertinentes para a comparação de desempenho. A construção das APIs seguiram os princípios do ciclo tradicional do desenvolvimento de software, portanto a modelagem foi elaborada antes do início da implementação das APIs. Isso assegura que nenhuma decisão de tecnologia afetou a modelagem das entidades, que pode ser observadas na figura \ref{fig:my-model}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{figuras/model.png}
+\label{fig:my-model}
+\caption{Modelagem WMS}
+\author{fonte: Autor}
+\end{figure}
+
+A modelagem acima, representa o gerenciamento de um armazém, com capacidade de armazenar diversos itens. Os itens são dispostos em pallets, e alocados em endereços dentro do armazém. Os endereços do armazém são formados a partir de uma combinação de três \textit{dimensões}: Prateleira, Linha e Nível. Cada combinação dessas três propriedades é capaz de alocar um pallet, que por sua vez pode conter diversas unidades de um mesmo item.
+
+Imagine um item de código 22B12, por exemplo, que representa um produto X. Este produto é disposto em um pallets com capacidade de armazenar 30 unidades do item 22B12. O armazém é composto por 26 prateleiras, sequenciadas de 'A' a 'Z'. Cada prateleira possui 2 linhas de profundidade e  3 níveis de atura. O pallet com o código 001 contém 30 unidade do item 22B12, e precisa ser alocado dentro armazém, para isso é utilizado um sistema de códigos envolvendo as 3 dimensões do armazém.
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\textwidth]{figuras/rack.jpg}
+\label{fig:rack}
+\caption{Diagrama de dimensões do armazém (REFAZER)}
+\author{fonte: Autor}
+\end{figure}
+
+60 unidades do item 22B12 estão dispostos em dois pallets(001, 002) existentes no armazém e cada um dos pallets será destinado a um endereço. O pallet 001 será alocado na terceira prateleira, no segundo nível e na primeira linha. Após a formação do endereço, o pallet 001 estará contido no endereço C0101.  
+
+\section{Hipóteses} \label{sechHipóteses}
+
+Hipóteses na diferença de desempenho entre as APIs derivaram dos fundamentos teóricos. Elas baseiam-se no entendimento de que os protocolos utilizados possibilitam a implementação de uma combinação de técnicas afim de afetar positivamento o desempenho da API. Portanto, ambas as implementações devem ter as mesmas propriedades, seguindo suas melhores práticas, modelos de maturidade e documentação.
+
+As hipóteses deste trabalho são: 
+
+\begin{itemize}
+\item Utilizando GraphQL irá reduzir o tamanho da resposta;
+\item Utilizando GraphQL irá reduzir o tempo de resposta;
+\item Utilizando REST irá reduzir a utilização de consumo de CPU;
+\item Utilizando REST irá o consumo de Memória;
+\end{itemize}
+
+Com o propósito de validar as hipóteses definidas, foram determinadas duas perguntas onde fossem envolvidas todas as entidades da modelagem. Para cada pergunta existe apenas uma resposta correta e sua lógica é baseada em campos das estruturas de dados de retorno.
+
+\textbf{Questão 1}: Qual item ocupa a maior quantidade de pallets alocados no armazém?
+
+\textbf{Questão 2}: O item 22B12 está armazenado em quias endereços?
+
+
+\section{Cenários} \label{sec:cenarios}
+
+A escolha das ferramentas a serem usadas na implementação foi uma das partes mais importantes no planejamento do estudo de caso. Foi necessário pensar em uma especificação que apresentasse uma curva rápida de aprendizagem, um fluxo de execução replicável e agnóstico à plataforma, e uma documentação madura em relação a implementação das APIs.
+
+As APIs foram escritas em Javascript, com vista  com auxilio da ferramente Node.jS em conjunto do Express.Js, que permitiu a construção das APIs REST e GraphQL. Foi utilizado como banco de dados o MongoBD, com dados pop0lados via script  composta por X \textit{schemas} que se relacionam entre si, para a avaliação da busca e retorno da mensagem em cada API. As duas APIs foram executadas em um servidor local no sistema operacional XX25.
+
+\section{Expess.JS}
+
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy. Express provides a thin layer of fundamental web application features, without obscuring Node.js features that you know and love.
+
+\section*{MongoDB}
+
+MongoDB is an open source database that uses a document-oriented data model. MongoDB is one of several database types to arise in the mid-2000s under the NoSQL banner. Instead of using tables and rows as in relational databases, MongoDB is built on an architecture of collections and documents.
+
+A configuração da máquina utilizada para o teste de desempenho local é descrita na Tabela 2. As APIs REST e GraphQL foram construídas para responder as requisições recebidas retornando respostas no formato JSON, a fim de gerar um fator de medição de desempenho da execução dos testes.
+
+\section*{Mongoose}
+
+MongoDB is an open source database that uses a document-oriented data model. MongoDB is one of several database types to arise in the mid-2000s under the NoSQL banner. Instead of using tables and rows as in relational databases, MongoDB is built on an architecture of collections and documents.
+
+A configuração da máquina utilizada para o teste de desempenho local é descrita na Tabela 2. As APIs REST e GraphQL foram construídas para responder as requisições recebidas retornando respostas no formato JSON, a fim de gerar um fator de medição de desempenho da execução dos testes.
+
+
+\begin{center}
+\begin{tabular}{| l | l |}
+\hline
+\textbf{Item} & \textbf{Descrição} \\ \hline
+Marca/Modelo & Mac \\ \hline
+Processador & Intel \\ \hline
+Memória &  X GB  \\ \hline
+Disco rígido & SSD 128  \\ \hline
+Quantidade núcleos & 4  \\ \hline
+\end{tabular}
+\end{center}
+
+\subsection{Detalhes implementação REST}
+
+O servidor REST consiste em um servidor HTTP escrito em Node.js que escuta as requisições HTTP recebidas. Dependendo do método e URL da requisição, rooteia-o para o \textit{controller} correspondente. O \textit{controller} faz a consulta na base de dados do MongoDB. Ao realizar o gerenciamento das rotas, o servidor realiza os devidos logs de latência . Após a consulta, a resposta desejada é enviada de volta para o cliente. Esse fluxo acontece em qualquer cenário, independente do numero de requisições desejadas.
+
+\begin{center}
+\begin{tabular}{| l | l |}
+\hline
+\textbf{URI} & \textbf{Descrição} \\ \hline
+/item & Consulta lista de itens \\ \hline
+/item/:id & Consulta item pelo id \\ \hline
+/pallet & Consulta lista de pallets  \\ \hline
+/pallet/:id & Consulta pallet pelo id  \\ \hline
+/address & Consulta lista de endereços \\ \hline
+/address/:id & Consulta endereço pelo id \\ \hline
+/slot & Consulta lista de prateleiras \\ \hline
+/slot/:id & Consulta prateleira pelo id \\ \hline
+/row & Consulta lista de linhas \\ \hline
+/row/:id & Consulta linha pelo id \\ \hline
+/level & Consulta lista de nível \\ \hline
+/level/:id & Consulta nível pelo id \\ \hline
+\end{tabular}
+\end{center}
+
+No presente trabalho, como o objetivo é apenas medir o desempenho de consultas utilizando REST, todas as requisições utilizarão o método HTTP GET. Para as medições da API REST, a aplicação cliente irá enviar uma requisição para recuperar todos os itens por exemplo. Para isso, é necessário executar uma busca do tipo localhost:8080/item, que irá ser interpretado pelo servidor REST, identificando qual é a rota responsável por essa requisição, e consultará a base de dados e retornando uma resposta no formato JSON, com a listagem de todos os itens cadastrados na API. Esse fluxo é ilustrado na figura \ref{fig:rest-uml}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{figuras/uml-sequence.png}
+\label{fig:rest-uml}
+\caption{UML sequence REST (REFAZER)}
+\author{fonte: Autor}
+\end{figure}
+\pagebreak
+
+\subsection{Detalhes implementação GraphQL}
+
+O servidor GraphQL foi implementado também usando Node.js. A diferença em comparação com a implementação do servidor REST é que o servidor GraphQL envia todos os pedidos ao núcleo GraphQL em vez de rotear as requisições recebidas para vários \textit{controllers} diferentes. O GraphQL analisa a consulta e envia os parâmetros para os \textit{resolvers} responsaveis localizados nos \textit{schemas} GraphQL. \textit{rRsolvers} são funções definidas para todos os campos no \textit{schema} GraphQL, cada um retorna os dados para o campo específico. Estas funções são executadas quando os campos correspondentes são consultados e os resultados são retornados na resposta.
+
+\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Consulta de itens]
+query RootQuery {
+	items {
+    	id
+    	description
+    }
+}
+
+\end{lstlisting}
+
+A consulta acima retorna com resposta lista de todos os itens cadastrados na base de dados. Note que a resposta contém apenas os atributos que a consulta requisitou: 
+
+\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Listagem dos itens (Validar)]
+{
+    "data": [
+         {
+        	"id": 1
+            "description": "Flat screen",
+        },
+        {
+        	"id": 2
+            "description": "Computer screen",
+        },
+        {
+        	"id": 3
+            "description": "Smartphone screen",
+        },
+    ]
+}
+
+\end{lstlisting}
+
+Aqui tenho que explicar o diagrama de sequência para o GraphQL
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{figuras/uml-sequence.png}
+\label{fig:graph-uml}
+\caption{UML sequence GraphQL (REFAZER)}
+\author{fonte: Autor}
+\end{figure}
+\pagebreak
+
+
+\section{Métricas}\label{sec:metrics}
+
+Afim de comparar as medidas de desempenho de APIs desenvolvidas em REST com APIs desenvolvidas em GraphQL, algumas métricas precisam ser definidas. O desempenho de cada API vai depender de sua implementação, porém, escolhendo as métricas corretas, o efeito da implementação pode ser reduzido. Focando em medições corretas, as diferenças relevantes das APIs podem ser destacadas e melhor ponderadas.
+
+Para o presente trabalho, será utilizado cinco métricas diferentes: Utilização da CPU, Consumo de memória, Tempo de resposta e o Tamanho da resposta. Vale aqui ressaltar que cada métrica foi medida separadamente, para que \textit{logs} e \textit{outputs} pertinentes a uma métrica específica não interfira no resultado das demais.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{figuras/metricas.PNG}
+\label{fig:my-model}
+\caption{Arquitetura das APIs e diferentes pontos de medidas (REFAZER)}
+\author{fonte: Autor}
+\end{figure}
+\pagebreak
+
+
+\subsection*{Utilização da CPU}
+
+A utilização da CPU é uma medida do percentual de ciclos que representa uma porcentagem em que as unidades de processamento ficam dedicados a executar um processo em particular. No contexto do presente trabalho, é a porcentagem de processamento dentro da CPU utilizada em cada requisição.
+
+Esta métrica será extraída atraves do módulo \textit{OS} presente no \textrm{core} do Node.Js. A função \textit{os.loadavg()} trás como resultado uma medida da atividade do sistema, calculada pelo sistema operacional e expressa como um número fracionário. Está média será a medida de comparação entre as duas abordagens. A seguinte formula será usada para calcular esta métrica: 
+
+$$S=mrs1+mrz2..+mrsn$$
+
+Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ representa a soma dos tempos, resultando do 
+
+\subsection*{Consumo de memória}
+
+O consumo de memória, junto com a utilização da CPU, é uma das medidas mais importantes pois é nesses pontos que observamos o verdadeiro custo por trás da escolha da ferramenta. O consumo de memória é a quantidade de em bytes utilizado pela API, e será medido através da soma da utilização de memória em cada consulta necessária para atender os senários propostos. A seguinte formula será usada para calcular esta métrica: 
+
+$$S=mrs1+mrz2..+mrsn$$
+
+Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ representa a soma dos tempos, resultando do 
+
+Ferramenta X utilizada
+
+\subsection*{Tempo de resposta}
+
+Tempo que cada requisição levou para realizar a consulta. Esse tempo é calculado a partir do inicio da requisição, até o retorno da resposta completa. No caso da API REST, esta métrica será acumulativa, ou seja, o tempo total que todas as requisições necessárias para obter a resposta desejada levaram. A seguinte formula será usada para calcular esta métrica: 
+
+$$S=mrs1+mrz2..+mrsn$$
+
+Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ representa a soma dos tempos, resultando do 
+
+\subsection*{Tamanho da resposta}
+
+O tamanho da resposta será calculada baseado no tamanho em textit{bytes} da resposta. Essa métrica será calcula a partir da média de 12 consultas. Novamente, para a API REST será usada a média das somas de todas as consultas necessárias para obter a resposta desejada. A seguinte formula será usada para calcular esta métrica: 
+
+$$S=mrs1+mrz2..+mrsn$$
+
+Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ representa a soma dos tempos, resultando do 
+
+
+
+\section{Resultados} \label{sec:resultados}

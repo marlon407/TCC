@@ -1,0 +1,197 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Araujo 2015]{abntex2classe}
+\abntrefinfo{Araujo}{ARAUJO}{2015a}
+{ARAUJO, L.~C. \emph{A classe abntex2: Modelo can{\^o}nico de trabalhos
+  acad{\^e}micos brasileiros compat{\'\i}vel com as normas ABNT NBR 14724:2011,
+  ABNT NBR 6024:2012 e outras}.
+[S.l.], 2015. Dispon{\'\i}vel em: \url{http://www.abntex.net.br/}.}
+
+\bibitem[Araujo 2015]{abntex2cite}
+\abntrefinfo{Araujo}{ARAUJO}{2015b}
+{ARAUJO, L.~C. \emph{O pacote abntex2cite: Estilos bibliogr{\'a}ficos
+  compat{\'\i}veis com a ABNT NBR 6023}.
+[S.l.], 2015. Dispon{\'\i}vel em: \url{http://www.abntex.net.br/}.}
+
+\bibitem[Araujo 2015]{abntex2cite-alf}
+\abntrefinfo{Araujo}{ARAUJO}{2015c}
+{ARAUJO, L.~C. \emph{O pacote abntex2cite: t{\'o}picos espec{\'\i}ficos da ABNT
+  NBR 10520:2002 e o estilo bibliogr{\'a}fico alfab{\'e}tico (sistema
+  autor-data)}.
+[S.l.], 2015. Dispon{\'\i}vel em: \url{http://www.abntex.net.br/}.}
+
+\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2003]{NBR6028:2003}
+\abntrefinfo{ABNT}{ABNT}{2003}
+{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 6028}: Resumo -
+  apresenta{\c c}{\~a}o.
+Rio de Janeiro, 2003. 2~p.}
+
+\bibitem[Barry 2003]{rest-intro}
+\abntrefinfo{Barry}{BARRY}{2003}
+{BARRY, D.~K. \emph{Service Architecture - Representational State Transfer
+  (REST)}. 2003.
+Dispon{\'\i}vel em: \url{https://goo.gl/KB2CGw}. Acesso em: 17 mai 2017.}
+
+\bibitem[Battle 2008]{rest-book-intro:61}
+\abntrefinfo{Battle}{BATTLE}{2008}
+{BATTLE, E.~B. R. \emph{Web Semantics: Science, Services and Agents on the
+  World Wide Web}. 1300 North 17th Street, Suite 400 Arlington, VA 22209,
+  United States: BBN Technologies, 2008.}
+
+\bibitem[Box et al. 2000]{soap2000}
+\abntrefinfo{Box et al.}{BOX et al.}{2000}
+{BOX, D. et al. {Simple Object Access Protocol (SOAP) 1.1}.
+  Http://www.w3.org/TR/soap. 2000.}
+
+\bibitem[Buna 2017]{graph-limitation}
+\abntrefinfo{Buna}{BUNA}{2017}
+{BUNA, S. \emph{REST APIs are REST-in-Peace APIs. Long Live GraphQL.} 2017.
+Dispon{\'\i}vel em: \url{https://goo.gl/3NDGrq}. Acesso em: 15 abr 2017.}
+
+\bibitem[Fielding 2000]{rest-thesis}
+\abntrefinfo{Fielding}{FIELDING}{2000}
+{FIELDING, R.~T.
+\emph{Architectural Styles and the Design of Network-based Software
+  Architectures}.
+Tese (Doutorado) --- University of California, Irvine, 2000. AAI9980887.}
+
+\bibitem[Glass et al. 2000]{rfc2977}
+\abntrefinfo{Glass et al.}{GLASS et al.}{2000}
+{GLASS, S. et al. \emph{{Mobile IP Authentication, Authorization, and
+  Accounting Requirements}}. RFC Editor, 2000. RFC 2977.
+ (Request for Comments: 2977, 2977).
+Dispon{\'\i}vel em: \url{https://rfc-editor.org/rfc/rfc792.txt}.}
+
+\bibitem[Grigorik 2017]{graph-cache}
+\abntrefinfo{Grigorik}{GRIGORIK}{2017}
+{GRIGORIK, I. \emph{GraphQL Overview}. 2017.
+Dispon{\'\i}vel em: \url{https://goo.gl/nGfQ4x}. Acesso em: 15 abr 2017.}
+
+\bibitem[Gustavsson 2016]{efficient-data-communication}
+\abntrefinfo{Gustavsson}{GUSTAVSSON}{2016}
+{GUSTAVSSON, K. \emph{Efficient data communication between a webclient and a
+  cloud environment}. 2016.
+Dispon{\'\i}vel em: \url{https://goo.gl/Z07LrK}. Acesso em: 15 abr 2017.}
+
+\bibitem[http://wiki.inf.ufpr.br/maziero/lib/exe/fetch.php?media=so:so-livro.pdf
+  2013]{sistemas-op-mazierro}
+\abntrefinfo{http://wiki.inf.ufpr.br/maziero/lib/exe/fetch.php?media=so:so-livro.pdf}{HTTP://WIKI.INF.UFPR.BR/MAZIERO/LIB/EXE/FETCH.PHP?MEDIA=SO:SO-LIVRO.PDF}{2013}
+{HTTP://WIKI.INF.UFPR.BR/MAZIERO/LIB/EXE/FETCH.PHP?MEDIA=SO:SO-LIVRO.PDF.
+  \emph{Sistemas Operacionais: Conceitos e Mecanismos}. [S.l.], 2013. Acesso
+  em: 01 mai 2017.}
+
+\bibitem[know 2008]{ipc}
+\abntrefinfo{know}{KNOW}{2008}
+{KNOW, I. dont. \emph{I dont know}. 2008.
+Dispon{\'\i}vel em:
+  \url{http://www.facol.br/sophia/2741/apostila09\_sincronizacao\_comunicacao\_entre\_processos.pdf}.}
+
+\bibitem[Kohlhoff 2003]{soap-limitations}
+\abntrefinfo{Kohlhoff}{KOHLHOFF}{2003}
+{KOHLHOFF, R.~S. C. \emph{Evaluating SOAP for High Performance Business
+  Applications: Real-Time Trading Systems}. 2003.
+Dispon{\'\i}vel em: \url{https://goo.gl/2w8a41}. Acesso em: 17 mai 2017.}
+
+\bibitem[Krohn 2013]{api-versioning}
+\abntrefinfo{Krohn}{KROHN}{2013}
+{KROHN, A. \emph{Do you really need API Versioning?} 2013.
+Dispon{\'\i}vel em: \url{https://goo.gl/lhvEph}. Acesso em: 15 abr 2017.}
+
+\bibitem[Kukreja 2014]{rpc-limitations}
+\abntrefinfo{Kukreja}{KUKREJA}{2014}
+{KUKREJA, N.~G. R. Remote procedure call: Limitations and drawbacks.
+\emph{International Journal of Research (IJR)}, v.~1, n.~10, p. 914--917, 11
+  2014.}
+
+\bibitem[Lensmar 2013]{programmableweb-rest-losing}
+\abntrefinfo{Lensmar}{LENSMAR}{2013}
+{LENSMAR, O. \emph{Is REST losing its flair - REST API Alternatives}. 2013.
+Dispon{\'\i}vel em: \url{https://goo.gl/bPm1ez}. Acesso em: 15 abr 2017.}
+
+\bibitem[Leopoldo 2007]{soap-benefits}
+\abntrefinfo{Leopoldo}{LEOPOLDO}{2007}
+{LEOPOLDO, M. R.~B. \emph{Simple Object Access Protocol Entendendo o Simple
+  Object Access Protocol (SOAP)}. 2007.
+Dispon{\'\i}vel em: \url{https://goo.gl/ATS7QB}. Acesso em: 17 mai 2017.}
+
+\bibitem[Maso 2016]{tcc-ufsc}
+\abntrefinfo{Maso}{MASO}{2016}
+{MASO, M. \emph{Um Modelo de Comunicação para Automação na Execução de
+  Consultas de Dados sobre APIs Web}. 2016.
+Dispon{\'\i}vel em: \url{https://goo.gl/mlMYso}. Acesso em: 15 abr 2017.}
+
+\bibitem[Merrick, Allen e Lapp 2006]{merrick2006xml}
+\abntrefinfo{Merrick, Allen e Lapp}{MERRICK; ALLEN; LAPP}{2006}
+{MERRICK, P.; ALLEN, S.; LAPP, J. \emph{XML remote procedure call (XML-RPC)}.
+  Google Patents, 2006.
+US Patent 7,028,312.
+Dispon{\'\i}vel em: \url{https://www.google.com/patents/US7028312}.}
+
+\bibitem[Microsoft 2008]{ipc-microsoft}
+\abntrefinfo{Microsoft}{MICROSOFT}{2008}
+{MICROSOFT. \emph{Interprocess Communications}. 2008.
+Dispon{\'\i}vel em:
+  \url{https://msdn.microsoft.com/en-us/library/windows/desktop/aa365574(v=vs.85).aspx\#base.using\_rpc\_for\_ipc}.}
+
+\bibitem[Mueller 2013]{soap-smartbear}
+\abntrefinfo{Mueller}{MUELLER}{2013}
+{MUELLER, J. \emph{Understanding SOAP and REST Basics And Differences}. 2013.
+Dispon{\'\i}vel em: \url{https://goo.gl/EZWLg1}. Acesso em: 02 ago 2017.}
+
+\bibitem[PALIARI 2012]{rest-webservice}
+\abntrefinfo{PALIARI}{PALIARI}{2012}
+{PALIARI, M. \emph{COMO FUNCIONA UM WEBSERVICE REST}. 2012.
+Dispon{\'\i}vel em: \url{https://goo.gl/lJgyrd}. Acesso em: 15 abr 2017.}
+
+\bibitem[Rouse 2009]{wms-definition}
+\abntrefinfo{Rouse}{ROUSE}{2009}
+{ROUSE, M. \emph{warehouse management system (WMS)}. 2009.
+Dispon{\'\i}vel em: \url{https://goo.gl/sgh88Y}. Acesso em: 15 abr 2017.}
+
+\bibitem[Rouse 2014]{soap-tech-target}
+\abntrefinfo{Rouse}{ROUSE}{2014}
+{ROUSE, M. \emph{SOAP (Simple Object Access Protocol)}. 2014.
+Dispon{\'\i}vel em: \url{https://goo.gl/CYyXtD}. Acesso em: 17 mai 2017.}
+
+\bibitem[Schrock 2015]{graph-intro}
+\abntrefinfo{Schrock}{SCHROCK}{2015a}
+{SCHROCK, N. \emph{GraphQL Introduction}. 2015.
+Dispon{\'\i}vel em: \url{https://goo.gl/OYsnm0}. Acesso em: 15 abr 2017.}
+
+\bibitem[Schrock 2015]{graphQl-overview}
+\abntrefinfo{Schrock}{SCHROCK}{2015b}
+{SCHROCK, N. \emph{GraphQL Overview}. 2015.
+Dispon{\'\i}vel em: \url{https://goo.gl/wX2VJ8}. Acesso em: 15 abr 2017.}
+
+\bibitem[Schussel 2001]{client-server-future}
+\abntrefinfo{Schussel}{SCHUSSEL}{2001}
+{SCHUSSEL, G. \emph{Client/Server: Past, Present and Future}. 2001.
+Dispon{\'\i}vel em:
+  \url{http://ciains.info/elearning/Solutions/Architecture/ClientServer/CS-past,presentFurure.pdf}.
+  Acesso em: 02 mai 2017.}
+
+\bibitem[Skonnard 2003]{soap-microsoft}
+\abntrefinfo{Skonnard}{SKONNARD}{2003}
+{SKONNARD, A. \emph{Understanding SOAP}. 2003.
+Dispon{\'\i}vel em: \url{https://goo.gl/1G2yiz}. Acesso em: 17 mai 2017.}
+
+\bibitem[Sun Microsystems 1995]{rfc1831:rpc}
+\abntrefinfo{Sun Microsystems}{SUN MICROSYSTEMS}{1995}
+{SUN MICROSYSTEMS. \emph{RPC: Remote Procedure Call Protocol Specification
+  Version 2}.
+[S.l.], 1995. Rev. 3.}
+
+\bibitem[Wilson e Madsen 2010]{memoir}
+\abntrefinfo{Wilson e Madsen}{WILSON; MADSEN}{2010}
+{WILSON, P.; MADSEN, L. \emph{The Memoir Class for Configurable Typesetting -
+  User Guide}.
+Normandy Park, WA, 2010. Dispon{\'\i}vel em:
+  \url{http://mirrors.ctan.org/macros/latex/contrib/memoir/memman.pdf}. Acesso
+  em: 19 dez. 2012.}
+
+\end{thebibliography}

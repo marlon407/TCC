@@ -1,0 +1,55 @@
+\changetocdepth {4}
+\select@language {brazil}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{16}{chapter.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Fundamentos}}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}IPC - Interprocess Communication}{17}{section.2.1}
+\contentsline {section}{\numberline {2.2}Cliente/Servidor}{18}{section.2.2}
+\contentsline {section}{\numberline {2.3}Aplica\IeC {\c c}\IeC {\~o}es Monol\IeC {\'\i }ticas}{18}{section.2.3}
+\contentsline {section}{\numberline {2.4}SOA - Service Oriented Architecture}{19}{section.2.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Protocolos de Comunica\IeC {\c c}\IeC {\~a}o}}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Remote Procedure Call}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Limita\IeC {\c c}\IeC {\~o}es}{22}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Simple Object Access Protocol}{23}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Limita\IeC {\c c}\IeC {\~o}es}{25}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}REpresentational State Transfer}{25}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Restri\IeC {\c c}\IeC {\~o}es}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Modelo de Maturidade de Richardson}{28}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Limita\IeC {\c c}\IeC {\~o}es}{29}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Arquiteturas baseadas em JSON/Graphs}{30}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Opera\IeC {\c c}\IeC {\~o}es}{31}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Schemas e Tipos}{31}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Autoriza\IeC {\c c}\IeC {\~a}o}{32}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Caching}{32}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Limita\IeC {\c c}\IeC {\~o}es}{33}{subsection.3.4.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Estudo de Caso}}{34}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hip\IeC {\'o}teses}{35}{section.4.1}
+\contentsline {section}{\numberline {4.2}Cen\IeC {\'a}rios}{36}{section.4.2}
+\contentsline {section}{\numberline {4.3}Expess.JS}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Detalhes implementa\IeC {\c c}\IeC {\~a}o REST}{37}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Detalhes implementa\IeC {\c c}\IeC {\~a}o GraphQL}{39}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}M\IeC {\'e}tricas}{40}{section.4.4}
+\contentsline {section}{\numberline {4.5}Resultados}{42}{section.4.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Resultados}}{43}{chapter.5}
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{44}{chapter.6}
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{45}{section*.22}
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\vspace {\cftbeforechapterskip }

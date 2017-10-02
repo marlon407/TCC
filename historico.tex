@@ -1,0 +1,64 @@
+% ----------------------------------------------------------
+% Histórico dos tipos de aplicações
+% ----------------------------------------------------------
+\chapter[Fundamentos]{Fundamentos}
+%\addcontentsline{toc}{chapter}{Histórico}
+% ----------------------------------------------------------
+
+\section{IPC - Interprocess Communication}\label{sec:ipc}
+
+Nem sempre um programa sequencial é a melhor solução para um determinado
+problema. Muitas vezes, as implementações são estruturadas na forma de várias tarefas
+inter-dependentes que cooperam entre si para atingir os objetivos da aplicação, como
+por exemplo em um navegador Web \cite{sistemas-op-mazierro}.
+
+Em um sistema multitarefa, seja com um único processador ou com mais de um processador ou ainda com vários núcleos por processador, os processos alternam sua execução segundo critérios de escalonamento estabelecidos pelo sistema operacional. Processos de aplicações concorrentes compartilham diversos recursos do sistema, como arquivos, registros, dispositivos de Entrada/Saída e áreas da memória \cite{ipc}.
+
+Os mecanismos que garantem a comunicação entre processos concorrentes e os acessos aos recursos compartilhados são chamados \textit{interprocess communication}. Algumas formas de IPC facilita a divisão de trabalho entre diversos processos especialistas. Outras formas facilitam a divisão de trabalho entre computadores dentro de uma rede.
+
+Normalmente, os aplicativos podem usar IPC categorizados como clientes ou servidores. Um cliente é um aplicativo ou um processo que solicita um serviço de alguma outra aplicação ou processo. Um servidor é um aplicativo ou um processo que responde a uma solicitação de cliente. Muitas aplicações agem como um cliente e um servidor, dependendo da situação. \cite{ipc-microsoft}
+
+A figura abaixo mostra como ocorre a comunicação entre tarefes de um processo, entre processos de um computador, e entre computadores na mesma rede.
+
+\newpage
+\begin{figure}[ht]
+\centering
+\caption{Características dos mecanismos de comunicação}
+\includegraphics[width=1\textwidth]{figuras/ipc.png}
+\label{fig:figura1}
+Fonte --\ Características dos mecanismos de comunicação \citeonline{sistemas-op-mazierro}
+\end{figure}
+
+\section{Cliente/Servidor}\label{sec:clientserver}
+
+Em uma arquitetura cliente/servidor de duas camadas, \textit{Remote Procedure Calls}(RPC) ou \textit{Structured Query Language}(SQL) são normalmente utilizadas para a comunicação entre cliente e servidor. O servidor geralmente tem suporte para \textit{Stored Procedures} e \textit{Triggers}. Isso significa que o servidor pode ser programado para implementar regras de negócios que são mais adequadas para serem executadas no servidor ao invés de no cliente, resultando em um sistemas muito mais eficiente. \cite{client-server-future}
+
+Desde 1992, fornecedores de software desenvolvem e trazem ao mercado muitas ferramentas para simplificar o desenvolvimento de aplicativos para a arquitetura cliente/servidor de 2 camadas. As mais conhecidas são: Microsoft Visual Basic, Delphi da Borland e PowerBuilder da Sybase. Essas ferramentas combinadas com milhões de desenvolvedores que sabem usá-las, significa que a abordagem de duas camadas de cliente/servidor é uma solução econômica para certas classes de problemas.
+
+
+\section{Aplicações Monolíticas}\label{sec:monolitico}
+Em engenharia de software, uma aplicação monolítica descreve uma única aplicação de software em camadas no qual a interface de usuário e código de acesso aos dados são combinados em um único programa a partir de uma única plataforma.
+
+Uma aplicação monolítica é autônoma e independente de outras aplicações de computação. A filosofia do projeto consiste em um aplicativo que não é responsável apenas por uma determinada tarefa, mas que também pode executar todos os passos necessários para completar uma determinada função.
+
+A arquitetura monolítica é um padrão comumente usado para o desenvolvimento de aplicações corporativas. Esse padrão funciona razoavelmente bem para pequenas aplicações, pois o desenvolvimento, testes e implantação de pequenas aplicações monolíticas é relativamente simples. No entanto, para aplicações grandes e complexas, a arquitetura monolítica torna-se um obstáculo ao desenvolvimento e implantação, dificulta a utilização de uma entrega contínua, além de limitar a adoção de novas tecnologias. Para grandes aplicações, faz mais sentido usar uma arquitetura de microservices, que divide a aplicação em um conjunto de serviços.
+
+\section{SOA - Service Oriented Architecture}\label{sec:soa}
+
+Este documento e seu código-fonte são exemplos de referência de uso da classe
+\textsf{abntex2} e do pacote \textsf{abntex2cite}. O documento exemplifica a elaboração de trabalho acadêmico produzido conforme a ABNT NBR 14724:2011 \emph{Informação e documentação - Trabalhos acadêmicos - Apresentação}.
+
+O modelo apresentado é baseado no ``Modelo Canônico'' criado pela equipe do projeto \abnTeX\, e implementa os requisitos das normas da ABNT. Uma lista completa das normas
+observadas pelo \abnTeX\ é apresentada em \citeonline{abntex2classe}. Aqui, está apresentada a forma que o modelo será utilizado no curso de Bacharelado em Sistemas de Informação do IFC - Araquari.
+
+Este documento deve ser utilizado como complemento dos manuais do \abnTeX\ 
+\cite{abntex2classe,abntex2cite,abntex2cite-alf} e da classe \textsf{memoir}
+\cite{memoir}. 
+
+Na introdução o autor coloca o problema ou a indagação que o levou a escrever o texto. A introdução nos dá, então, uma idéia do assunto tratado. Além disso, nela o autor coloca também o ponto de vista ou o ângulo sob o qual ele vai abordar o assunto e, às vezes, o método, ou seja, o caminho que vai seguir (se vai apresentar casos para chegar a uma generalização, ou se vai partir de um princípio geral e deduzir suas consequências).
+
+Também na introdução, o tema é apresentado e esclarecido aos leitores as indicações de leitura do trabalho. Deve-se utilizar o projeto do TCC para colocar na introdução o objetivo principal, os objetivos específicos, o problema e a hipótese.
+
+A respeito de materiais e métodos, pode-se falar sobre a infra-estrutura necessária para o trabalho, incluindo servidores, estações, equipamentos de rede, \emph{softwares} com suas respectivas versões e tudo o mais que for necessário.
+
+A introdução termina com a apresentação dos demais capítulos do trabalho. O capítulo 2 contém o referencial teórico deste trabalho. No capítulo 3 é apresentado o desenvolvimento, o cenário, os testes e a discussão dos resultados. Por fim, temos a conclusão, onde discutiremos os resultados, as dificuldades encontradas e faremos sugestões de trabalhos futuros.
