@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 OCT 2017 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 OCT 2017 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1039,11 +1039,7 @@ Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 
 (./definicoes.tex)
 Package hyperref Info: Option `colorlinks' set `true' on input line 123.
- (./TCC-IFC.aux
-
-LaTeX Warning: Label `fig:my-model' multiply defined.
-
-)
+ (./TCC-IFC.aux)
 \openout1 = `TCC-IFC.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
@@ -1061,7 +1057,8 @@ LaTeX Font Info:    ... okay on input line 133.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
 LaTeX Font Info:    ... okay on input line 133.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 133.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box32
@@ -1253,7 +1250,7 @@ O/LIB/EXE/FETCH.PHP?MEDIA=SO:SO-
 
 [17
 
-] <figuras/ipc.png, id=237, 587.19376pt x 346.29375pt>
+] <figuras/ipc.png, id=241, 587.19376pt x 346.29375pt>
 File: figuras/ipc.png Graphic file (type png)
 
 <use figuras/ipc.png>
@@ -1267,7 +1264,7 @@ a-das, \T1/lmr/m/it/12 (-20) Re-mote Pro-ce-dure Calls\T1/lmr/m/n/12 (-20) (RPC
  []
 
 [18 <./figuras/ipc.png>] [19]) (./comunicacao.tex [20]
-<figuras/How-RPC-Works.png, id=278, 192.72pt x 112.7412pt>
+<figuras/How-RPC-Works.png, id=282, 192.72pt x 112.7412pt>
 File: figuras/How-RPC-Works.png Graphic file (type png)
 
 <use figuras/How-RPC-Works.png>
@@ -1282,7 +1279,7 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 29.
  [21
 
-] [22 <./figuras/How-RPC-Works.png>] <figuras/soap-st.png, id=304, 566.115pt x 
+] [22 <./figuras/How-RPC-Works.png>] <figuras/soap-st.png, id=308, 566.115pt x 
 315.1775pt>
 File: figuras/soap-st.png Graphic file (type png)
 
@@ -1290,7 +1287,7 @@ File: figuras/soap-st.png Graphic file (type png)
 Package pdftex.def Info: figuras/soap-st.png used on input line 69.
 (pdftex.def)             Requested size: 455.0pt x 253.32059pt.
  [23] [24 <./figuras/soap-st.png>] [25] [26] [27]
-<figuras/rest-maturity-model.jpg, id=351, 144.54pt x 119.7273pt>
+<figuras/rest-maturity-model.jpg, id=355, 144.54pt x 119.7273pt>
 File: figuras/rest-maturity-model.jpg Graphic file (type jpg)
 
 <use figuras/rest-maturity-model.jpg>
@@ -1298,13 +1295,13 @@ Package pdftex.def Info: figuras/rest-maturity-model.jpg used on input line 150
 .
 (pdftex.def)             Requested size: 227.5pt x 188.45638pt.
  [28 <./figuras/rest-maturity-model.jpg>]
-[29] [30] [31] <figuras/cache-http.png, id=385, 350.30875pt x 253.94875pt>
+[29] [30] [31] <figuras/cache-http.png, id=389, 350.30875pt x 253.94875pt>
 File: figuras/cache-http.png Graphic file (type png)
 
 <use figuras/cache-http.png>
 Package pdftex.def Info: figuras/cache-http.png used on input line 244.
 (pdftex.def)             Requested size: 227.5pt x 164.92522pt.
- [32]) (./estudo.tex [33 <./figuras/cache-http.png>] <figuras/model.png, id=404
+ [32]) (./estudo.tex [33 <./figuras/cache-http.png>] <figuras/model.png, id=408
 , 734.745pt x 462.72874pt>
 File: figuras/model.png Graphic file (type png)
  <use figuras/model.png>
@@ -1314,42 +1311,62 @@ Package pdftex.def Info: figuras/model.png used on input line 14.
 [34
 
  <./figuras/model.png>]
-<figuras/rack.jpg, id=411, 311.66437pt x 182.93344pt>
+<figuras/rack.jpg, id=415, 311.66437pt x 182.93344pt>
 File: figuras/rack.jpg Graphic file (type jpg)
  <use figuras/rack.jpg>
 Package pdftex.def Info: figuras/rack.jpg used on input line 27.
 (pdftex.def)             Requested size: 318.49861pt x 186.94691pt.
 
-[35 <./figuras/rack.jpg>] [36] [37]
-<figuras/uml-sequence.png, id=433, 357.27846pt x 355.24268pt>
-File: figuras/uml-sequence.png Graphic file (type png)
-
-<use figuras/uml-sequence.png>
-Package pdftex.def Info: figuras/uml-sequence.png used on input line 132.
-(pdftex.def)             Requested size: 227.5pt x 226.2108pt.
- [38 <./figuras/uml-sequence.png>]
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+[35 <./figuras/rack.jpg>] [36]
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 76.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 78.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [37] [38]
+<figuras/uml-sequence.png, id=476, 357.27846pt x 355.24268pt>
 File: figuras/uml-sequence.png Graphic file (type png)
 
 <use figuras/uml-sequence.png>
-Package pdftex.def Info: figuras/uml-sequence.png used on input line 179.
+Package pdftex.def Info: figuras/uml-sequence.png used on input line 170.
 (pdftex.def)             Requested size: 227.5pt x 226.2108pt.
  [39]
-<figuras/metricas.PNG, id=466, 374.90062pt x 249.93375pt>
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+) [40 <./figuras/uml-sequence.png>]
+File: figuras/uml-sequence.png Graphic file (type png)
+ <use figuras/uml-sequence.png>
+Package pdftex.def Info: figuras/uml-sequence.png used on input line 219.
+(pdftex.def)             Requested size: 227.5pt x 226.2108pt.
+ [41]
+<figuras/metricas.PNG, id=512, 374.90062pt x 249.93375pt>
 File: figuras/metricas.PNG Graphic file (type png)
 
 <use figuras/metricas.PNG>
-Package pdftex.def Info: figuras/metricas.PNG used on input line 195.
+Package pdftex.def Info: figuras/metricas.PNG used on input line 235.
 (pdftex.def)             Requested size: 364.00139pt x 242.68333pt.
- [40] [41 <./figuras/metricas.PNG>])
-(./resultados.tex [42]) (./conclusao.tex [43
+ [42 <./figuras/metricas.PNG>] [43])
+(./resultados.tex [44]) (./conclusao.tex [45
 
-]) (./TCC-IFC.bbl [44
+]) (./TCC-IFC.bbl [46
 
 ]
 
@@ -1357,13 +1374,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[45
+[47
 
-])
+] [48])
 No file TCC-IFC.ind.
 
 AED: lastpage setting LastPage
-[46] [47]
+[49]
 \tf@lof=\write4
 \openout4 = `TCC-IFC.lof'.
 
@@ -1383,39 +1400,46 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 287.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
  ) 
 Here is how much of TeX's memory you used:
- 15644 strings out of 492995
- 228804 string characters out of 6132704
- 561015 words of memory out of 5000000
- 18583 multiletter control sequences out of 15000+600000
- 96890 words of font info for 140 fonts, out of 8000000 for 9000
+ 15848 strings out of 492995
+ 231773 string characters out of 6132704
+ 593144 words of memory out of 5000000
+ 18740 multiletter control sequences out of 15000+600000
+ 97338 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,38p,986b,1534s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
-texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
-17/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-d
-ist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2017/texmf-dist/fonts/type
-1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/l
-m/lmbxi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.
-pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/
-type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
-ic/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss
-10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss12.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on TCC-IFC.pdf (48 pages, 625988 bytes).
+ 42i,13n,38p,986b,2289s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{lstnumber.2.13} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{lstnumber.1.15} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/te
+xlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017
+/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dis
+t/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/
+public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/
+lmbxi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
+/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss10
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/public/lm/lmtt10.pfb>
+Output written on TCC-IFC.pdf (50 pages, 656613 bytes).
 PDF statistics:
- 777 PDF objects out of 1000 (max. 8388607)
- 689 compressed objects within 7 object streams
- 187 named destinations out of 1000 (max. 500000)
- 30622 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 837 PDF objects out of 1000 (max. 8388607)
+ 745 compressed objects within 8 object streams
+ 219 named destinations out of 1000 (max. 500000)
+ 31134 words of extra memory for PDF output out of 35830 (max. 10000000)
 

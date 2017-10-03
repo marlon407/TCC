@@ -61,21 +61,56 @@ As APIs foram escritas na linguagem de programação Javascript, utilizando a es
 
 \subsection{Ferramentas utilizadas}
 
-Node.js dispões de inúmeros recursos e ferramentas que possibilitam a construção de APIs. Mesmo assim, o ecosistema de bibliotecas no Node.js conta com ferramentas que simplificam ainda mais a construção de aplicações para servidores Web. Nesta sessão serão citados algumas nessas bibliotecas que foram utilizadas para construir tanto a API REST quando a API GraphQL.
+Node.js dispões de inúmeros recursos e ferramentas que possibilitam a construção de APIs. Mesmo assim, o ecosistema de bibliotecas no Node.js conta com ferramentas que simplificam ainda mais a construção de aplicações para servidores Web. Nesta sessão serão citados algumas nessas bibliotecas que foram utilizadas para desenvolver tanto a API REST quando a API GraphQL. 
 
 \subsubsection*{Expess.JS}
 
 Expess é um \textit{framework} para Node.js extremamente flexisível, que forcene um conjunto robusto de feramentas para a construção de aplicações Web e Moveis. Conta com um robusto sistema de roteamento, facilitando o desenvolvimento de APIs. O Express forcene uma fina camada de abstração nas principais funcionalidade do Node.js, sem sobrepor os recursos no Node.
 
+Nos protótipos desenvolvidos para executar o experimento, o Express teve como papel server de \textit{middleware} gerenciando as rotas, e delegando a resposabilidade de interpretação das requisições para os \textit{Controllers} na API REST e para os \textit{Resolvers} na API GraphQL.
+
+Na figura \ref{lst:load-rest} ilustra como os \textit{Controllers} enviam as informações da requisição para o model, que é o responsável na API REST em executar as consultas no banco de dados. No exemplo abaixo, o trexo de código é o responsavel por retornar um Item baseado no id recebido como parâmetro da requisição.
+
+\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Controller para carregar um item\label{lst:load-rest},language=Java]
+//item.controller.js
+import Item from '../models/item.model';
+
+/**
+ * Load item and append to req.
+ */
+function load(req, res, next, id) {
+  Item.get(id)
+    .then((item) => {
+      req.item = item;
+      return next();
+    })
+    .finally(e => next(e));
+}
+
+\end{lstlisting}
+
+Já a figura \ref{lst:express-graph} mostra como o Express gerencia a requisição recebida via método GET, e delega a responsabilidade para o schema.js, onde esta contido a lógica para a interpretação dos parâmetros da requisição e retornar um objeto JSON com a devida resposta.
+
+\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Controller para carregar um item\label{lst:express-graph},language=Java]
+//server.js
+import express from 'express';
+let app = express();
+
+import schema from './schema.js';
+
+app.get('/', (req, res) => {
+    graphql(schema, req.query.query)
+    .then((result) => {
+        res.send(result);
+    });
+});
+
+\end{lstlisting}
+
 \subsubsection*{MongoDB}
 
-MongoDB is an open source database that uses a document-oriented data model. MongoDB is one of several database types to arise in the mid-2000s under the NoSQL banner. Instead of using tables and rows as in relational databases, MongoDB is built on an architecture of collections and documents.
+MongoDB é um banco de dados \textit{open source} que utilizada um modelo de dados orientado a objetos. MongoDB tem como característica conter todas as informações importantes em um único documento, possuir identificadores únicos universais (UUID), possibilitar a consulta de documentos através de métodos avançados de agrupamento e filtragem, também conhecido como \textit{MapReducers}. Ao innvés de usar tabelas e linhas, como os bancos de dados relacionais, MongoDB é usa uma arquitetura baseada em coleções e documentos.
 
-A configuração da máquina utilizada para o teste de desempenho local é descrita na Tabela 2. As APIs REST e GraphQL foram construídas para responder as requisições recebidas retornando respostas no formato JSON, a fim de gerar um fator de medição de desempenho da execução dos testes.
-
-\subsubsection*{Mongoose}
-
-MongoDB is an open source database that uses a document-oriented data model. MongoDB is one of several database types to arise in the mid-2000s under the NoSQL banner. Instead of using tables and rows as in relational databases, MongoDB is built on an architecture of collections and documents.
 
 \subsubsection*{Ferrametas clientes}
 
@@ -138,6 +173,8 @@ No presente trabalho, como o objetivo é apenas medir o desempenho de consultas 
 \author{fonte: Autor}
 \end{figure}
 \pagebreak
+
+Aqui tenho que explicar o diagrama de sequência para o REST
 
 \subsection{Detalhes implementação GraphQL}
 
