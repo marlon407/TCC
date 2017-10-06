@@ -254,9 +254,9 @@ Um padrão possível para isso é reservar um campo, como id, para ser o identif
 
 \subsection{Limitações}
 
-Segundo aponta \citeonline{graph-limitation}, uma ameaça importante que o GraphQL facilita são os ataques de negação de serviço. Um servidor GraphQL pode ser atacado com consultas excessivamente complexas que irão consumir todos os recursos do servidor. Esse tipo de ataque não é específico do GraphQL, mas é preciso um cuidado redobrado para evitar-los.
+Segundo aponta \citeonline{graph-limitation}, uma ameaça importante que o GraphQL \emph{facilita} são os ataques de negação de serviço. Um servidor GraphQL pode ser atacado com consultas excessivamente complexas que irão consumir todos os recursos do servidor. Esse tipo de ataque não é específico do GraphQL, mas é preciso um cuidado redobrado para evitar-los.
 
-Há entretanto, alguns procedimento que se implementados, podem mitigar a ameaça de negação de serviço. É possível fazer uma análise de custos na consulta com antecedência e impor um certo tipo de limites na quantidade de dados que uma requisição pode consumir. Também é possível implementar um tempo limite para que requisições que levam muito tempo para serem resolvidas, sejam excluídas da fila de execução .
+Há entretanto, alguns procedimento que se implementados, podem mitigar a ameaça de negação de serviço. É possível fazer uma análise de custos na consulta com antecedência e impor \emph{um certo tipo} de limites na quantidade de dados que uma requisição pode consumir. Também é possível implementar um tempo limite para que requisições que levam muito tempo para serem resolvidas, sejam excluídas da fila de execução .
 
 %https://arxiv.org/pdf/1701.00626.pdf
 

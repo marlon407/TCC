@@ -38,7 +38,7 @@
 \contentsline {section}{\numberline {4.2}Cen\IeC {\'a}rios}{36}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Ferramentas utilizadas}{36}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Ambiente}{38}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Detalhes implementa\IeC {\c c}\IeC {\~a}o REST}{38}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Detalhes implementa\IeC {\c c}\IeC {\~a}o REST}{39}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Detalhes implementa\IeC {\c c}\IeC {\~a}o GraphQL}{40}{subsection.4.2.4}
 \contentsline {section}{\numberline {4.3}M\IeC {\'e}tricas}{42}{section.4.3}
 \contentsline {section}{\numberline {4.4}Resultados}{44}{section.4.4}
