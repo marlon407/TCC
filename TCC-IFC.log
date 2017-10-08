@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 OCT 2017 22:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 OCT 2017 13:21
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/marlon407/Documents/IFC/TCC/tcc-final 2/TCC-IFC.tex"
-(/Users/marlon407/Documents/IFC/TCC/tcc-final 2/TCC-IFC.tex
+**TCC-IFC.tex
+(./TCC-IFC.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -1307,12 +1306,12 @@ Package pdftex.def Info: figuras/cache-http.png used on input line 244.
 File: figuras/model.png Graphic file (type png)
  <use figuras/model.png>
 Package pdftex.def Info: figuras/model.png used on input line 14.
-(pdftex.def)             Requested size: 455.0pt x 286.557pt.
+(pdftex.def)             Requested size: 409.49722pt x 257.89777pt.
 
 [34
 
  <./figuras/model.png>]
-<figuras/rack.jpg, id=415, 311.66437pt x 182.93344pt>
+<figuras/rack.jpg, id=416, 311.66437pt x 182.93344pt>
 File: figuras/rack.jpg Graphic file (type jpg)
  <use figuras/rack.jpg>
 Package pdftex.def Info: figuras/rack.jpg used on input line 27.
@@ -1325,7 +1324,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 75.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 74.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1335,7 +1334,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 77.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 76.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -1344,7 +1343,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 File: figuras/uml-sequence.png Graphic file (type png)
 
 <use figuras/uml-sequence.png>
-Package pdftex.def Info: figuras/uml-sequence.png used on input line 170.
+Package pdftex.def Info: figuras/uml-sequence.png used on input line 168.
 (pdftex.def)             Requested size: 227.5pt x 226.2108pt.
  [39]
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
@@ -1355,17 +1354,16 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) [40 <./figuras/uml-sequence.png>]
 File: figuras/uml-sequence.png Graphic file (type png)
  <use figuras/uml-sequence.png>
-Package pdftex.def Info: figuras/uml-sequence.png used on input line 219.
+Package pdftex.def Info: figuras/uml-sequence.png used on input line 215.
 (pdftex.def)             Requested size: 227.5pt x 226.2108pt.
- [41]
-<figuras/metricas.PNG, id=512, 374.90062pt x 249.93375pt>
+ [41] [42]
+<figuras/metricas.PNG, id=519, 374.90062pt x 249.93375pt>
 File: figuras/metricas.PNG Graphic file (type png)
 
 <use figuras/metricas.PNG>
-Package pdftex.def Info: figuras/metricas.PNG used on input line 235.
+Package pdftex.def Info: figuras/metricas.PNG used on input line 269.
 (pdftex.def)             Requested size: 364.00139pt x 242.68333pt.
- [42 <./figuras/metricas.PNG>] [43])
-(./resultados.tex [44]) (./conclusao.tex [45
+) (./resultados.tex [43] [44 <./figuras/metricas.PNG>]) (./conclusao.tex [45
 
 ]) (./TCC-IFC.bbl [46
 
@@ -1406,13 +1404,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
  ) 
 Here is how much of TeX's memory you used:
- 15849 strings out of 492995
- 231914 string characters out of 6132704
- 592998 words of memory out of 5000000
+ 15851 strings out of 492995
+ 231803 string characters out of 6132704
+ 592795 words of memory out of 5000000
  18740 multiletter control sequences out of 15000+600000
- 97338 words of font info for 142 fonts, out of 8000000 for 9000
+ 97467 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,38p,1035b,2289s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,38p,986b,2289s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{lstnumber.2.13} has been referenced but does not 
 exist, replaced by a fixed one
 
@@ -1437,10 +1435,10 @@ live/2017/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dis
 t/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/public/lm/lmtt10.pfb>
-Output written on TCC-IFC.pdf (50 pages, 657557 bytes).
+Output written on TCC-IFC.pdf (50 pages, 657933 bytes).
 PDF statistics:
- 837 PDF objects out of 1000 (max. 8388607)
- 745 compressed objects within 8 object streams
- 219 named destinations out of 1000 (max. 500000)
+ 839 PDF objects out of 1000 (max. 8388607)
+ 747 compressed objects within 8 object streams
+ 220 named destinations out of 1000 (max. 500000)
  31134 words of extra memory for PDF output out of 35830 (max. 10000000)
 

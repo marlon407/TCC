@@ -7,17 +7,17 @@
 
 Para obter um exemplo do mundo real, o estudo de caso foi projetado com base em uma aplicação de WMS (\textit{Warehouse Management System}). \citeonline{wms-definition} explica que um sistema de WMS é um software que auxilia as operações do dia-a-dia em um armazém. Os sistemas WMS permitem o gerenciamento centralizado de tarefas, como o rastreamento de níveis de inventário e locais de estoque. Os sistemas WMS podem ser  um aplicativo independente ou parte de um sistema de ERP.
 
-Com o intuito de realizar consultas relevantes, foi modelado um esquema contendo seis entidades, capazes de representar consultas reais, e ainda produzirem informações pertinentes para a comparação de desempenho. A construção das APIs seguiram os princípios do ciclo tradicional do desenvolvimento de software, portanto a modelagem foi elaborada antes do início da implementação das APIs. Isso assegura que nenhuma decisão de tecnologia afetou a modelagem das entidades, que pode ser observadas na figura \ref{fig:wms-model}
+Com o intuito de realizar consultas relevantes, foi modelado um esquema contendo seis entidades, capazes de representar consultas reais, e ainda produzirem informações pertinentes para a comparação de desempenho. A construção das APIs seguiram os princípios do ciclo tradicional do desenvolvimento de software, portanto a modelagem foi elaborada antes do início da implementação das APIs. Isso assegura que nenhuma decisão de tecnologia afetou a modelagem das entidades, que pode ser exemplificado na figura \ref{fig:marlon}.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=1\textwidth]{figuras/model.png}
-\label{fig:wms-model}
+\includegraphics[width=0.9\textwidth]{figuras/model.png}
+\label{fig:marlon}
 \caption{Modelagem WMS}
 \author{fonte: Autor}
 \end{figure}
 
-A modelagem acima, representa o gerenciamento de um armazém, com capacidade de armazenar diversos itens. Os itens são dispostos em pallets, e alocados em endereços dentro do armazém. Os endereços do armazém são formados a partir de uma combinação de três \textit{dimensões}: Prateleira, Linha e Nível. Cada combinação dessas três propriedades é capaz de alocar um pallet, que por sua vez pode conter diversas unidades de um mesmo item.
+A modelagem acima, representa o gerenciamento de um armazém, com capacidade de armazenar diversos itens. Os itens são dispostos em pallets, e alocados em endereços dentro do armazém. Como pode ser observado na figura \ref{fig:rack}, os endereços do armazém são formados a partir de uma combinação de três \textit{dimensões}: Prateleira, Linha e Nível. Cada combinação dessas três propriedades é capaz de alocar um pallet, que por sua vez pode conter diversas unidades de um mesmo item.
 
 Imagine um item de código 22B12, por exemplo, que representa um produto X. Este produto é disposto em um pallet com capacidade de armazenar 30 unidades do item 22B12. O armazém é composto por 26 prateleiras, sequenciadas de 'A' a 'Z'. Cada prateleira possui 2 linhas de profundidade e  3 níveis de altura. O pallet com o código 001 contém 30 unidade do item 22B12, e precisa ser alocado dentro armazém, para isso é utilizado um sistema de códigos envolvendo as 3 dimensões do armazém.
 
@@ -55,8 +55,7 @@ Com o propósito de validar as hipóteses definidas, foram determinadas duas per
 
 A escolha das ferramentas a serem usadas na implementação foi uma das partes mais importantes no planejamento do estudo de caso. Foi necessário pensar em uma especificação que apresentasse uma curva rápida de aprendizagem, um fluxo de execução replicável e agnóstico à plataforma, e uma documentação madura em relação a implementação das APIs.
 
-As APIs foram escritas na linguagem de programação Javascript, utilizando a especificação do ECMAScript 5. Foi escolhido esta linguagem com vista ao fácil acesso a bons frameworks para construção de serviços WEB, como o Node.js. Node.js é uma plataforma para desenvolvimento de servidores web baseadas em rede utilizando JavaScript e o V8 JavaScript Engine, ou seja, com Node.js podemos criar uma variedade de aplicações Web utilizando código em JavaScript \citeonline{node-definition}. A figura \ref{fig:my-metrics} ilustra o sistema como um todo.
-
+As APIs foram escritas na linguagem de programação JavaScript, utilizando a especificação do ECMAScript 5. Foi escolhido esta linguagem com vista ao fácil acesso a bons frameworks para construção de serviços WEB, como o Node.js. Node.js é uma plataforma para desenvolvimento de servidores web baseadas em rede utilizando JavaScript e o V8 JavaScript Engine, ou seja, com Node.js pode-se criar uma variedade de aplicações Web utilizando código em JavaScript \citeonline{node-definition}.
 
 \subsection{Ferramentas utilizadas}
 
@@ -141,6 +140,8 @@ A configuração da máquina utilizada para o teste de desempenho local é descr
 
 O servidor REST consiste em um servidor HTTP escrito em Node.js que recebe as requisições HTTP recebidas. Dependendo do método e URL da requisição, rooteia-o para o \textit{controller} correspondente. O \textit{controller} faz a consulta na base de dados do MongoDB. Ao realizar o gerenciamento das rotas, o servidor realiza os devidos logs de latência . Após a consulta, a resposta desejada é enviada de volta para o cliente. Esse fluxo acontece em qualquer cenário, independente do número de requisições desejadas.
 
+No presente trabalho, como o objetivo é apenas medir o desempenho de consultas utilizando REST, todas as requisições utilizarão o método HTTP GET. Para as medições da API REST, a aplicação cliente irá enviar por exemplo, uma requisição para recuperar todos os itens cadastrados. Como pode ser observado da tabela \ref{tab:rest-url}, é necessário executar uma busca do tipo localhost:8080/item, que que irá ser interpretada pelo servidor REST, identificando qual é a rota responsável por essa requisição. A servidor consultará a base de dados retornando uma resposta no formato JSON, com todos os itens cadastrados na API. Esse fluxo é ilustrado na figura \ref{fig:rest-uml}
+
 \begin{table}
     \centering
     \begin{tabular}{| l | l |}
@@ -162,9 +163,6 @@ O servidor REST consiste em um servidor HTTP escrito em Node.js que recebe as re
     \caption{Servidor REST} \label{tab:rest-url}
 \end{table}
 
-
-No presente trabalho, como o objetivo é apenas medir o desempenho de consultas utilizando REST, todas as requisições utilizarão o método HTTP GET. Para as medições da API REST, a aplicação cliente irá enviar uma requisição para recuperar todos os itens cadastrados por exemplo. Como pode ser observado da tabela \ref{tab:rest-url}, é necessário executar uma busca do tipo localhost:8080/item, que que irá ser interpretada pelo servidor rest, identificando qual é a rota responsável por essa requisição, e consultará a base de dados retornando uma resposta no formato JSON, com a listagem de todos os itens cadastrados na API. Esse fluxo é ilustrado na figura \ref{fig:rest-uml}
-
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{figuras/uml-sequence.png}
@@ -174,11 +172,9 @@ No presente trabalho, como o objetivo é apenas medir o desempenho de consultas 
 \end{figure}
 \pagebreak
 
-Aqui tenho que explicar o diagrama de sequência para o REST
-
 \subsection{Detalhes implementação GraphQL}
 
-O servidor GraphQL foi implementado também usando Node.js. A diferença em comparação com a implementação do servidor REST é que o servidor GraphQL envia todos os pedidos ao núcleo GraphQL ao invés de rotear as requisições recebidas para vários \textit{controllers} diferentes. O GraphQL analisa a consulta e envia os parâmetros para os \textit{resolvers} responsáveis localizados nos \textit{schemas} GraphQL. \textit{Rsolvers} são funções definidas para todos os campos no \textit{schema} GraphQL, cada um retorna os dados para o campo específico. Estas funções são executadas quando os campos correspondentes são consultados e os resultados são retornados na resposta.
+O servidor GraphQL foi implementado também usando Node.js. A diferença em comparação com a implementação do servidor REST é que o servidor GraphQL envia todos os pedidos ao núcleo GraphQL ao invés de rotear as requisições recebidas para vários \textit{controllers} diferentes. O GraphQL analisa a consulta e envia os parâmetros para os \textit{resolvers} responsáveis, localizados nos \textit{schemas} GraphQL. \textit{Rsolvers} são funções definidas para todos os campos no \textit{schema} GraphQL, cada um retorna os dados para o campo específico. Estas funções são executadas quando os campos correspondentes são consultados e os resultados são retornados na resposta.
 
 \begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Consulta de itens]
 query RootQuery {
@@ -190,7 +186,7 @@ query RootQuery {
 
 \end{lstlisting}
 
-A consulta acima retorna com resposta lista de todos os itens cadastrados na base de dados. Note que a resposta contém apenas os atributos que a consulta requisitou: 
+ \textit{ A consulta acima retorna como resposta lista a de todos os itens cadastrados na base de dados. Note que a resposta contém apenas os atributos que a consulta requisitou: }
 
 \begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Listagem dos itens (Validar)]
 {
@@ -228,23 +224,13 @@ Aqui tenho que explicar o diagrama de sequência para o GraphQL
 
 Afim de comparar as medidas de desempenho de APIs desenvolvidas em REST com APIs desenvolvidas em GraphQL, algumas métricas precisam ser definidas. O desempenho de cada API vai depender de sua implementação, porém, escolhendo as métricas corretas, o efeito da implementação pode ser reduzido. Focando em medições corretas, as diferenças relevantes das APIs podem ser destacadas e melhor ponderadas.
 
-Para o presente trabalho, será utilizado cinco métricas diferentes: Utilização da CPU, Consumo de memória, Tempo de resposta e o Tamanho da resposta. Vale aqui ressaltar que cada métrica foi medida separadamente, para que \textit{logs} e \textit{outputs} pertinentes a uma métrica específica não interfira no resultado das demais.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.8\textwidth]{figuras/metricas.PNG}
-\label{fig:my-metrics}
-\caption{Arquitetura das APIs e diferentes pontos de medidas (REFAZER)}
-\author{fonte: Autor}
-\end{figure}
-\pagebreak
-
+Para o presente trabalho, serão utilizadas quatro métricas diferentes: Utilização da CPU, Consumo de memória, Tempo de resposta e o Tamanho da resposta. É importante ressaltar que cada métrica foi medida separadamente, para que \textit{logs} e \textit{outputs} pertinentes a uma métrica específica não interfira no resultado das demais.
 
 \subsection*{Utilização da CPU}
 
-A utilização da CPU é uma medida do percentual de ciclos que representa uma porcentagem em que as unidades de processamento ficam dedicados a executar um processo em particular. No contexto do presente trabalho, é a porcentagem de processamento dentro da CPU utilizada em cada requisição.
+A utilização da CPU é uma medida do percentual de ciclos que representa uma porcentagem em que as unidades de processamento ficam dedicadas a executar um processo em particular. No contexto do presente trabalho, é a porcentagem de processamento dentro da CPU utilizada em cada requisição.
 
-Esta métrica será extraída atraves do módulo \textit{OS} presente no \textrm{core} do Node.Js. A função \textit{os.loadavg()} trás como resultado uma medida da atividade do sistema, calculada pelo sistema operacional e expressa como um número fracionário. Está média será a medida de comparação entre as duas abordagens. A seguinte formula será usada para calcular esta métrica: 
+Esta métrica será extraída atraves do módulo \textit{OS} presente no \textrm{core} do Node.Js. A função \textit{os.loadavg()} trás como resultado uma medida da atividade do sistema, calculada pelo sistema operacional e expressa como um número fracionário. A média será a medida de comparação entre as duas abordagens. A seguinte fórmula será usada para calcular esta métrica: 
 
 $$S=mrs1+mrz2..+mrsn$$
 
@@ -252,7 +238,7 @@ Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ 
 
 \subsection*{Consumo de memória}
 
-O consumo de memória, junto com a utilização da CPU, é uma das medidas mais importantes pois é nesses pontos que observamos o verdadeiro custo por trás da escolha da ferramenta. O consumo de memória é a quantidade de em bytes utilizado pela API, e será medido através da soma da utilização de memória em cada consulta necessária para atender os senários propostos. A seguinte formula será usada para calcular esta métrica: 
+O consumo de memória, junto com a utilização da CPU, é uma das medidas mais importantes pois é nesses pontos que observamos o verdadeiro custo por trás da escolha da ferramenta. O consumo de memória é a quantidade de em bytes utilizado pela API, e será medido através da soma da utilização de memória em cada consulta necessária para atender os senários propostos. A seguinte fórmula será usada para calcular esta métrica: 
 
 $$S=mrs1+mrz2..+mrsn$$
 
@@ -262,7 +248,7 @@ Ferramenta X utilizada
 
 \subsection*{Tempo de resposta}
 
-Tempo que cada requisição levou para realizar a consulta. Esse tempo é calculado a partir do inicio da requisição, até o retorno da resposta completa. No caso da API REST, esta métrica será acumulativa, ou seja, o tempo total que todas as requisições necessárias para obter a resposta desejada levaram. A seguinte formula será usada para calcular esta métrica: 
+Tempo que cada requisição levou para realizar a consulta. Esse tempo é calculado a partir do início da requisição, até o retorno da resposta completa. No caso da API REST, esta métrica será acumulativa, ou seja, a soma do tempo de todas as requisições necessárias. A seguinte fórmula será usada para calcular esta métrica: 
 
 $$S=mrs1+mrz2..+mrsn$$
 
@@ -270,12 +256,22 @@ Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ 
 
 \subsection*{Tamanho da resposta}
 
-O tamanho da resposta será calculada baseado no tamanho em textit{bytes} da resposta. Essa métrica será calcula a partir da média de 12 consultas. Novamente, para a API REST será usada a média das somas de todas as consultas necessárias para obter a resposta desejada. A seguinte formula será usada para calcular esta métrica: 
+O tamanho da resposta será calculada baseado no tamanho em textit{bytes} da resposta. Essa métrica será calcula a partir da média de 12 consultas. Novamente, para a API REST será usada a média das somas de todas as consultas necessárias para obter a resposta desejada. A seguinte fórmula será usada para calcular esta métrica: 
 
 $$S=mrs1+mrz2..+mrsn$$
 
 Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ representa a soma dos tempos, resultando do 
 
+\subsection*{Conclusão}
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{figuras/metricas.PNG}
+\label{fig:my-metrics}
+\caption{Arquitetura das APIs e diferentes pontos de medidas (REFAZER)}
+\author{fonte: Autor}
+\end{figure}
+
+A figura \ref{fig:my-metrics} mostra como as métricas serão extraidas. A utlização do CPU e o consumo de memória serão medida utilizando ferramentas do próprio Node.js. Ambos serão medidos via \textit{logs} no código fonte dos protótipos implementados. O tamanho da resposta e o tempo de resposta serão extraídos utilizando a ferramenta Postman, ao final de cada consulta.
 
 \section{Resultados} \label{sec:resultados}
