@@ -12,8 +12,8 @@ Com o intuito de realizar consultas relevantes, foi modelado um esquema contendo
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.9\textwidth]{figuras/model.png}
-\label{fig:marlon}
 \caption{Modelagem WMS}
+\label{fig:marlon}
 \author{fonte: Autor}
 \end{figure}
 
@@ -25,8 +25,8 @@ Imagine um item de código 22B12, por exemplo, que representa um produto X. Este
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{figuras/rack.jpg}
-\label{fig:rack}
 \caption{Diagrama de dimensões do armazém (REFAZER)}
+\label{fig:rack}
 \author{fonte: Autor}
 \end{figure}
 
@@ -67,9 +67,9 @@ Express é um \textit{framework} para Node.js extremamente flexível, que forcen
 
 Nos protótipos desenvolvidos para executar o experimento, o Express teve como papel de \textit{middleware} gerenciando as rotas, e delegando a resposabilidade de interpretação das requisições para os \textit{Controllers} na API REST e para os \textit{Resolvers} na API GraphQL.
 
-A figura \ref{lst:load-rest} ilustra como os \textit{Controllers} enviam as informações da requisição para o model, que é o responsável na API REST em executar as consultas no banco de dados. No exemplo abaixo, o trexo de código é o responsavel por retornar um Item baseado no id recebido como parâmetro da requisição.
+O código \ref{lst:load-rest} ilustra como os \textit{Controllers} enviam as informações da requisição para o model, que é o responsável na API REST em executar as consultas no banco de dados. No exemplo abaixo, o trexo de código é o responsavel por retornar um Item baseado no id recebido como parâmetro da requisição.
 
-\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Controller para carregar um item\label{lst:load-rest},language=Java]
+\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption={Controller para carregar um item}, label=lst:load-rest,language=Java]
 //item.controller.js
 import Item from '../models/item.model';
 
@@ -87,9 +87,9 @@ function load(req, res, next, id) {
 
 \end{lstlisting}
 
-Já a figura \ref{lst:express-graph} mostra como o Express gerencia a requisição recebida via método GET, e delega a responsabilidade para o schema.js, onde esta contido a lógica para a interpretação dos parâmetros da requisição e retornar um objeto JSON com a devida resposta.
+Já o código \ref{lst:express-graph} mostra como o Express.JS gerencia a requisição recebida via método GET, e delega a responsabilidade para o schema.js, onde esta contido a lógica para a interpretação dos parâmetros da requisição e retornar um objeto JSON com a devida resposta.
 
-\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Controller para carregar um item\label{lst:express-graph},language=Java]
+\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption={Controller para carregar um item}, label=lst:express-graph,language=JavaScript]
 //server.js
 import express from 'express';
 let app = express();
@@ -166,8 +166,8 @@ No presente trabalho, como o objetivo é apenas medir o desempenho de consultas 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{figuras/uml-sequence.png}
-\label{fig:rest-uml}
 \caption{UML sequence REST (REFAZER)}
+\label{fig:rest-uml}
 \author{fonte: Autor}
 \end{figure}
 \pagebreak
@@ -213,8 +213,8 @@ Aqui tenho que explicar o diagrama de sequência para o GraphQL
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{figuras/uml-sequence.png}
-\label{fig:graph-uml}
 \caption{UML sequence GraphQL (REFAZER)}
+\label{fig:graph-uml}
 \author{fonte: Autor}
 \end{figure}
 \pagebreak
@@ -267,11 +267,9 @@ Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{figuras/metricas.PNG}
-\label{fig:my-metrics}
 \caption{Arquitetura das APIs e diferentes pontos de medidas (REFAZER)}
+\label{fig:my-metrics}
 \author{fonte: Autor}
 \end{figure}
 
 A figura \ref{fig:my-metrics} mostra como as métricas serão extraidas. A utlização do CPU e o consumo de memória serão medida utilizando ferramentas do próprio Node.js. Ambos serão medidos via \textit{logs} no código fonte dos protótipos implementados. O tamanho da resposta e o tempo de resposta serão extraídos utilizando a ferramenta Postman, ao final de cada consulta.
-
-\section{Resultados} \label{sec:resultados}

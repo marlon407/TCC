@@ -191,6 +191,11 @@ Dispon{\'\i}vel em: \url{https://goo.gl/1G2yiz}. Acesso em: 17 mai 2017.}
   Version 2}.
 [S.l.], 1995. Rev. 3.}
 
+\bibitem[VNI 2017]{cisco-network-report}
+\abntrefinfo{VNI}{VNI}{2017}
+{VNI, C.~M. \emph{Cisco Visual Networking Index}. 2017.
+Dispon{\'\i}vel em: \url{https://goo.gl/MHsDgQ}. Acesso em: 15 out 2017.}
+
 \bibitem[Wilson e Madsen 2010]{memoir}
 \abntrefinfo{Wilson e Madsen}{WILSON; MADSEN}{2010}
 {WILSON, P.; MADSEN, L. \emph{The Memoir Class for Configurable Typesetting -
@@ -198,5 +203,10 @@ Dispon{\'\i}vel em: \url{https://goo.gl/1G2yiz}. Acesso em: 17 mai 2017.}
 Normandy Park, WA, 2010. Dispon{\'\i}vel em:
   \url{http://mirrors.ctan.org/macros/latex/contrib/memoir/memman.pdf}. Acesso
   em: 19 dez. 2012.}
+
+\bibitem[Work 2011]{load-time-effects}
+\abntrefinfo{Work}{WORK}{2011}
+{WORK, S. \emph{How Loading Time Affects Your Bottom Line}. 2011.
+Dispon{\'\i}vel em: \url{https://goo.gl/xUpdJ8}. Acesso em: 15 out 2017.}
 
 \end{thebibliography}

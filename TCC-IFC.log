@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 OCT 2017 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 OCT 2017 19:03
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**TCC-IFC.tex
-(./TCC-IFC.tex
+**"/Users/marlon407/Documents/IFC/TCC/tcc-final 2/TCC-IFC.tex"
+(/Users/marlon407/Documents/IFC/TCC/tcc-final 2/TCC-IFC.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -1038,31 +1039,31 @@ Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 \openout2 = `definicoes.aux'.
 
 (./definicoes.tex)
-Package hyperref Info: Option `colorlinks' set `true' on input line 123.
+Package hyperref Info: Option `colorlinks' set `true' on input line 140.
  (./TCC-IFC.aux)
 \openout1 = `TCC-IFC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 133.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 150.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 133.
+Package hyperref Info: Link coloring ON on input line 150.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1074,15 +1075,15 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 133.
-LaTeX Info: Redefining \ref on input line 133.
-LaTeX Info: Redefining \pageref on input line 133.
-LaTeX Info: Redefining \nameref on input line 133.
+LaTeX Info: Redefining \nameref on input line 150.
+LaTeX Info: Redefining \ref on input line 150.
+LaTeX Info: Redefining \pageref on input line 150.
+LaTeX Info: Redefining \nameref on input line 150.
 \myptabbox=\box33
 \myptabboxwidth=\skip264
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 133.
+(lastpage)             ! on input line 150.
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count178
@@ -1113,7 +1114,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 133.
+LaTeX Info: Redefining \microtypecontext on input line 150.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1129,7 +1130,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \c@lstlisting=\count184
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 139.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 156.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmss.fd
@@ -1144,41 +1145,41 @@ Package microtype Info: Loading generic settings for font family
 
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 142.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 159.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 142.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 159.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 142
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 159
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 142
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 159
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 142.
+(Font)              <12> on input line 159.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 142.
+(Font)              <8> on input line 159.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 142.
+(Font)              <6> on input line 159.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 
+l.159 
        [1
 
 
@@ -1238,19 +1239,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] (./TCC-IFC.toc [14
 
-]) [15]) (./introducao.tex) (./historico.tex
-[16
+]) [15]) (./introducao.tex [16
 
 
-]
+])
+(./historico.tex [17]
 Overfull \hbox (100.12903pt too wide) in paragraph at lines 10--14
 \T1/lmr/m/n/12 (-20) em um na-ve-ga-dor Web ([][]HTTP://WIKI.INF.UFPR.BR/MAZIER
 O/LIB/EXE/FETCH.PHP?MEDIA=SO:SO-
  []
 
-[17
+[18
 
-] <figuras/ipc.png, id=241, 587.19376pt x 346.29375pt>
+] <figuras/ipc.png, id=283, 587.19376pt x 346.29375pt>
 File: figuras/ipc.png Graphic file (type png)
 
 <use figuras/ipc.png>
@@ -1263,8 +1264,8 @@ a-das, \T1/lmr/m/it/12 (-20) Re-mote Pro-ce-dure Calls\T1/lmr/m/n/12 (-20) (RPC
 )
  []
 
-[18 <./figuras/ipc.png>] [19]) (./comunicacao.tex [20]
-<figuras/How-RPC-Works.png, id=282, 192.72pt x 112.7412pt>
+[19 <./figuras/ipc.png>] [20]) (./comunicacao.tex [21]
+<figuras/How-RPC-Works.png, id=323, 192.72pt x 112.7412pt>
 File: figuras/How-RPC-Works.png Graphic file (type png)
 
 <use figuras/How-RPC-Works.png>
@@ -1277,47 +1278,47 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 29.
- [21
+ [22
 
-] [22 <./figuras/How-RPC-Works.png>] <figuras/soap-st.png, id=308, 566.115pt x 
+] [23 <./figuras/How-RPC-Works.png>] <figuras/soap-st.png, id=349, 566.115pt x 
 315.1775pt>
 File: figuras/soap-st.png Graphic file (type png)
 
 <use figuras/soap-st.png>
 Package pdftex.def Info: figuras/soap-st.png used on input line 69.
 (pdftex.def)             Requested size: 455.0pt x 253.32059pt.
- [23] [24 <./figuras/soap-st.png>] [25] [26] [27]
-<figuras/rest-maturity-model.jpg, id=355, 144.54pt x 119.7273pt>
+ [24] [25 <./figuras/soap-st.png>] [26] [27] [28]
+<figuras/rest-maturity-model.jpg, id=395, 144.54pt x 119.7273pt>
 File: figuras/rest-maturity-model.jpg Graphic file (type jpg)
 
 <use figuras/rest-maturity-model.jpg>
 Package pdftex.def Info: figuras/rest-maturity-model.jpg used on input line 150
 .
 (pdftex.def)             Requested size: 227.5pt x 188.45638pt.
- [28 <./figuras/rest-maturity-model.jpg>]
-[29] [30] [31] <figuras/cache-http.png, id=389, 350.30875pt x 253.94875pt>
+ [29 <./figuras/rest-maturity-model.jpg>]
+[30] [31] [32] <figuras/cache-http.png, id=430, 350.30875pt x 253.94875pt>
 File: figuras/cache-http.png Graphic file (type png)
 
 <use figuras/cache-http.png>
 Package pdftex.def Info: figuras/cache-http.png used on input line 244.
 (pdftex.def)             Requested size: 227.5pt x 164.92522pt.
- [32]) (./estudo.tex [33 <./figuras/cache-http.png>] <figuras/model.png, id=408
-, 734.745pt x 462.72874pt>
+ [33 <./figuras/cache-http.png>]) (./estudo.tex
+[34] <figuras/model.png, id=449, 734.745pt x 462.72874pt>
 File: figuras/model.png Graphic file (type png)
- <use figuras/model.png>
+
+<use figuras/model.png>
 Package pdftex.def Info: figuras/model.png used on input line 14.
 (pdftex.def)             Requested size: 409.49722pt x 257.89777pt.
-
-[34
+ [35
 
  <./figuras/model.png>]
-<figuras/rack.jpg, id=416, 311.66437pt x 182.93344pt>
+<figuras/rack.jpg, id=457, 311.66437pt x 182.93344pt>
 File: figuras/rack.jpg Graphic file (type jpg)
  <use figuras/rack.jpg>
 Package pdftex.def Info: figuras/rack.jpg used on input line 27.
 (pdftex.def)             Requested size: 318.49861pt x 186.94691pt.
 
-[35 <./figuras/rack.jpg>] [36]
+[36 <./figuras/rack.jpg>] [37]
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1338,34 +1339,66 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [37] [38]
-<figuras/uml-sequence.png, id=476, 357.27846pt x 355.24268pt>
+) [38] [39]
+<figuras/uml-sequence.png, id=515, 357.27846pt x 355.24268pt>
 File: figuras/uml-sequence.png Graphic file (type png)
 
 <use figuras/uml-sequence.png>
 Package pdftex.def Info: figuras/uml-sequence.png used on input line 168.
 (pdftex.def)             Requested size: 227.5pt x 226.2108pt.
- [39]
+ [40]
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [40 <./figuras/uml-sequence.png>]
+) [41 <./figuras/uml-sequence.png>]
 File: figuras/uml-sequence.png Graphic file (type png)
  <use figuras/uml-sequence.png>
 Package pdftex.def Info: figuras/uml-sequence.png used on input line 215.
 (pdftex.def)             Requested size: 227.5pt x 226.2108pt.
- [41] [42]
-<figuras/metricas.PNG, id=519, 374.90062pt x 249.93375pt>
+ [42] [43]
+<figuras/metricas.PNG, id=559, 374.90062pt x 249.93375pt>
 File: figuras/metricas.PNG Graphic file (type png)
 
 <use figuras/metricas.PNG>
 Package pdftex.def Info: figuras/metricas.PNG used on input line 269.
 (pdftex.def)             Requested size: 364.00139pt x 242.68333pt.
-) (./resultados.tex [43] [44 <./figuras/metricas.PNG>]) (./conclusao.tex [45
+) (./resultados.tex [44] [45 <./figuras/metricas.PNG>]
+Overfull \hbox (23.29352pt too wide) in paragraph at lines 12--24
+ [][] 
+ []
 
-]) (./TCC-IFC.bbl [46
+<figuras/Q1-result-request-time.png, id=575, 406.51875pt x 249.93375pt>
+File: figuras/Q1-result-request-time.png Graphic file (type png)
+
+<use figuras/Q1-result-request-time.png>
+Package pdftex.def Info: figuras/Q1-result-request-time.png used on input line 
+39.
+(pdftex.def)             Requested size: 364.00139pt x 223.80182pt.
+ [46
+
+]
+<figuras/Q1-size.png, id=581, 414.54875pt x 253.94875pt>
+File: figuras/Q1-size.png Graphic file (type png)
+
+<use figuras/Q1-size.png>
+Package pdftex.def Info: figuras/Q1-size.png used on input line 53.
+(pdftex.def)             Requested size: 364.00139pt x 222.99121pt.
+ [47 <./figuras/Q1-result-request-time.png> <./figuras/Q1-size.png>]
+<figuras/Q2-result-request-time.png, id=589, 373.395pt x 230.8625pt>
+File: figuras/Q2-result-request-time.png Graphic file (type png)
+
+<use figuras/Q2-result-request-time.png>
+Package pdftex.def Info: figuras/Q2-result-request-time.png used on input line 
+75.
+(pdftex.def)             Requested size: 364.00139pt x 225.0636pt.
+ [48 <./figuras/Q2-result-request-time.png>]
+File: figuras/Q1-size.png Graphic file (type png)
+ <use figuras/Q1-size.png>
+Package pdftex.def Info: figuras/Q1-size.png used on input line 89.
+(pdftex.def)             Requested size: 364.00139pt x 222.99121pt.
+) (./conclusao.tex [49]) (./TCC-IFC.bbl [50
 
 ]
 
@@ -1373,13 +1406,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[47
+[51
 
-] [48])
+] [52])
 No file TCC-IFC.ind.
 
 AED: lastpage setting LastPage
-[49]
+[53]
 \tf@lof=\write4
 \openout4 = `TCC-IFC.lof'.
 
@@ -1392,53 +1425,48 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `TCC-IFC.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  (./TCC-IFC.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 287.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 304.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 15851 strings out of 492995
- 231803 string characters out of 6132704
- 592795 words of memory out of 5000000
- 18740 multiletter control sequences out of 15000+600000
- 97467 words of font info for 143 fonts, out of 8000000 for 9000
+ 15960 strings out of 492995
+ 233641 string characters out of 6132704
+ 594139 words of memory out of 5000000
+ 18821 multiletter control sequences out of 15000+600000
+ 100720 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,38p,986b,2289s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{lstnumber.2.13} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{lstnumber.1.15} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/te
-xlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017
-/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dis
-t/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/
-public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/
-lmbxi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
-/lm/lmri12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss10
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dis
-t/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/public/lm/lmtt10.pfb>
-Output written on TCC-IFC.pdf (50 pages, 657933 bytes).
+ 44i,13n,42p,1035b,2292s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
+17/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-d
+ist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2017/texmf-dist/fonts/type
+1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/l
+m/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbxi10.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/public/lm/lmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
+ic/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri
+12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
+ic/lm/lmtt10.pfb>
+Output written on TCC-IFC.pdf (54 pages, 722908 bytes).
 PDF statistics:
- 839 PDF objects out of 1000 (max. 8388607)
- 747 compressed objects within 8 object streams
- 220 named destinations out of 1000 (max. 500000)
- 31134 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 938 PDF objects out of 1000 (max. 8388607)
+ 834 compressed objects within 9 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 31733 words of extra memory for PDF output out of 35830 (max. 10000000)
 

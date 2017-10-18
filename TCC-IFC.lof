@@ -1,12 +1,16 @@
 \select@language {brazil}
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Caracter\IeC {\'\i }sticas dos mecanismos de comunica\IeC {\c c}\IeC {\~a}o}}{18}{figure.2.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces RPC fluxo de dados. (refazer)}}{22}{figure.3.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces SOAP fluxo de dados. (refazer)}}{24}{figure.3.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Modelo de maturidade de Richardson. (refazer)}}{28}{figure.3.4}
+\contentsline {figure}{\numberline {1}{\ignorespaces Caracter\IeC {\'\i }sticas dos mecanismos de comunica\IeC {\c c}\IeC {\~a}o}}{19}{figure.2.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces RPC fluxo de dados. (refazer)}}{23}{figure.3.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces SOAP fluxo de dados. (refazer)}}{25}{figure.3.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Modelo de maturidade de Richardson. (refazer)}}{29}{figure.3.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces HTTP Caching. (refazer)}}{33}{figure.3.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Modelagem WMS}}{34}{figure.4.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de dimens\IeC {\~o}es do armaz\IeC {\'e}m (REFAZER)}}{35}{figure.4.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces UML sequence REST (REFAZER)}}{40}{figure.4.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces UML sequence GraphQL (REFAZER)}}{41}{figure.4.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Arquitetura das APIs e diferentes pontos de medidas (REFAZER)}}{44}{figure.4.10}
+\contentsline {figure}{\numberline {6}{\ignorespaces Modelagem WMS}}{35}{figure.4.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de dimens\IeC {\~o}es do armaz\IeC {\'e}m (REFAZER)}}{36}{figure.4.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces UML sequence REST (REFAZER)}}{41}{figure.4.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces UML sequence GraphQL (REFAZER)}}{42}{figure.4.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Arquitetura das APIs e diferentes pontos de medidas (REFAZER)}}{45}{figure.4.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tempo de resposta}}{47}{figure.5.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tamanho de resposta}}{47}{figure.5.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tempo de resposta}}{48}{figure.5.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tamanho de resposta}}{49}{figure.5.14}
