@@ -7,34 +7,52 @@
 
 \section{IPC - Interprocess Communication}\label{sec:ipc}
 
-Nem sempre um programa sequencial é a melhor solução para um determinado
-problema. Muitas vezes, as implementações são estruturadas na forma de várias tarefas
-inter-dependentes que cooperam entre si para atingir os objetivos da aplicação, como
-por exemplo em um navegador Web \cite{sistemas-op-mazierro}.
 
-Em um sistema multitarefa, seja com um único processador ou com mais de um processador ou ainda com vários núcleos por processador, os processos alternam sua execução segundo critérios de escalonamento estabelecidos pelo sistema operacional. Processos de aplicações concorrentes compartilham diversos recursos do sistema, como arquivos, registros, dispositivos de Entrada/Saída e áreas da memória \cite{ipc}.
+Diversos sistemas operacionais fornecem mecanismos para viabilizar a comunicação e o compartilhamento de dados entre aplicações. Coletivamente, as atividades habilitadas por estes mecanismos são chamadas de interprocess communications (IPC) \cite{microsoft-ipc}.
+
+Nem sempre um programa sequencial é a melhor solução para um determinado problema. Muitas vezes, as implementações são estruturadas na forma de várias tarefas inter-dependentes que cooperam entre si para atingir os objetivos da aplicação, como por exemplo em um navegador Web \cite{sistemas-op-mazierro}.
 
 Os mecanismos que garantem a comunicação entre processos concorrentes e os acessos aos recursos compartilhados são chamados \textit{interprocess communication}. Algumas formas de IPC facilita a divisão de trabalho entre diversos processos especialistas. Outras formas facilitam a divisão de trabalho entre computadores dentro de uma rede.
 
 Normalmente, os aplicativos podem usar IPC categorizados como clientes ou servidores. Um cliente é um aplicativo ou um processo que solicita um serviço de alguma outra aplicação ou processo. Um servidor é um aplicativo ou um processo que responde a uma solicitação de cliente. Muitas aplicações agem como um cliente e um servidor, dependendo da situação. \cite{ipc-microsoft}
 
-A figura abaixo mostra como ocorre a comunicação entre tarefes de um processo, entre processos de um computador, e entre computadores na mesma rede.
+A figura \ref{fig:how-communication-works} mostra como ocorre a comunicação entre processos (P1 e P2). Esta troca de informação pode acontecer de duas maneiras: em duas etapas, ou de forma direta. A comunicação em duas stapas envolve um processo coordenador, que pode ser um interpretador em Python utilizado para dar início ao \textit{workflow}. A comunicação direta é ilustrada na figura ligada por linhas pontilhadas. A comunicação IPC direta pode ser dividida em diversos tipos, entre eles: Pipes, Shared Memoty, Mapped Memory e Arquivos.
 
-\newpage
 \begin{figure}[ht]
 \centering
-\caption{Características dos mecanismos de comunicação}
 \includegraphics[width=1\textwidth]{figuras/ipc.png}
-\label{fig:figura1}
-Fonte --\ Características dos mecanismos de comunicação \citeonline{sistemas-op-mazierro}
+\caption{Características dos mecanismos de comunicação}
+\label{fig:how-communication-works}
+\legend{Características dos mecanismos de comunicação \citeonline{sistemas-op-mazierro}}
 \end{figure}
 
 \section{Cliente/Servidor}\label{sec:clientserver}
 
-Em uma arquitetura cliente/servidor de duas camadas, \textit{Remote Procedure Calls}(RPC) ou \textit{Structured Query Language}(SQL) são normalmente utilizadas para a comunicação entre cliente e servidor. O servidor geralmente tem suporte para \textit{Stored Procedures} e \textit{Triggers}. Isso significa que o servidor pode ser programado para implementar regras de negócios que são mais adequadas para serem executadas no servidor ao invés de no cliente, resultando em um sistemas muito mais eficiente. \cite{client-server-future}
+Also knowm as two-tier architecture is a software architecture in which a presentation layer or interface runs on a client, and a data layer or data structure gets stored on a server. Separating these two components into different locations represents a two-tier architecture, as opposed to a single-tier architecture
 
-Desde 1992, fornecedores de software desenvolvem e trazem ao mercado muitas ferramentas para simplificar o desenvolvimento de aplicativos para a arquitetura cliente/servidor de 2 camadas. As mais conhecidas são: Microsoft Visual Basic, Delphi da Borland e PowerBuilder da Sybase. Essas ferramentas combinadas com milhões de desenvolvedores que sabem usá-las, significa que a abordagem de duas camadas de cliente/servidor é uma solução econômica para certas classes de problemas.
+The data processing is split into distinct parts. A part is either requester (client) or provider (server). The client sends during the data processing one or more requests to the servers to perform specified tasks. The server part provide services for the clients. Client system handles both Presentation and Application layers and Server system handles Database layer. It is also known as client server application. The communication takes place between the Client and the Server. Client system sends the request to the Server system and the Server system processes the request and sends back the data to the Client System
 
+
+Desde a década de 1990, fornecedores de software desenvolvem e trazem ao mercado muitas ferramentas para simplificar o desenvolvimento de aplicativos para a arquitetura cliente/servidor de 2 camadas. Algumas das mais conhecidas são: Microsoft Visual Basic, Delphi da Borland e PowerBuilder da Sybase. Essas ferramentas combinadas com milhões de desenvolvedores que sabem usá-las, significa que a abordagem de duas camadas de cliente/servidor é uma solução econômica para certas classes de problemas.
+
+Desde então, aplicações desktop comunicando-se com o servidor de banco de dados era um caso de uso normal. A maior parte da lógica de negócios foi incorporada dentro da aplicação desktop. Portanto, esse estilo de aplicativos cliente/servidor também foi chamado de \textit{fat clients}. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{figuras/two-tier.png}
+    \caption{Comunicação em duas camadas}
+    \label{fig:two-tier}
+\end{figure}
+
+The above figure shows the architecture of two-tier. Here the direct communication between client and server, there is no intermediate between client and server. 
+
+GOOD: Since this contains static business rules it’s more applicable for homogenous environments. Database server and business logic is physically close, which offers higher performance
+
+BAD: 
+1 the 2-tier model lacks scalability as it supports only a limited number of users. When simultaneous client requests increases application performance degrades rapidly due to the fact that clients necessitate separate connections and CPU memory to proceed. 
+2 Minimal Logic Sharing: Since the application logic is coupled with the client it’s difficult to re-use logic dispersed among applications and tools.
+3 Change of Database Structure: Most applications used for interaction is dependent on the database structure creating an issue when re-designing, as they are intimate with the prevailing structure.
+http://www.dotnetspider.com/forum/32148-advantages-disadvantages-two-tier-architec.aspx
 
 \section{Aplicações Monolíticas}\label{sec:monolitico}
 Em engenharia de software, uma aplicação monolítica descreve uma única aplicação de software em camadas no qual a interface de usuário e código de acesso aos dados são combinados em um único programa a partir de uma única plataforma.

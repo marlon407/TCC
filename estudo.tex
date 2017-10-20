@@ -69,7 +69,7 @@ Nos protótipos desenvolvidos para executar o experimento, o Express teve como p
 
 O código \ref{lst:load-rest} ilustra como os \textit{Controllers} enviam as informações da requisição para o model, que é o responsável na API REST em executar as consultas no banco de dados. No exemplo abaixo, o trexo de código é o responsavel por retornar um Item baseado no id recebido como parâmetro da requisição.
 
-\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption={Controller para carregar um item}, label=lst:load-rest,language=Java]
+\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption={Controller para carregar um item}, label=lst:load-rest,language=JavaScript]
 //item.controller.js
 import Item from '../models/item.model';
 
@@ -170,7 +170,6 @@ No presente trabalho, como o objetivo é apenas medir o desempenho de consultas 
 \label{fig:rest-uml}
 \author{fonte: Autor}
 \end{figure}
-\pagebreak
 
 \subsection{Detalhes implementação GraphQL}
 
@@ -217,8 +216,6 @@ Aqui tenho que explicar o diagrama de sequência para o GraphQL
 \label{fig:graph-uml}
 \author{fonte: Autor}
 \end{figure}
-\pagebreak
-
 
 \section{Métricas}\label{sec:metrics}
 
