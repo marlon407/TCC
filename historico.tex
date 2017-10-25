@@ -44,15 +44,9 @@ Desde então, aplicações desktop comunicando-se com o servidor de banco de dad
     \label{fig:two-tier}
 \end{figure}
 
-The above figure shows the architecture of two-tier. Here the direct communication between client and server, there is no intermediate between client and server. 
+A figura \cite{fig:two-tier} ilustra como a arquitetura em duas camadas funciona, mantendo uma comunicação direta entre cliente e servidor, sem intermediarios entre as duas pontas. Visto que neste modelo as regras de negocio estão presentes na camada de aplicação, ele é frequentemente aplicado em ambientes homogêneos. A camada de banco de dados e a camada de aplicação estão fisicamente próximos, o que oferece um bom desempenho para as aplicações.
 
-GOOD: Since this contains static business rules it’s more applicable for homogenous environments. Database server and business logic is physically close, which offers higher performance
-
-BAD: 
-1 the 2-tier model lacks scalability as it supports only a limited number of users. When simultaneous client requests increases application performance degrades rapidly due to the fact that clients necessitate separate connections and CPU memory to proceed. 
-2 Minimal Logic Sharing: Since the application logic is coupled with the client it’s difficult to re-use logic dispersed among applications and tools.
-3 Change of Database Structure: Most applications used for interaction is dependent on the database structure creating an issue when re-designing, as they are intimate with the prevailing structure.
-http://www.dotnetspider.com/forum/32148-advantages-disadvantages-two-tier-architec.aspx
+Por outro lado, o modelo cliente servidor em duas cadamas tem grandes desafios de escabilidade. Quando multiplos usúarios executam requisições simultaneas, a aplicação perde muito desempenho, dado ao fato que cada cliente precisa de conecções separadas e memória de CPU para processar as requisições. Entretando, um dos maiores problemas na arquitetura em duas camadas ocorre quando há mudanças na estrutura do banco de dados. A maioria das aplicações usadas para interação depende da estrutura do banco de dados criando um problema quando é preciso remodela-lo, já que as aplicações são dependentes da estrutura predominante.
 
 \section{Aplicações Monolíticas}\label{sec:monolitico}
 Em engenharia de software, uma aplicação monolítica descreve uma única aplicação de software em camadas no qual a interface de usuário e código de acesso aos dados são combinados em um único programa a partir de uma única plataforma.
