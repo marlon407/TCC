@@ -10,41 +10,39 @@
 
 Diversos sistemas operacionais fornecem mecanismos para viabilizar a comunicação e o compartilhamento de dados entre aplicações. Coletivamente, as atividades habilitadas por estes mecanismos são chamadas de interprocess communications (IPC) \cite{microsoft-ipc}.
 
-Nem sempre um programa sequencial é a melhor solução para um determinado problema. Muitas vezes, as implementações são estruturadas na forma de várias tarefas inter-dependentes que cooperam entre si para atingir os objetivos da aplicação, como por exemplo em um navegador Web \cite{sistemas-op-mazierro}.
+Nem sempre um programa sequencial é a melhor solução para um determinado problema. Muitas vezes, as implementações são estruturadas na forma de várias tarefas inter-dependentes que cooperam entre si para atingir os objetivos da aplicação \cite{sistemas-op-mazierro}.
 
-Os mecanismos que garantem a comunicação entre processos concorrentes e os acessos aos recursos compartilhados são chamados \textit{interprocess communication}. Algumas formas de IPC facilita a divisão de trabalho entre diversos processos especialistas. Outras formas facilitam a divisão de trabalho entre computadores dentro de uma rede.
+Os mecanismos que garantem a comunicação entre processos concorrentes e os acessos aos recursos compartilhados são chamados \textit{interprocess communication}. Algumas formas de IPC facilitam a divisão de trabalho entre diversos processos especialistas, enquanto outras  facilitam esta divisão entre computadores dentro de uma rede.
 
-Normalmente, os aplicativos podem usar IPC categorizados como clientes ou servidores. Um cliente é um aplicativo ou um processo que solicita um serviço de alguma outra aplicação ou processo. Um servidor é um aplicativo ou um processo que responde a uma solicitação de cliente. Muitas aplicações agem como um cliente e um servidor, dependendo da situação. \cite{ipc-microsoft}
+Normalmente, os aplicativos que fazer parte de uma comunicação através de IPC são categorizados como clientes ou servidores. Um cliente é um aplicativo ou um processo que solicita um serviço de alguma outra aplicação ou processo. Por outro lado um servidor é um aplicativo ou um processo que responde a uma solicitação de cliente. Muitas aplicações agem como um cliente e um servidor, dependendo da situação \cite{microsoft-ipc}.
 
-A figura \ref{fig:how-communication-works} mostra como ocorre a comunicação entre processos (P1 e P2). Esta troca de informação pode acontecer de duas maneiras: em duas etapas, ou de forma direta. A comunicação em duas stapas envolve um processo coordenador, que pode ser um interpretador em Python utilizado para dar início ao \textit{workflow}. A comunicação direta é ilustrada na figura ligada por linhas pontilhadas. A comunicação IPC direta pode ser dividida em diversos tipos, entre eles: Pipes, Shared Memoty, Mapped Memory e Arquivos.
+A figura \ref{fig:how-communication-works} mostra como ocorre a comunicação entre processos (P1 e P2). Esta troca de informação pode acontecer de duas maneiras: em duas etapas, ou de forma direta. A comunicação em duas etapas envolve um processo coordenador, que pode ser um interpretador em Python utilizado para dar início ao \textit{workflow} por exemplo. A comunicação direta é ilustrada na figura ligada por linhas pontilhadas e não necessita de intermediação de nenhum processo. Esta maneira de comunicação pode ser executada através de diversas formas, entre elas: Pipes, Shared Memoty, Mapped Memory e Arquivos compartilhados.
 
 \begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{figuras/ipc.png}
-\caption{Características dos mecanismos de comunicação}
-\label{fig:how-communication-works}
-\legend{Características dos mecanismos de comunicação \citeonline{sistemas-op-mazierro}}
+    \centering
+    \includegraphics[width=1\textwidth]{figuras/ipc.png}
+    \legend{Características dos mecanismos de comunicação \citeonline{sistemas-op-mazierro}}
+    \label{fig:how-communication-works}
 \end{figure}
 
 \section{Cliente/Servidor}\label{sec:clientserver}
 
-Also knowm as two-tier architecture is a software architecture in which a presentation layer or interface runs on a client, and a data layer or data structure gets stored on a server. Separating these two components into different locations represents a two-tier architecture, as opposed to a single-tier architecture
+Também conhecido como arquitetura de duas camadas, o modelo cliente/service consiste em uma arquitetura em que a camada de apresentação se encontra no cliente e a camada de dados esta armazenada no servidor. Esta separação se opõe ao modelo centralizado amplamente utilizado.
 
-The data processing is split into distinct parts. A part is either requester (client) or provider (server). The client sends during the data processing one or more requests to the servers to perform specified tasks. The server part provide services for the clients. Client system handles both Presentation and Application layers and Server system handles Database layer. It is also known as client server application. The communication takes place between the Client and the Server. Client system sends the request to the Server system and the Server system processes the request and sends back the data to the Client System
-
+O processamento dos dados é dividido em duas partes distintas. Uma parte é a requerente de dados (cliente), e a outra parte é a provedora dos dados (servidor). O cliente envia durante sua execução uma ou mais solicitações ao servidor para realizar alguma tarefa específica. É delea responsabilidade tanto de apresentar as informações para o usuário, quando executar as regras de negócio necessárias à aplicação. O servidor é responsável por armazenar os dados e prover um meio para que o cliente os consulte.
 
 Desde a década de 1990, fornecedores de software desenvolvem e trazem ao mercado muitas ferramentas para simplificar o desenvolvimento de aplicativos para a arquitetura cliente/servidor de 2 camadas. Algumas das mais conhecidas são: Microsoft Visual Basic, Delphi da Borland e PowerBuilder da Sybase. Essas ferramentas combinadas com milhões de desenvolvedores que sabem usá-las, significa que a abordagem de duas camadas de cliente/servidor é uma solução econômica para certas classes de problemas.
 
-Desde então, aplicações desktop comunicando-se com o servidor de banco de dados era um caso de uso normal. A maior parte da lógica de negócios foi incorporada dentro da aplicação desktop. Portanto, esse estilo de aplicativos cliente/servidor também foi chamado de \textit{fat clients}. 
+Desde então, aplicações \textit{desktop} comunicando-se com o servidor de banco de dados era um caso de uso normal. A maior parte da lógica de negócios foi incorporada dentro da aplicação \textit{desktop}. Portanto, esse estilo de aplicativos cliente/servidor também foi chamado de \textit{fat clients}. 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=1\textwidth]{figuras/two-tier.png}
+    \includegraphics[width=0.8\textwidth]{figuras/two-tier.png}
     \caption{Comunicação em duas camadas}
     \label{fig:two-tier}
 \end{figure}
 
-A figura \cite{fig:two-tier} ilustra como a arquitetura em duas camadas funciona, mantendo uma comunicação direta entre cliente e servidor, sem intermediarios entre as duas pontas. Visto que neste modelo as regras de negocio estão presentes na camada de aplicação, ele é frequentemente aplicado em ambientes homogêneos. A camada de banco de dados e a camada de aplicação estão fisicamente próximos, o que oferece um bom desempenho para as aplicações.
+A figura \ref{fig:two-tier} ilustra como a arquitetura em duas camadas funciona, mantendo uma comunicação direta entre cliente e servidor, sem intermediarios entre as duas pontas. Visto que neste modelo as regras de negocio estão presentes na camada de aplicação, ele é frequentemente aplicado em ambientes homogêneos. A camada de banco de dados e a camada de aplicação estão fisicamente próximos, o que oferece um bom desempenho para as aplicações.
 
 Por outro lado, o modelo cliente servidor em duas cadamas tem grandes desafios de escabilidade. Quando multiplos usúarios executam requisições simultaneas, a aplicação perde muito desempenho, dado ao fato que cada cliente precisa de conecções separadas e memória de CPU para processar as requisições. Entretando, um dos maiores problemas na arquitetura em duas camadas ocorre quando há mudanças na estrutura do banco de dados. A maioria das aplicações usadas para interação depende da estrutura do banco de dados criando um problema quando é preciso remodela-lo, já que as aplicações são dependentes da estrutura predominante.
 

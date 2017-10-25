@@ -1,6 +1,6 @@
 \select@language {brazil}
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Caracter\IeC {\'\i }sticas dos mecanismos de comunica\IeC {\c c}\IeC {\~a}o}}{19}{figure.2.1}
+\contentsline {figure}{\numberline {1}{\ignorespaces Comunica\IeC {\c c}\IeC {\~a}o em duas camadas}}{20}{figure.2.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces RPC fluxo de dados. (refazer)}}{23}{figure.3.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces SOAP fluxo de dados. (refazer)}}{25}{figure.3.3}
 \contentsline {figure}{\numberline {4}{\ignorespaces Modelo de maturidade de Richardson. (refazer)}}{29}{figure.3.4}
@@ -9,8 +9,12 @@
 \contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de dimens\IeC {\~o}es do armaz\IeC {\'e}m (REFAZER)}}{36}{figure.4.7}
 \contentsline {figure}{\numberline {8}{\ignorespaces UML sequence REST (REFAZER)}}{41}{figure.4.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces UML sequence GraphQL (REFAZER)}}{42}{figure.4.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Arquitetura das APIs e diferentes pontos de medidas (REFAZER)}}{45}{figure.4.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tempo de resposta}}{47}{figure.5.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tamanho de resposta}}{47}{figure.5.12}
+\contentsline {figure}{\numberline {10}{\ignorespaces Arquitetura das APIs e diferentes pontos de medidas (REFAZER)}}{44}{figure.4.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o da Utiliza\IeC {\c c}\IeC {\~a}o de CPU}}{46}{figure.5.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do Consumo de Mem\IeC {\'o}ria}}{47}{figure.5.12}
 \contentsline {figure}{\numberline {13}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tempo de resposta}}{48}{figure.5.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tamanho de resposta}}{49}{figure.5.14}
+\contentsline {figure}{\numberline {14}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tamanho de resposta}}{48}{figure.5.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o da Utiliza\IeC {\c c}\IeC {\~a}o da CPU - Q2}}{49}{figure.5.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do Consumo de mem\IeC {\'o}ria Q2}}{50}{figure.5.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tempo de resposta Q@}}{51}{figure.5.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tamanho da resposta}}{51}{figure.5.18}

@@ -78,19 +78,6 @@ Dispon{\'\i}vel em: \url{https://goo.gl/nGfQ4x}. Acesso em: 15 abr 2017.}
   cloud environment}. 2016.
 Dispon{\'\i}vel em: \url{https://goo.gl/Z07LrK}. Acesso em: 15 abr 2017.}
 
-\bibitem[http://wiki.inf.ufpr.br/maziero/lib/exe/fetch.php?media=so:so-livro.pdf
-  2013]{sistemas-op-mazierro}
-\abntrefinfo{http://wiki.inf.ufpr.br/maziero/lib/exe/fetch.php?media=so:so-livro.pdf}{HTTP://WIKI.INF.UFPR.BR/MAZIERO/LIB/EXE/FETCH.PHP?MEDIA=SO:SO-LIVRO.PDF}{2013}
-{HTTP://WIKI.INF.UFPR.BR/MAZIERO/LIB/EXE/FETCH.PHP?MEDIA=SO:SO-LIVRO.PDF.
-  \emph{Sistemas Operacionais: Conceitos e Mecanismos}. [S.l.], 2013. Acesso
-  em: 01 mai 2017.}
-
-\bibitem[know 2008]{ipc}
-\abntrefinfo{know}{KNOW}{2008}
-{KNOW, I. dont. \emph{I dont know}. 2008.
-Dispon{\'\i}vel em:
-  \url{http://www.facol.br/sophia/2741/apostila09\_sincronizacao\_comunicacao\_entre\_processos.pdf}.}
-
 \bibitem[Kohlhoff 2003]{soap-limitations}
 \abntrefinfo{Kohlhoff}{KOHLHOFF}{2003}
 {KOHLHOFF, R.~S. C. \emph{Evaluating SOAP for High Performance Business
@@ -130,6 +117,11 @@ Dispon{\'\i}vel em: \url{https://goo.gl/SGQuT2}. Acesso em: 15 abr 2017.}
   Consultas de Dados sobre APIs Web}. 2016.
 Dispon{\'\i}vel em: \url{https://goo.gl/mlMYso}. Acesso em: 15 abr 2017.}
 
+\bibitem[Maziero 2013]{sistemas-op-mazierro}
+\abntrefinfo{Maziero}{MAZIERO}{2013}
+{MAZIERO, C.~A. \emph{Sistemas Operacionais: Conceitos e Mecanismos}. [S.l.],
+  2013. Acesso em: 01 mai 2017.}
+
 \bibitem[Merrick, Allen e Lapp 2006]{merrick2006xml}
 \abntrefinfo{Merrick, Allen e Lapp}{MERRICK; ALLEN; LAPP}{2006}
 {MERRICK, P.; ALLEN, S.; LAPP, J. \emph{XML remote procedure call (XML-RPC)}.
@@ -137,19 +129,18 @@ Dispon{\'\i}vel em: \url{https://goo.gl/mlMYso}. Acesso em: 15 abr 2017.}
 US Patent 7,028,312.
 Dispon{\'\i}vel em: \url{https://www.google.com/patents/US7028312}.}
 
-\bibitem[Microsoft 2008]{ipc-microsoft}
+\bibitem[Microsoft 2008]{microsoft-ipc}
 \abntrefinfo{Microsoft}{MICROSOFT}{2008}
 {MICROSOFT. \emph{Interprocess Communications}. 2008.
-Dispon{\'\i}vel em:
-  \url{https://msdn.microsoft.com/en-us/library/windows/desktop/aa365574(v=vs.85).aspx\#base.using\_rpc\_for\_ipc}.}
+Dispon{\'\i}vel em: \url{https://goo.gl/LcBkCv}. Acesso em: 15 abr 2017.}
 
 \bibitem[Mueller 2013]{soap-smartbear}
 \abntrefinfo{Mueller}{MUELLER}{2013}
 {MUELLER, J. \emph{Understanding SOAP and REST Basics And Differences}. 2013.
 Dispon{\'\i}vel em: \url{https://goo.gl/EZWLg1}. Acesso em: 02 ago 2017.}
 
-\bibitem[PALIARI 2012]{rest-webservice}
-\abntrefinfo{PALIARI}{PALIARI}{2012}
+\bibitem[Paliari 2012]{rest-webservice}
+\abntrefinfo{Paliari}{PALIARI}{2012}
 {PALIARI, M. \emph{COMO FUNCIONA UM WEBSERVICE REST}. 2012.
 Dispon{\'\i}vel em: \url{https://goo.gl/lJgyrd}. Acesso em: 15 abr 2017.}
 
@@ -172,13 +163,6 @@ Dispon{\'\i}vel em: \url{https://goo.gl/OYsnm0}. Acesso em: 15 abr 2017.}
 \abntrefinfo{Schrock}{SCHROCK}{2015b}
 {SCHROCK, N. \emph{GraphQL Overview}. 2015.
 Dispon{\'\i}vel em: \url{https://goo.gl/wX2VJ8}. Acesso em: 15 abr 2017.}
-
-\bibitem[Schussel 2001]{client-server-future}
-\abntrefinfo{Schussel}{SCHUSSEL}{2001}
-{SCHUSSEL, G. \emph{Client/Server: Past, Present and Future}. 2001.
-Dispon{\'\i}vel em:
-  \url{http://ciains.info/elearning/Solutions/Architecture/ClientServer/CS-past,presentFurure.pdf}.
-  Acesso em: 02 mai 2017.}
 
 \bibitem[Skonnard 2003]{soap-microsoft}
 \abntrefinfo{Skonnard}{SKONNARD}{2003}
