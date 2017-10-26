@@ -44,14 +44,45 @@ Desde então, aplicações \textit{desktop} comunicando-se com o servidor de ban
 
 A figura \ref{fig:two-tier} ilustra como a arquitetura em duas camadas funciona, mantendo uma comunicação direta entre cliente e servidor, sem intermediarios entre as duas pontas. Visto que neste modelo as regras de negocio estão presentes na camada de aplicação, ele é frequentemente aplicado em ambientes homogêneos. A camada de banco de dados e a camada de aplicação estão fisicamente próximos, o que oferece um bom desempenho para as aplicações.
 
-Por outro lado, o modelo cliente servidor em duas cadamas tem grandes desafios de escabilidade. Quando multiplos usúarios executam requisições simultaneas, a aplicação perde muito desempenho, dado ao fato que cada cliente precisa de conecções separadas e memória de CPU para processar as requisições. Entretando, um dos maiores problemas na arquitetura em duas camadas ocorre quando há mudanças na estrutura do banco de dados. A maioria das aplicações usadas para interação depende da estrutura do banco de dados criando um problema quando é preciso remodela-lo, já que as aplicações são dependentes da estrutura predominante.
+Por outro lado, o modelo cliente servidor em duas cadamas possui grandes desafios de escabilidade. Quando multiplos usúarios executam requisições simultaneas, a aplicação perde muito desempenho, dado ao fato que cada cliente precisa de conecções separadas e memória de CPU para processar as requisições. Entretando, um dos maiores problemas na arquitetura em duas camadas ocorre quando há mudanças na estrutura do banco de dados. A maioria das aplicações usadas para interação depende da estrutura do banco de dados criando um problema quando é preciso remodela-lo, já que as aplicações são dependentes da estrutura predominante.
+
+Esta modelo foi substituido pelo modelo de tres ou n camadas, muito mais eficiente, e amplamente utilizado nas aplicações atuais [ESCREVER MAIS SOBRE ISSO]
 
 \section{Aplicações Monolíticas}\label{sec:monolitico}
-Em engenharia de software, uma aplicação monolítica descreve uma única aplicação de software em camadas no qual a interface de usuário e código de acesso aos dados são combinados em um único programa a partir de uma única plataforma.
 
-Uma aplicação monolítica é autônoma e independente de outras aplicações de computação. A filosofia do projeto consiste em um aplicativo que não é responsável apenas por uma determinada tarefa, mas que também pode executar todos os passos necessários para completar uma determinada função.
+Conforme \citeonline{monolithic-definition} explica, uma aplicação monolítica é construída como uma única unidade de \textit{software}. As aplicações empresariais são construídas em três partes: um banco de dados (que consiste em tabelas geralmente em um sistema de gerenciamento de banco de dados), uma interface de usuário do lado do cliente (consistindo de páginas executando em um navegador ou aplicativos móveis) e um lado do servidor aplicação. Este aplicativo do lado do servidor tratará as requisições HTTP, executará a regra de negócio, recuperará e atualizará dados do banco de dados e construirá as respostas para serem enviadas às aplicações clientes. Estas camadas representam uma aplicação monolitica - um único executável lógico. Para fazer alterações no sistema, é necessário criar e implantar uma versão atualizada do aplicativo do lado do servidor.
 
-A arquitetura monolítica é um padrão comumente usado para o desenvolvimento de aplicações corporativas. Esse padrão funciona razoavelmente bem para pequenas aplicações, pois o desenvolvimento, testes e implantação de pequenas aplicações monolíticas é relativamente simples. No entanto, para aplicações grandes e complexas, a arquitetura monolítica torna-se um obstáculo ao desenvolvimento e implantação, dificulta a utilização de uma entrega contínua, além de limitar a adoção de novas tecnologias. Para grandes aplicações, faz mais sentido usar uma arquitetura de microservices, que divide a aplicação em um conjunto de serviços.
+Uma aplicação monolítica é autônoma e independente de outras aplicações. A filosofia do projeto consiste em um aplicativo que não é responsável apenas por uma determinada tarefa, mas que também pode executar todos os passos necessários para completar uma determinada função, como é mostrado na figura \ref{fig:three-tier}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/three-tier.png}
+    \caption{Aplicação monolítica clássica em 3 camadas}
+    \label{fig:three-tier}
+\end{figure}
+
+\citeonline{monolithic-extinction} afirma que as aplicações monolíticas são uma maneira natural para a evolução de uma aplicação. A maioria das aplicações começam com um único objetivo, ou um pequeno número de objetivos relacionados. Ao longo do tempo, novas funcionalidades são adicionados ao aplicativo para suportar as necessidades do negócio. 
+
+Temos alguma desvantagens nos sistemas moniliticos, alguns deles são: 
+
+\begin{itemize}
+    \item Um único ponto de falha pode comprometer o funcionamento correto de todos os módulos do sistema.
+    \item Baixa estalabilidade dado a necessidade de copiar toda a \textit{stack} para escalar horizontalmente.
+    \item Base de código \textbf{gigante}, uma vez que toda a regra de negócio se encontra em uma só base.
+    \item É necessário muita comunicação para que várias equipes de desenvolvedores trabalhem em paralelo. Esta sobrecarga diminui o ritmo de desenvolvimento.
+\end{itemize}
+
+Contudo, com a popularização dos \textit{frameworks} Javascript como Angular e Backbone, houve um movimento de desacoplação da camada de visualização nas aplicações monoliticas. Foram criadas então as chamadas aplicação \textit{frontend}, responsáveis pela camada de apresentação, e sendo executadas em dispositivos móveis como \textit{smartphones} e \textit{tables} ou nos \textit{browsers desktop}. 
+
+Esse movimento criou um modelo monolítico de duas camadas, ilustrado na figura \ref{fig:two-tier-monolithic}. A remoção da interdependência entre as cadas de interface e servidor de aplicação facilitou o escalonamento e a escalabilidade de cada uma das partes. Esta separação de conceitos foi o primeiro passo em direção a uma arquitetura orientada a serviços.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figuras/two-tier-monolithic.png}
+    \caption{Modelo monolítico de duas camadas}
+    \label{fig:two-tier-monolithic}
+\end{figure}
+
 
 \section{SOA - Service Oriented Architecture}\label{sec:soa}
 
