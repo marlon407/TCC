@@ -13,53 +13,108 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
+I was expecting an "="---line 173 of file referencias.bib
+ :  author    
+ :            "Raj Srinivasan",
+I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2091 of file abntex2-alf.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--campo title vazio em rfc1831:rpc
+Warning--campo year vazio ou faltando em rfc1831:rpc
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Zhang, Liang-Jie, Zhang, Jia, Cai, Hong" for entry soa-book
+while executing---line 2146 of file abntex2-alf.bst
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 36 entries,
+You've used 35 entries,
             6714 wiz_defined-function locations,
-            1374 strings with 13713 characters,
-and the built_in function-call counts, 35712 in all, are:
-= -- 3952
-> -- 601
-< -- 708
-+ -- 963
-- -- 194
-* -- 2144
-:= -- 4737
-add.period$ -- 164
-call.type$ -- 36
-change.case$ -- 245
-chr.to.int$ -- 36
-cite$ -- 35
-duplicate$ -- 3052
-empty$ -- 2024
-format.name$ -- 906
-if$ -- 7576
+            1360 strings with 13184 characters,
+and the built_in function-call counts, 33239 in all, are:
+= -- 3600
+> -- 569
+< -- 611
++ -- 852
+- -- 184
+* -- 1983
+:= -- 4430
+add.period$ -- 158
+call.type$ -- 35
+change.case$ -- 234
+chr.to.int$ -- 35
+cite$ -- 36
+duplicate$ -- 2747
+empty$ -- 1997
+format.name$ -- 859
+if$ -- 7148
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 574
-newline$ -- 183
-num.names$ -- 165
-pop$ -- 683
+missing$ -- 566
+newline$ -- 177
+num.names$ -- 160
+pop$ -- 692
 preamble$ -- 1
-purify$ -- 115
+purify$ -- 111
 quote$ -- 0
-skip$ -- 3297
+skip$ -- 2993
 stack$ -- 1
-substring$ -- 1401
-swap$ -- 1114
-text.length$ -- 31
+substring$ -- 1273
+swap$ -- 1011
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 2
-warning$ -- 0
-while$ -- 231
+warning$ -- 2
+while$ -- 222
 width$ -- 0
-write$ -- 538
+write$ -- 518
+(There were 25 error messages)

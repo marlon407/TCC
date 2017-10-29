@@ -241,6 +241,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
 INPUT figuras/two-tier-monolithic.png
 INPUT ./figuras/two-tier-monolithic.png
 INPUT ./figuras/two-tier-monolithic.png
+INPUT figuras/soa.png
+INPUT ./figuras/soa.png
+INPUT ./figuras/soa.png
 INPUT comunicacao.tex
 INPUT comunicacao.tex
 INPUT figuras/How-RPC-Works.png

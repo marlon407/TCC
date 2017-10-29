@@ -5,26 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
-\bibitem[Araujo 2015]{abntex2classe}
-\abntrefinfo{Araujo}{ARAUJO}{2015a}
-{ARAUJO, L.~C. \emph{A classe abntex2: Modelo can{\^o}nico de trabalhos
-  acad{\^e}micos brasileiros compat{\'\i}vel com as normas ABNT NBR 14724:2011,
-  ABNT NBR 6024:2012 e outras}.
-[S.l.], 2015. Dispon{\'\i}vel em: \url{http://www.abntex.net.br/}.}
-
-\bibitem[Araujo 2015]{abntex2cite}
-\abntrefinfo{Araujo}{ARAUJO}{2015b}
-{ARAUJO, L.~C. \emph{O pacote abntex2cite: Estilos bibliogr{\'a}ficos
-  compat{\'\i}veis com a ABNT NBR 6023}.
-[S.l.], 2015. Dispon{\'\i}vel em: \url{http://www.abntex.net.br/}.}
-
-\bibitem[Araujo 2015]{abntex2cite-alf}
-\abntrefinfo{Araujo}{ARAUJO}{2015c}
-{ARAUJO, L.~C. \emph{O pacote abntex2cite: t{\'o}picos espec{\'\i}ficos da ABNT
-  NBR 10520:2002 e o estilo bibliogr{\'a}fico alfab{\'e}tico (sistema
-  autor-data)}.
-[S.l.], 2015. Dispon{\'\i}vel em: \url{http://www.abntex.net.br/}.}
-
 \bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2003]{NBR6028:2003}
 \abntrefinfo{ABNT}{ABNT}{2003}
 {ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 6028}: Resumo -
@@ -52,6 +32,12 @@ Dispon{\'\i}vel em: \url{https://goo.gl/KB2CGw}. Acesso em: 17 mai 2017.}
 \abntrefinfo{Buna}{BUNA}{2017}
 {BUNA, S. \emph{REST APIs are REST-in-Peace APIs. Long Live GraphQL.} 2017.
 Dispon{\'\i}vel em: \url{https://goo.gl/3NDGrq}. Acesso em: 15 abr 2017.}
+
+\bibitem[Everware-CBDI 2014]{soa-cbdi}
+\abntrefinfo{Everware-CBDI}{EVERWARE-CBDI}{2014}
+{EVERWARE-CBDI. \emph{CBDI-SAE Knowledgebase for SOA. Best Practices and
+  Resources for SOA}. 2014.
+Dispon{\'\i}vel em: \url{https://goo.gl/Cy8dWp}. Acesso em: 15 abr 2017.}
 
 \bibitem[Fielding 2000]{rest-thesis}
 \abntrefinfo{Fielding}{FIELDING}{2000}
@@ -146,11 +132,6 @@ Dispon{\'\i}vel em: \url{https://www.google.com/patents/US7028312}.}
 {MICROSOFT. \emph{Interprocess Communications}. 2008.
 Dispon{\'\i}vel em: \url{https://goo.gl/LcBkCv}. Acesso em: 15 abr 2017.}
 
-\bibitem[Mueller 2013]{soap-smartbear}
-\abntrefinfo{Mueller}{MUELLER}{2013}
-{MUELLER, J. \emph{Understanding SOAP and REST Basics And Differences}. 2013.
-Dispon{\'\i}vel em: \url{https://goo.gl/EZWLg1}. Acesso em: 02 ago 2017.}
-
 \bibitem[Paliari 2012]{rest-webservice}
 \abntrefinfo{Paliari}{PALIARI}{2012}
 {PALIARI, M. \emph{COMO FUNCIONA UM WEBSERVICE REST}. 2012.
@@ -161,8 +142,18 @@ Dispon{\'\i}vel em: \url{https://goo.gl/lJgyrd}. Acesso em: 15 abr 2017.}
 {ROUSE, M. \emph{warehouse management system (WMS)}. 2009.
 Dispon{\'\i}vel em: \url{https://goo.gl/sgh88Y}. Acesso em: 15 abr 2017.}
 
+\bibitem[Rouse 2014]{soa-tech-target}
+\abntrefinfo{Rouse}{ROUSE}{2014a}
+{ROUSE, M. \emph{service-oriented architecture (SOA)}. 2014.
+Dispon{\'\i}vel em: \url{https://goo.gl/VeAeTw}. Acesso em: 15 abr 2017.}
+
+\bibitem[Rouse 2014]{soa-intel}
+\abntrefinfo{Rouse}{ROUSE}{2014b}
+{ROUSE, M. \emph{service-oriented architecture (SOA)}. 2014.
+Dispon{\'\i}vel em: \url{https://goo.gl/yga17e}. Acesso em: 15 abr 2017.}
+
 \bibitem[Rouse 2014]{soap-tech-target}
-\abntrefinfo{Rouse}{ROUSE}{2014}
+\abntrefinfo{Rouse}{ROUSE}{2014c}
 {ROUSE, M. \emph{SOAP (Simple Object Access Protocol)}. 2014.
 Dispon{\'\i}vel em: \url{https://goo.gl/CYyXtD}. Acesso em: 17 mai 2017.}
 
@@ -181,28 +172,24 @@ Dispon{\'\i}vel em: \url{https://goo.gl/wX2VJ8}. Acesso em: 15 abr 2017.}
 {SKONNARD, A. \emph{Understanding SOAP}. 2003.
 Dispon{\'\i}vel em: \url{https://goo.gl/1G2yiz}. Acesso em: 17 mai 2017.}
 
-\bibitem[Sun Microsystems 1995]{rfc1831:rpc}
-\abntrefinfo{Sun Microsystems}{SUN MICROSYSTEMS}{1995}
-{SUN MICROSYSTEMS. \emph{RPC: Remote Procedure Call Protocol Specification
-  Version 2}.
-[S.l.], 1995. Rev. 3.}
+\bibitem[Sun Microsystems]{rfc1831:rpc}
+\abntrefinfo{Sun Microsystems}{SUN MICROSYSTEMS}{}
+{SUN MICROSYSTEMS.
+[S.l.].}
 
 \bibitem[VNI 2017]{cisco-network-report}
 \abntrefinfo{VNI}{VNI}{2017}
 {VNI, C.~M. \emph{Cisco Visual Networking Index}. 2017.
 Dispon{\'\i}vel em: \url{https://goo.gl/MHsDgQ}. Acesso em: 15 out 2017.}
 
-\bibitem[Wilson e Madsen 2010]{memoir}
-\abntrefinfo{Wilson e Madsen}{WILSON; MADSEN}{2010}
-{WILSON, P.; MADSEN, L. \emph{The Memoir Class for Configurable Typesetting -
-  User Guide}.
-Normandy Park, WA, 2010. Dispon{\'\i}vel em:
-  \url{http://mirrors.ctan.org/macros/latex/contrib/memoir/memman.pdf}. Acesso
-  em: 19 dez. 2012.}
-
 \bibitem[Work 2011]{load-time-effects}
 \abntrefinfo{Work}{WORK}{2011}
 {WORK, S. \emph{How Loading Time Affects Your Bottom Line}. 2011.
 Dispon{\'\i}vel em: \url{https://goo.gl/xUpdJ8}. Acesso em: 15 out 2017.}
+
+\bibitem[Zhang Liang-Jie 2007]{soa-book}
+\abntrefinfo{Zhang Liang-Jie}{ZHANG LIANG-JIE}{2007}
+{ZHANG LIANG-JIE, Z. J. C.~H. \emph{Service-Oriented Architecture. In: Services
+  Computing.} [S.l.]: Springer, Berlin, Heidelberg, 2007.}
 
 \end{thebibliography}

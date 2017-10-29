@@ -17,42 +17,42 @@
 \contentsline {section}{\numberline {2.3}Aplica\IeC {\c c}\IeC {\~o}es Monol\IeC {\'\i }ticas}{20}{section.2.3}
 \contentsline {section}{\numberline {2.4}SOA - Service Oriented Architecture}{22}{section.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Protocolos de Comunica\IeC {\c c}\IeC {\~a}o}}{24}{chapter.3}
-\contentsline {section}{\numberline {3.1}Remote Procedure Call}{24}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Limita\IeC {\c c}\IeC {\~o}es}{25}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Simple Object Access Protocol}{26}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Limita\IeC {\c c}\IeC {\~o}es}{27}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}REpresentational State Transfer}{28}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Restri\IeC {\c c}\IeC {\~o}es}{28}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Modelo de Maturidade de Richardson}{30}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Limita\IeC {\c c}\IeC {\~o}es}{32}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Arquiteturas baseadas em JSON/Graphs}{32}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Opera\IeC {\c c}\IeC {\~o}es}{33}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Schemas e Tipos}{34}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Autoriza\IeC {\c c}\IeC {\~a}o}{35}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Caching}{35}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Limita\IeC {\c c}\IeC {\~o}es}{36}{subsection.3.4.5}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Protocolos de Comunica\IeC {\c c}\IeC {\~a}o}}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Remote Procedure Call}{25}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Limita\IeC {\c c}\IeC {\~o}es}{26}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Simple Object Access Protocol}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Limita\IeC {\c c}\IeC {\~o}es}{28}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}REpresentational State Transfer}{29}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Restri\IeC {\c c}\IeC {\~o}es}{29}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Modelo de Maturidade de Richardson}{32}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Limita\IeC {\c c}\IeC {\~o}es}{33}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Arquiteturas baseadas em JSON/Graphs}{34}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Opera\IeC {\c c}\IeC {\~o}es}{34}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Schemas e Tipos}{35}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Autoriza\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Caching}{36}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Limita\IeC {\c c}\IeC {\~o}es}{37}{subsection.3.4.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Estudo de Caso}}{37}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hip\IeC {\'o}teses}{38}{section.4.1}
-\contentsline {section}{\numberline {4.2}Cen\IeC {\'a}rios}{39}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Ferramentas utilizadas}{39}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Ambiente}{41}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Detalhes implementa\IeC {\c c}\IeC {\~a}o REST}{41}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Detalhes implementa\IeC {\c c}\IeC {\~a}o GraphQL}{42}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}M\IeC {\'e}tricas}{44}{section.4.3}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Estudo de Caso}}{38}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hip\IeC {\'o}teses}{39}{section.4.1}
+\contentsline {section}{\numberline {4.2}Cen\IeC {\'a}rios}{40}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Ferramentas utilizadas}{40}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Ambiente}{42}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Detalhes implementa\IeC {\c c}\IeC {\~a}o REST}{42}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Detalhes implementa\IeC {\c c}\IeC {\~a}o GraphQL}{43}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}M\IeC {\'e}tricas}{45}{section.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Resultados}}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Quest\IeC {\~a}o 1}{47}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Utiliza\IeC {\c c}\IeC {\~a}o da CPU}{48}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Consumo de mem\IeC {\'o}ria}{49}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Tempo de resposta}{49}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Tamanho da resposta}{49}{subsection.5.1.4}
-\contentsline {section}{\numberline {5.2}Quest\IeC {\~a}o 2}{51}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Utiliza\IeC {\c c}\IeC {\~a}o da CPU}{51}{subsection.5.2.1}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Resultados}}{48}{chapter.5}
+\contentsline {section}{\numberline {5.1}Quest\IeC {\~a}o 1}{48}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Utiliza\IeC {\c c}\IeC {\~a}o da CPU}{49}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Consumo de mem\IeC {\'o}ria}{50}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Tempo de resposta}{50}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Tamanho da resposta}{51}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}Quest\IeC {\~a}o 2}{52}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Utiliza\IeC {\c c}\IeC {\~a}o da CPU}{52}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Consumo de mem\IeC {\'o}ria}{52}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Tempo de resposta}{52}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Tamanho da resposta}{53}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.3}Tempo de resposta}{53}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Tamanho da resposta}{54}{subsection.5.2.4}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{55}{chapter.6}

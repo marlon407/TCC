@@ -37,7 +37,7 @@ Desde então, aplicações \textit{desktop} comunicando-se com o servidor de ban
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{figuras/two-tier.png}
+    \includegraphics[width=0.5\textwidth]{figuras/two-tier.png}
     \caption{Comunicação em duas camadas}
     \label{fig:two-tier}
 \end{figure}
@@ -56,7 +56,7 @@ Uma aplicação monolítica é autônoma e independente de outras aplicações. 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{figuras/three-tier.png}
+    \includegraphics[width=0.5\textwidth]{figuras/three-tier.png}
     \caption{Aplicação monolítica clássica em 3 camadas}
     \label{fig:three-tier}
 \end{figure}
@@ -83,23 +83,29 @@ Esse movimento criou um modelo monolítico de duas camadas, ilustrado na figura 
     \label{fig:two-tier-monolithic}
 \end{figure}
 
-
 \section{SOA - Service Oriented Architecture}\label{sec:soa}
 
-Este documento e seu código-fonte são exemplos de referência de uso da classe
-\textsf{abntex2} e do pacote \textsf{abntex2cite}. O documento exemplifica a elaboração de trabalho acadêmico produzido conforme a ABNT NBR 14724:2011 \emph{Informação e documentação - Trabalhos acadêmicos - Apresentação}.
+\citeonline{soa-cbdi} define SOA como políticas, práticas e frameworks que permitem que rotinas de aplicações sejam fornecidas e consumidas como conjuntos de serviços publicados em uma granularidade relevante para o consumidor do serviço. Os serviços podem ser invocados, publicados e descobertos e são abstraídos da implementação usando uma única forma de interface baseada em padrões.
 
-O modelo apresentado é baseado no ``Modelo Canônico'' criado pela equipe do projeto \abnTeX\, e implementa os requisitos das normas da ABNT. Uma lista completa das normas
-observadas pelo \abnTeX\ é apresentada em \citeonline{abntex2classe}. Aqui, está apresentada a forma que o modelo será utilizado no curso de Bacharelado em Sistemas de Informação do IFC - Araquari.
+Além de criar e expor serviços, \citeonline{soa-tech-target} assinala que o SOA tem a capacidade de aproveitar esses serviços uma e outra vez em aplicativos (conhecidos como aplicativos compostos). A SOA vincula esses serviços à orquestração ou alavanca individualmente esses serviços. Assim, a SOA é realmente sobre como consertar arquiteturas existentes, abordando a maioria dos principais sistemas como serviços e resgatando esses serviços em um único domínio onde eles são formados em soluções.
 
-Este documento deve ser utilizado como complemento dos manuais do \abnTeX\ 
-\cite{abntex2classe,abntex2cite,abntex2cite-alf} e da classe \textsf{memoir}
-\cite{memoir}. 
+ O SOA permite a reutilização de ativos existentes, onde novos serviços podem ser criados a partir de uma infra-estrutura de sistemas de TI existente. Em outras palavras, ele permite que as empresas alavancem os investimentos existentes, permitindo que eles reutilizem aplicativos existentes e possibilita a interoperabilidade entre aplicações e tecnologias heterogêneas. SOA fornece um nível de flexibilidade que não era possível antes, no sentido de que:
 
-Na introdução o autor coloca o problema ou a indagação que o levou a escrever o texto. A introdução nos dá, então, uma idéia do assunto tratado. Além disso, nela o autor coloca também o ponto de vista ou o ângulo sob o qual ele vai abordar o assunto e, às vezes, o método, ou seja, o caminho que vai seguir (se vai apresentar casos para chegar a uma generalização, ou se vai partir de um princípio geral e deduzir suas consequências).
+\begin{itemize}
+    \item Os serviços são componentes de software com interfaces bem definidas que são independentes da implementação. Um aspecto importante da SOA é a separação da interface de serviço (o que) da sua implementação (como). Esses serviços são consumidos por clientes que não estão preocupados com a forma como esses serviços irão executar seus pedidos.
+    \item Os serviços são autônomos (executar tarefas predeterminadas) e vagamente acoplados (para independência)
+    \item Serviços compostos podem ser construídos a partir de agregados de outros serviços
+\end{itemize}
 
-Também na introdução, o tema é apresentado e esclarecido aos leitores as indicações de leitura do trabalho. Deve-se utilizar o projeto do TCC para colocar na introdução o objetivo principal, os objetivos específicos, o problema e a hipótese.
+Isso significa que o SOA é uma abordagem alinhada com o negócio em que os aplicativos dependem dos serviços disponíveis para facilitar os processos de negócios. Um serviço é um componente de software reutilizável autônomo fornecido por um provedor de serviços e consumido pelos solicitantes de serviço. O SOA cria uma visão de flexibilidade de TI que facilita a agilidade do negócio. A implementação de uma SOA envolve principalmente componentes de aplicativos corporativos e/ou em desenvolvimento que usam serviços, disponibilizando aplicativos como serviços para outras aplicações \cite{soa-book}.
 
-A respeito de materiais e métodos, pode-se falar sobre a infra-estrutura necessária para o trabalho, incluindo servidores, estações, equipamentos de rede, \emph{softwares} com suas respectivas versões e tudo o mais que for necessário.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figuras/soa.png}
+    \caption{Service Oriented Architecture}
+    \label{fig:soa}
+\end{figure}
 
-A introdução termina com a apresentação dos demais capítulos do trabalho. O capítulo 2 contém o referencial teórico deste trabalho. No capítulo 3 é apresentado o desenvolvimento, o cenário, os testes e a discussão dos resultados. Por fim, temos a conclusão, onde discutiremos os resultados, as dificuldades encontradas e faremos sugestões de trabalhos futuros.
+\citeonline{soa-intel} acrescenta que em um ambiente SOA típico, existe um provedor de serviços e um consumidor de serviços. Para que isso funcione, também precisa de um mecanismo para que eles possam se comunicar uns com os outros, como  é ilustrado na figura \ref{fig:soa}.  A W3C \footnote{World Wide Web Consortium} definiu um padrão aberto para que \textit{web services} possam implementar SOA e habilitar a comunicação entre o provedor e o consumidor atravém de um protocolo baseado em XML o Simple Object Access Protocol (SOAP). Outros padrões também são usandos ou foram criados para realizar a comunicações entre os serviçoes SOA. Alguns basearam-se no \textit{design} do REpresentation State Transfer (REST), utilizando tanto XML quando JSON para transportar os dados entre os serviços. 
+
+There seems to be general confusion about the relationship between SOA and Web services. In an April 2003 Gartner report, Yefim V. Natis makes the distinction as follows: "Web services are about technology specifications, whereas SOA is a software design principle. Notably, Web services' WSDL is an SOA-suitable interface definition standard: this is where Web services and SOA fundamentally connect." Fundamentally, SOA is an architectural pattern, while Web services are services implemented using a set of standards; Web services is one of the ways you can implement SOA. The benefit of implementing SOA with Web services is that you achieve a platform-neutral approach to accessing services and better interoperability as more and more vendors support more and more Web services specifications.
