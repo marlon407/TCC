@@ -36,11 +36,12 @@
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Estudo de Caso}}{38}{chapter.4}
 \contentsline {section}{\numberline {4.1}Hip\IeC {\'o}teses}{39}{section.4.1}
 \contentsline {section}{\numberline {4.2}Cen\IeC {\'a}rios}{40}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Ferramentas utilizadas}{40}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Ambiente}{42}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Detalhes implementa\IeC {\c c}\IeC {\~a}o REST}{42}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Detalhes implementa\IeC {\c c}\IeC {\~a}o GraphQL}{43}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}M\IeC {\'e}tricas}{45}{section.4.3}
+\contentsline {section}{\numberline {4.3}Ferramentas utilizadas}{40}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Ferramentas servidor}{40}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Ambiente}{42}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Detalhes implementa\IeC {\c c}\IeC {\~a}o REST}{43}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Detalhes implementa\IeC {\c c}\IeC {\~a}o GraphQL}{43}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}M\IeC {\'e}tricas}{45}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Resultados}}{48}{chapter.5}
 \contentsline {section}{\numberline {5.1}Quest\IeC {\~a}o 1}{48}{section.5.1}
