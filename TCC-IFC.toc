@@ -9,7 +9,7 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{16}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{15}{chapter.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Fundamentos}}{18}{chapter.2}
 \contentsline {section}{\numberline {2.1}IPC - Interprocess Communication}{18}{section.2.1}
@@ -24,9 +24,9 @@
 \contentsline {subsection}{\numberline {3.2.1}Limita\IeC {\c c}\IeC {\~o}es}{28}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}REpresentational State Transfer}{29}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Restri\IeC {\c c}\IeC {\~o}es}{29}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Modelo de Maturidade de Richardson}{32}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Modelo de Maturidade de Richardson}{31}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Limita\IeC {\c c}\IeC {\~o}es}{33}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Arquiteturas baseadas em JSON/Graphs}{34}{section.3.4}
+\contentsline {section}{\numberline {3.4}Arquiteturas baseadas em JSON/Graphs}{33}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Opera\IeC {\c c}\IeC {\~o}es}{34}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Schemas e Tipos}{35}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Autoriza\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.4.3}
@@ -56,10 +56,8 @@
 \contentsline {subsection}{\numberline {5.2.4}Tamanho da resposta}{54}{subsection.5.2.4}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{55}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{56}{chapter.6}
 \vspace {\cftbeforechapterskip }
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{56}{section*.24}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

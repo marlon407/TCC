@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 OCT 2017 09:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 NOV 2017 07:30
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/marlon407/Documents/IFC/TCC/tcc-final 2/TCC-IFC.tex"
-(/Users/marlon407/Documents/IFC/TCC/tcc-final 2/TCC-IFC.tex
+**TCC-IFC.tex
+(./TCC-IFC.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -1040,11 +1039,8 @@ Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 
 (./definicoes.tex)
 Package hyperref Info: Option `colorlinks' set `true' on input line 140.
- (./TCC-IFC.aux
 
-LaTeX Warning: Label `sec:cenarios' multiply defined.
-
-)
+No file TCC-IFC.aux.
 \openout1 = `TCC-IFC.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
@@ -1062,7 +1058,7 @@ LaTeX Font Info:    ... okay on input line 150.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
 LaTeX Font Info:    ... okay on input line 150.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 150.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box32
@@ -1188,6 +1184,10 @@ l.159
 
 
 ] (./fichacatalografica.tex
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 29.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 29--29
 
  []
@@ -1222,16 +1222,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [6
 
-]) (./resumo.tex [7
+]) (./resumo.tex
+
+LaTeX Warning: Citation `NBR6028:2003' on page 7 undefined on input line 5.
+
+[7
 
 ] [8
 
-])
-(./indices-siglas.tex (./TCC-IFC.lof) [9
+]) (./indices-siglas.tex [9
 
-] (./TCC-IFC.lot) [10
+] [10
 
-] (./TCC-IFC.lol)
+]
+
+Package hyperref Warning: old lol file detected, not used; run LaTeX again.
+
 [11
 
 ] [12
@@ -1240,63 +1246,172 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] [13
 
 
-] (./TCC-IFC.toc [14
+] [14
 
-]) [15]) (./introducao.tex [16
+]) (./introducao.tex
+
+LaTeX Warning: Citation `cisco-network-report' on page 15 undefined on input li
+ne 11.
 
 
-])
-(./historico.tex [17] <figuras/ipc.png, id=295, 387.69844pt x 207.77625pt>
-File: figuras/ipc.png Graphic file (type png)
+LaTeX Warning: Citation `load-time-effects' on page 15 undefined on input line 
+13.
 
-<use figuras/ipc.png>
-Package pdftex.def Info: figuras/ipc.png used on input line 23.
-(pdftex.def)             Requested size: 455.0pt x 243.8486pt.
- [18
+
+LaTeX Warning: Citation `tcc-ufsc' on page 15 undefined on input line 17.
+
+
+LaTeX Warning: Citation `programmableweb-rest-losing' on page 15 undefined on i
+nput line 17.
+
+[15
+
 
 ]
-<figuras/two-tier.png, id=308, 332.74312pt x 258.21469pt>
+
+LaTeX Warning: Citation `rest-webservice' on page 16 undefined on input line 19
+.
+
+[16]) (./historico.tex [17]
+
+LaTeX Warning: Citation `sistemas-op-mazierro' on page 18 undefined on input li
+ne 11.
+
+
+LaTeX Warning: Citation `microsoft-ipc' on page 18 undefined on input line 13.
+
+
+LaTeX Warning: Citation `microsoft-ipc' on page 18 undefined on input line 17.
+
+
+LaTeX Warning: Reference `fig:how-communication-works' on page 18 undefined on 
+input line 19.
+
+! Undefined control sequence.
+l.19 ...s de diversas formas, entre elas: \textiit
+                                                  {Pipes}, \textiit{Shared M...
+
+? 
+! Undefined control sequence.
+l.19 ...mas, entre elas: \textiit{Pipes}, \textiit
+                                                  {Shared Memory}, \textiit{...
+
+? 
+! Undefined control sequence.
+l.19 ...{Pipes}, \textiit{Shared Memory}, \textiit
+                                                  {Mapped Memory} e Arquivos...
+
+? 
+<figuras/ipc.png, id=123, 387.69844pt x 207.77625pt>
+File: figuras/ipc.png Graphic file (type png)
+ <use figuras/ipc.png>
+Package pdftex.def Info: figuras/ipc.png used on input line 23.
+(pdftex.def)             Requested size: 455.0pt x 243.8486pt.
+
+
+LaTeX Warning: Citation `sistemas-op-mazierro' on page 18 undefined on input li
+ne 24.
+
+
+LaTeX Warning: Citation `sistemas-op-mazierro' on page 18 undefined on input li
+ne 24.
+
+[18
+
+] <figuras/two-tier.png, id=133, 332.74312pt x 258.21469pt>
 File: figuras/two-tier.png Graphic file (type png)
 
 <use figuras/two-tier.png>
 Package pdftex.def Info: figuras/two-tier.png used on input line 40.
 (pdftex.def)             Requested size: 227.5pt x 176.54503pt.
- [19 <./figuras/ipc.png>]
-<figuras/three-tier.png, id=318, 934.49126pt x 473.77pt>
+
+
+LaTeX Warning: Reference `fig:two-tier' on page 19 undefined on input line 45.
+
+[19 <./figuras/ipc.png>]
+
+LaTeX Warning: Citation `monolithic-definition' on page 20 undefined on input l
+ine 53.
+
+
+LaTeX Warning: Reference `fig:three-tier' on page 20 undefined on input line 55
+.
+
+<figuras/three-tier.png, id=139, 934.49126pt x 473.77pt>
 File: figuras/three-tier.png Graphic file (type png)
 
 <use figuras/three-tier.png>
 Package pdftex.def Info: figuras/three-tier.png used on input line 59.
 (pdftex.def)             Requested size: 227.5pt x 115.33368pt.
  [20 <./figuras/two-tier.png>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 69.
 
+LaTeX Warning: Citation `monolithic-extinction' on page 21 undefined on input l
+ine 64.
+
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 67.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 69.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 67.
 
-<figuras/two-tier-monolithic.png, id=328, 278.03876pt x 392.46625pt>
+
+LaTeX Warning: Reference `fig:two-tier-monolithic' on page 21 undefined on inpu
+t line 75.
+
+<figuras/two-tier-monolithic.png, id=147, 278.03876pt x 392.46625pt>
 File: figuras/two-tier-monolithic.png Graphic file (type png)
 
 <use figuras/two-tier-monolithic.png>
-Package pdftex.def Info: figuras/two-tier-monolithic.png used on input line 81.
+Package pdftex.def Info: figuras/two-tier-monolithic.png used on input line 79.
 
 (pdftex.def)             Requested size: 227.5pt x 321.13571pt.
- [21 <./figuras/three-tier.png (PNG copy)>] [22 <./figuras/two-tier-monolithic.
-png>]
-<figuras/soa.png, id=348, 495.8525pt x 249.93375pt>
+
+
+LaTeX Warning: Citation `soa-cbdi' on page 21 undefined on input line 86.
+
+[21 <./figuras/three-tier.png (PNG copy)>]
+
+LaTeX Warning: Citation `soa-tech-target' on page 22 undefined on input line 88
+.
+
+[22 <./figuras/two-tier-monolithic.png>]
+
+LaTeX Warning: Citation `soa-book' on page 23 undefined on input line 98.
+
+<figuras/soa.png, id=161, 495.8525pt x 249.93375pt>
 File: figuras/soa.png Graphic file (type png)
  <use figuras/soa.png>
-Package pdftex.def Info: figuras/soa.png used on input line 104.
+Package pdftex.def Info: figuras/soa.png used on input line 102.
 (pdftex.def)             Requested size: 227.5pt x 114.66963pt.
-)
-(./comunicacao.tex [23 <./figuras/soa.png>] [24]
 
-Package hyperref Warning: Suppressing empty link on input line 16.
 
-<figuras/How-RPC-Works.png, id=370, 192.72pt x 112.7412pt>
+LaTeX Warning: Citation `soa-intel' on page 23 undefined on input line 107.
+
+
+LaTeX Warning: Reference `fig:soa' on page 23 undefined on input line 107.
+
+
+LaTeX Warning: Citation `soa-webservice' on page 23 undefined on input line 109
+.
+
+! Undefined control sequence.
+l.109 ...az uma distinção entre o SOA e \textiit
+                                                  {web services} do seguinte...
+
+? 
+) (./comunicacao.tex [23 <./figuras/soa.png>] [24]
+
+LaTeX Warning: Citation `merrick2006xml' on page 25 undefined on input line 14.
+
+
+
+LaTeX Warning: Citation `rfc1831:rpc' on page 25 undefined on input line 16.
+
+
+LaTeX Warning: Reference `fig:rpc' on page 25 undefined on input line 16.
+
+<figuras/How-RPC-Works.png, id=175, 192.72pt x 112.7412pt>
 File: figuras/How-RPC-Works.png Graphic file (type png)
 
 <use figuras/How-RPC-Works.png>
@@ -1304,19 +1419,70 @@ Package pdftex.def Info: figuras/How-RPC-Works.png used on input line 20.
 (pdftex.def)             Requested size: 227.5pt x 133.08676pt.
 
 
-Package hyperref Warning: Suppressing empty link on input line 25.
+LaTeX Warning: Citation `rfc1831:rpc' on page 25 undefined on input line 25.
 
 [25
 
-] [26 <./figuras/How-RPC-Works.png>]
-<figuras/soap-st.png, id=397, 566.115pt x 315.1775pt>
+]
+
+LaTeX Warning: Citation `rpc-limitations' on page 26 undefined on input line 43
+.
+
+[26 <./figuras/How-RPC-Works.png>]
+
+LaTeX Warning: Citation `soap2000' on page 27 undefined on input line 57.
+
+
+LaTeX Warning: Citation `soap-tech-target' on page 27 undefined on input line 6
+0.
+
+
+LaTeX Warning: Citation `soap-microsoft' on page 27 undefined on input line 62.
+
+
+
+LaTeX Warning: Reference `fig:soap' on page 27 undefined on input line 64.
+
+<figuras/soap-st.png, id=193, 566.115pt x 315.1775pt>
 File: figuras/soap-st.png Graphic file (type png)
 
 <use figuras/soap-st.png>
 Package pdftex.def Info: figuras/soap-st.png used on input line 68.
 (pdftex.def)             Requested size: 455.0pt x 253.32059pt.
- [27] [28 <./figuras/soap-st.png>] [29] [30] [31]
-<figuras/rest-maturity-model.jpg, id=448, 144.54pt x 119.7273pt>
+
+
+LaTeX Warning: Citation `soap-benefits' on page 27 undefined on input line 74.
+
+[27]
+
+LaTeX Warning: Citation `soap-limitations' on page 28 undefined on input line 9
+2.
+
+[28 <./figuras/soap-st.png>]
+
+LaTeX Warning: Citation `rest-intro' on page 29 undefined on input line 106.
+
+
+LaTeX Warning: Citation `programmableweb-rest-losing' on page 29 undefined on i
+nput line 108.
+
+
+LaTeX Warning: Citation `rest-book-intro:61' on page 29 undefined on input line
+ 110.
+
+[29]
+
+LaTeX Warning: Citation `rest-thesis' on page 30 undefined on input line 118.
+
+
+LaTeX Warning: Citation `rest-thesis' on page 30 undefined on input line 120.
+
+[30]
+
+LaTeX Warning: Reference `fig:rest-maturity-model' on page 31 undefined on inpu
+t line 140.
+
+[31] <figuras/rest-maturity-model.jpg, id=227, 144.54pt x 119.7273pt>
 File: figuras/rest-maturity-model.jpg Graphic file (type jpg)
 
 <use figuras/rest-maturity-model.jpg>
@@ -1324,29 +1490,81 @@ Package pdftex.def Info: figuras/rest-maturity-model.jpg used on input line 144
 .
 (pdftex.def)             Requested size: 227.5pt x 188.45638pt.
  [32 <./figuras/rest-maturity-model.jpg>]
-[33] [34] [35] <figuras/cache-http.png, id=483, 350.30875pt x 253.94875pt>
+
+LaTeX Warning: Citation `graph-intro' on page 33 undefined on input line 172.
+
+
+LaTeX Warning: Citation `efficient-data-communication' on page 33 undefined on 
+input line 174.
+
+
+LaTeX Warning: Citation `api-versioning' on page 33 undefined on input line 176
+.
+
+[33]
+
+LaTeX Warning: Citation `graphQl-overview' on page 34 undefined on input line 1
+86.
+
+[34] [35]
+
+LaTeX Warning: Citation `rfc2977' on page 36 undefined on input line 225.
+
+
+LaTeX Warning: Citation `graph-cache' on page 36 undefined on input line 231.
+
+<figuras/cache-http.png, id=250, 350.30875pt x 253.94875pt>
 File: figuras/cache-http.png Graphic file (type png)
 
 <use figuras/cache-http.png>
 Package pdftex.def Info: figuras/cache-http.png used on input line 235.
 (pdftex.def)             Requested size: 227.5pt x 164.92522pt.
- [36 <./figuras/cache-http.png>]) (./estudo.tex
-[37] <figuras/model.png, id=502, 734.745pt x 462.72874pt>
-File: figuras/model.png Graphic file (type png)
 
-<use figuras/model.png>
+
+LaTeX Warning: Reference `fig:cache-http' on page 36 undefined on input line 24
+1.
+
+[36 <./figuras/cache-http.png>]
+
+LaTeX Warning: Citation `graph-limitation' on page 37 undefined on input line 2
+47.
+
+) (./estudo.tex [37]
+
+LaTeX Warning: Citation `wms-definition' on page 38 undefined on input line 8.
+
+<figuras/model.png, id=265, 734.745pt x 462.72874pt>
+File: figuras/model.png Graphic file (type png)
+ <use figuras/model.png>
 Package pdftex.def Info: figuras/model.png used on input line 16.
 (pdftex.def)             Requested size: 409.49722pt x 257.89777pt.
- [38
+
+
+LaTeX Warning: Reference `fig:modelagem' on page 38 undefined on input line 22.
+
+
+
+LaTeX Warning: Reference `fig:rack' on page 38 undefined on input line 22.
+
+[38
 
  <./figuras/model.png>]
-<figuras/rack.jpg, id=511, 311.66437pt x 182.93344pt>
+<figuras/rack.jpg, id=273, 311.66437pt x 182.93344pt>
 File: figuras/rack.jpg Graphic file (type jpg)
  <use figuras/rack.jpg>
 Package pdftex.def Info: figuras/rack.jpg used on input line 29.
 (pdftex.def)             Requested size: 318.49861pt x 186.94691pt.
 
-[39 <./figuras/rack.jpg>] [40]
+[39 <./figuras/rack.jpg>]
+
+LaTeX Warning: Citation `node-definition' on page 40 undefined on input line 62
+.
+
+[40]
+
+LaTeX Warning: Reference `lst:load-rest' on page 41 undefined on input line 74.
+
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
@@ -1360,10 +1578,26 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
+
+LaTeX Warning: Reference `lst:express-graph' on page 41 undefined on input line
+ 94.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [41] [42]
-<figuras/uml-sequence.png, id=570, 357.27846pt x 355.24268pt>
+) [41]
+
+LaTeX Warning: Reference `tab:host' on page 42 undefined on input line 127.
+
+[42]
+
+LaTeX Warning: Reference `tab:rest-url' on page 43 undefined on input line 147.
+
+
+
+LaTeX Warning: Reference `fig:rest-uml' on page 43 undefined on input line 147.
+
+
+<figuras/uml-sequence.png, id=331, 357.27846pt x 355.24268pt>
 File: figuras/uml-sequence.png Graphic file (type png)
 
 <use figuras/uml-sequence.png>
@@ -1381,91 +1615,129 @@ File: figuras/uml-sequence.png Graphic file (type png)
 Package pdftex.def Info: figuras/uml-sequence.png used on input line 218.
 (pdftex.def)             Requested size: 227.5pt x 226.2108pt.
  [45] [46]
-<figuras/metricas.PNG, id=613, 374.90062pt x 249.93375pt>
+<figuras/metricas.PNG, id=383, 374.90062pt x 249.93375pt>
 File: figuras/metricas.PNG Graphic file (type png)
 
 <use figuras/metricas.PNG>
 Package pdftex.def Info: figuras/metricas.PNG used on input line 270.
 (pdftex.def)             Requested size: 364.00139pt x 242.68333pt.
+
+
+LaTeX Warning: Reference `fig:my-metrics' on page 47 undefined on input line 27
+6.
+
 ) (./resultados.tex [47 <./figuras/metricas.PNG>]
+
+LaTeX Warning: Reference `tab:request-table1' on page 48 undefined on input lin
+e 8.
+
+
+LaTeX Warning: Reference `tab:request-table2' on page 48 undefined on input lin
+e 8.
+
+
 Overfull \hbox (23.29352pt too wide) in paragraph at lines 24--36
  [][] 
  []
 
+
+LaTeX Warning: Reference `tab:cenarios' on page 48 undefined on input line 40.
+
 [48
 
-] <figuras/q1-cpu.png, id=631, 353.32pt x 218.8175pt>
-File: figuras/q1-cpu.png Graphic file (type png)
+]
 
-<use figuras/q1-cpu.png>
+LaTeX Warning: Reference `fig:q1-cpu' on page 49 undefined on input line 64.
+
+<figuras/q1-cpu.png, id=401, 353.32pt x 218.8175pt>
+File: figuras/q1-cpu.png Graphic file (type png)
+ <use figuras/q1-cpu.png>
 Package pdftex.def Info: figuras/q1-cpu.png used on input line 68.
 (pdftex.def)             Requested size: 364.00139pt x 225.43462pt.
- [49 <./figuras/q1-cpu.png>]
-<figuras/q1-mem.png, id=638, 430.60875pt x 262.9825pt>
+
+
+LaTeX Warning: Reference `fig:q1-mem' on page 49 undefined on input line 78.
+
+[49 <./figuras/q1-cpu.png>]
+<figuras/q1-mem.png, id=411, 430.60875pt x 262.9825pt>
 File: figuras/q1-mem.png Graphic file (type png)
 
 <use figuras/q1-mem.png>
 Package pdftex.def Info: figuras/q1-mem.png used on input line 82.
 (pdftex.def)             Requested size: 364.00139pt x 222.30826pt.
 
-<figuras/Q1-result-request-time.png, id=640, 406.51875pt x 249.93375pt>
+
+LaTeX Warning: Reference `fig:q1-time' on page 50 undefined on input line 92.
+
+<figuras/Q1-result-request-time.png, id=412, 406.51875pt x 249.93375pt>
 File: figuras/Q1-result-request-time.png Graphic file (type png)
 
 <use figuras/Q1-result-request-time.png>
 Package pdftex.def Info: figuras/Q1-result-request-time.png used on input line 
 96.
 (pdftex.def)             Requested size: 364.00139pt x 223.80182pt.
- [50 <./figuras/q1-mem.png>]
-<figuras/Q1-size.png, id=647, 414.54875pt x 253.94875pt>
+
+
+LaTeX Warning: Reference `fig:q1-size' on page 50 undefined on input line 106.
+
+[50 <./figuras/q1-mem.png>]
+<figuras/Q1-size.png, id=421, 414.54875pt x 253.94875pt>
 File: figuras/Q1-size.png Graphic file (type png)
 
 <use figuras/Q1-size.png>
 Package pdftex.def Info: figuras/Q1-size.png used on input line 110.
 (pdftex.def)             Requested size: 364.00139pt x 222.99121pt.
- [51 <./figuras/Q1-result-request-time.png> <./figuras/Q1-size.png>] <figuras/q
-2-cpu.png, id=655, 441.65pt x 274.02374pt>
-File: figuras/q2-cpu.png Graphic file (type png)
+ [51 <./figuras/Q1-result-request-time.png> <./figuras/Q1-size.png>]
 
-<use figuras/q2-cpu.png>
+LaTeX Warning: Reference `fig:q2-cpu' on page 52 undefined on input line 128.
+
+<figuras/q2-cpu.png, id=431, 441.65pt x 274.02374pt>
+File: figuras/q2-cpu.png Graphic file (type png)
+ <use figuras/q2-cpu.png>
 Package pdftex.def Info: figuras/q2-cpu.png used on input line 132.
 (pdftex.def)             Requested size: 364.00139pt x 225.85495pt.
 
-<figuras/q2-mem.png, id=657, 360.34625pt x 221.82875pt>
+
+LaTeX Warning: Reference `fig:q2-mem' on page 52 undefined on input line 142.
+
+[52 <./figuras/q2-cpu.png>]
+<figuras/q2-mem.png, id=441, 360.34625pt x 221.82875pt>
 File: figuras/q2-mem.png Graphic file (type png)
 
 <use figuras/q2-mem.png>
 Package pdftex.def Info: figuras/q2-mem.png used on input line 146.
 (pdftex.def)             Requested size: 364.00139pt x 224.07909pt.
- [52 <./figuras/q2-cpu.png>]
-<figuras/Q2-result-request-time.png, id=664, 373.395pt x 230.8625pt>
+
+
+LaTeX Warning: Reference `fig:q2-time' on page 53 undefined on input line 156.
+
+<figuras/Q2-result-request-time.png, id=442, 373.395pt x 230.8625pt>
 File: figuras/Q2-result-request-time.png Graphic file (type png)
 
 <use figuras/Q2-result-request-time.png>
 Package pdftex.def Info: figuras/Q2-result-request-time.png used on input line 
 160.
 (pdftex.def)             Requested size: 364.00139pt x 225.0636pt.
- [53 <./figuras/q2-mem.png>]
-File: figuras/Q1-size.png Graphic file (type png)
 
-<use figuras/Q1-size.png>
+
+LaTeX Warning: Reference `fig:q2-size' on page 53 undefined on input line 170.
+
+[53 <./figuras/q2-mem.png>]
+File: figuras/Q1-size.png Graphic file (type png)
+ <use figuras/Q1-size.png>
 Package pdftex.def Info: figuras/Q1-size.png used on input line 174.
 (pdftex.def)             Requested size: 364.00139pt x 222.99121pt.
-) (./conclusao.tex [54 <./figuras/Q2-result-request-time.png>]) (./TCC-IFC.bbl 
-[55
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 3.
-
-bibitemlist
-[56
-
-] [57])
+) [54 <./figuras/Q2-result-request-time.png>] (./conclusao.tex [55])
+No file TCC-IFC.bbl.
 No file TCC-IFC.ind.
 
+Package lastpage Warning: Rerun to get the references right on input line 304.
+
+
 AED: lastpage setting LastPage
-[58]
+[56
+
+]
 \tf@lof=\write4
 \openout4 = `TCC-IFC.lof'.
 
@@ -1485,18 +1757,21 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 304.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 15934 strings out of 492995
- 233644 string characters out of 6132704
- 569647 words of memory out of 5000000
- 18773 multiletter control sequences out of 15000+600000
- 100333 words of font info for 143 fonts, out of 8000000 for 9000
+ 15785 strings out of 492995
+ 230594 string characters out of 6132704
+ 559877 words of memory out of 5000000
+ 18673 multiletter control sequences out of 15000+600000
+ 106355 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,13n,42p,1039b,2350s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,13n,42p,990b,2350s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
 17/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-d
@@ -1516,10 +1791,10 @@ exlive/2017/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/201
 t/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
 ic/lm/lmtt10.pfb>
-Output written on TCC-IFC.pdf (59 pages, 903041 bytes).
+Output written on TCC-IFC.pdf (57 pages, 873704 bytes).
 PDF statistics:
- 1018 PDF objects out of 1200 (max. 8388607)
- 892 compressed objects within 9 object streams
- 263 named destinations out of 1000 (max. 500000)
- 31781 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 750 PDF objects out of 1000 (max. 8388607)
+ 630 compressed objects within 7 object streams
+ 225 named destinations out of 1000 (max. 500000)
+ 34333 words of extra memory for PDF output out of 35830 (max. 10000000)
 
