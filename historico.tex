@@ -7,20 +7,19 @@
 
 \section{IPC - Interprocess Communication}\label{sec:ipc}
 
-Nem sempre um programa sequencial é a melhor solução para um determinado problema. Muitas vezes, as implementações são estruturadas na forma de várias tarefas inter-dependentes que cooperam 
-entre si para atingir os objetivos da aplicação \cite{sistemas-op-mazierro}.
+Nem sempre um programa sequencial é a melhor solução para um determinado problema. Muitas vezes, as implementações são estruturadas na forma de várias tarefas inter-dependentes que cooperam entre si para atingir os objetivos da aplicação \cite{sistemas-op-mazierro}.
 
-Diversos sistemas operacionais fornecem mecanismos para viabilizar a comunicação e o compartilhamento de dados entre aplicações. Coletivamente, as atividades habilitadas por estes mecanismos são chamadas de interprocess communications (IPC) \cite{microsoft-ipc}.
+Diversos sistemas operacionais fornecem mecanismos para viabilizar a comunicação e o compartilhamento de dados entre aplicações. Coletivamente, as atividades habilitadas por estes mecanismos são chamadas de Interprocess Communications (IPC) \cite{microsoft-ipc}.
 
-Os mecanismos que garantem a comunicação entre processos concorrentes e os acessos aos recursos compartilhados são chamados \textit{interprocess communication}. Algumas formas de IPC facilitam a divisão de trabalho entre diversos processos especialistas, enquanto outras facilitam esta divisão entre computadores dentro de uma rede.
+IPC consist em mecanismos que garantem a comunicação entre processos concorrentes e os acessos aos recursos compartilhados. Algumas formas de IPC facilitam a divisão de trabalho entre diversos processos especialistas, enquanto outras facilitam esta divisão entre computadores dentro de uma rede.
 
 Normalmente, os aplicativos que fazer parte de uma comunicação através de IPC são categorizados como clientes ou servidores. Um cliente é um aplicativo ou um processo que solicita um serviço de alguma outra aplicação ou processo. Por outro lado um servidor é um aplicativo ou um processo que responde a uma solicitação de cliente. Muitas aplicações agem como um cliente e servidor, dependendo da situação \cite{microsoft-ipc}.
 
-A figura \ref{fig:how-communication-works} mostra como ocorre a comunicação entre processos (P1 e P2). Esta troca de informação pode acontecer de duas maneiras: em duas etapas, ou de forma direta. A comunicação em duas etapas envolve um processo coordenador, que pode ser um interpretador em Python utilizado para dar início ao \textit{workflow} por exemplo. A comunicação direta é ilustrada na figura ligada por linhas pontilhadas e não necessita de intermediação de nenhum processo. Esta maneira de comunicação pode ser executada através de diversas formas, entre elas: \textiit{Pipes}, \textiit{Shared Memory}, \textiit{Mapped Memory} e Arquivos compartilhados.
+A figura \ref{fig:how-communication-works} mostra como ocorre a comunicação entre processos (P1 e P2). Esta troca de informação pode acontecer de duas maneiras: em duas etapas, ou de forma direta. A comunicação em duas etapas envolve um processo coordenador, que pode ser um interpretador em Python utilizado para dar início ao \textit{workflow} por exemplo. A comunicação direta é ilustrada na figura ligada por linhas pontilhadas e não necessita de intermediação de nenhum processo. Esta maneira de comunicação pode ser executada através de diversas formas, entre elas: \textit{Pipes}, \textit{Shared Memory}, \textit{Mapped Memory} e Arquivos compartilhados.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\textwidth]{figuras/ipc.png}
+    \includegraphics[width=0.7\textwidth]{figuras/ipc.png}
     \legend{Características dos mecanismos de comunicação \citeonline{sistemas-op-mazierro}}
     \label{fig:how-communication-works}
 \end{figure}
@@ -37,7 +36,7 @@ Desde então, aplicações \textit{desktop} comunicando-se com o servidor de ban
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{figuras/two-tier.png}
+    \includegraphics[width=0.7\textwidth]{figuras/client-server.png}
     \caption{Comunicação em duas camadas}
     \label{fig:two-tier}
 \end{figure}
@@ -56,7 +55,7 @@ Uma aplicação monolítica é autônoma e independente de outras aplicações. 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{figuras/three-tier.png}
+    \includegraphics[width=0.7\textwidth]{figuras/monolithic-3-tier.png}
     \caption{Aplicação monolítica clássica em 3 camadas}
     \label{fig:three-tier}
 \end{figure}
@@ -76,7 +75,7 @@ Esse movimento criou um modelo monolítico de duas camadas, ilustrado na figura 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{figuras/two-tier-monolithic.png}
+    \includegraphics[width=0.7\textwidth]{figuras/monolithic-2-tier.png}
     \caption{Modelo monolítico de duas camadas}
     \label{fig:two-tier-monolithic}
 \end{figure}
@@ -99,11 +98,11 @@ Isso significa que o SOA é uma abordagem alinhada com o negócio, em que os apl
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{figuras/soa.png}
+    \includegraphics[width=0.7\textwidth]{figuras/soa.png}
     \caption{Service Oriented Architecture}
     \label{fig:soa}
 \end{figure}
 
 \citeonline{soa-intel} acrescenta que em um ambiente SOA típico, existe um provedor de serviços e um consumidor de serviços. Para que isso funcione, também é necessário um mecanismo para que eles possam se comunicar uns com os outros, como é ilustrado na figura \ref{fig:soa}. A W3C \footnote{World Wide Web Consortium} definiu um padrão aberto para que \textit{web services} possam implementar o SOA e habilitar a comunicação entre o provedor e o consumidor através de um protocolo baseado em XML: o \textit{Simple Object Access Protocol} (SOAP). Outros padrões também são usandos ou foram criados para realizar a comunicações entre os serviçoes SOA. Alguns basearam-se no \textit{design} do \textit{REpresentation State Transfer} (REST), utilizando tanto XML quando JSON para transportar os dados entre os serviços.
 
-Em geral, há uma confusão entre o relacionamento entre SOA e \textit{web services}. \citeonline{soa-webservice} faz uma distinção entre o SOA e \textiit{web services} do seguinte modo: \"Web services tratam-se de especificações de tecnologias, enquanto o SOA é um princípio de \textit{design} de \textit{software}. Notavelmente, Web services são um padrão de definição de interface adequado ao SOA e é neste ponto onde eles se conectam ao SOA". Portanto, o SOA é um padrão de arquitetura, enquanto os \textit{Web services} são serviços implementados usando um conjunto de padrões. Os \textit{Web services} são uma das maneiras em que é possível implementar o SOA. cujo os benefícios são que é possível alcançar uma abordagem neutra em relação a plataformas para acessar serviços e uma melhor interoperabilidade à medida que mais fornecedores suportam cada vez mais especificações.
+Em geral, há uma confusão entre o relacionamento entre SOA e \textit{web services}. \citeonline{soa-webservice} faz uma distinção entre o SOA e \textit{web services} do seguinte modo: \"Web services tratam-se de especificações de tecnologias, enquanto o SOA é um princípio de \textit{design} de \textit{software}. Notavelmente, Web services são um padrão de definição de interface adequado ao SOA e é neste ponto onde eles se conectam ao SOA". Portanto, o SOA é um padrão de arquitetura, enquanto os \textit{Web services} são serviços implementados usando um conjunto de padrões. Os \textit{Web services} são uma das maneiras em que é possível implementar o SOA. cujo os benefícios são que é possível alcançar uma abordagem neutra em relação a plataformas para acessar serviços e uma melhor interoperabilidade à medida que mais fornecedores suportam cada vez mais especificações.
