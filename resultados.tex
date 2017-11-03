@@ -37,7 +37,7 @@ Foram executadas 30 interações para cada requisição necessária a fim de obe
     \label{tab:request-table2}
 \end{table}
 
-Além das 30 interações feitas para cada requisição, foi montado também três cenários para melhor analise dos resultados. Estes cenários possuem quantidade de registros diferentes para as entidades Item e Pallet, pois são estas que afetam de maneira mais significativa o quão eficiente será a resposta das APIs. Estes três cenários estão descritos na tabela \ref{tab:cenarios} com suas respectivas quantidades.
+Além das 30 interações feitas para cada requisição, foi montado também três cenários para melhor analise dos resultados. Estes cenários possuem quantidade de registros diferentes para as entidades \textup{Item} e \textup{Pallet}, pois são estas que afetam de maneira mais significativa o quão eficiente será a resposta das APIs. Estes três cenários estão descritos na tabela \ref{tab:cenarios} com suas respectivas quantidades.
 
 \begin{table}[htbp]
     \centering
@@ -57,7 +57,7 @@ Além das 30 interações feitas para cada requisição, foi montado também tr�
 
 \section{Questão 1}
 
-Embora necessite de buscas mais simples, através da Questão 1 já é possível observar as diferenças em termos de desempenho entre a aplicação REST e a aplicação GraphQL. A Questão 1 busca o Item com a maior quantidade de pallets alocados no armazém, e para responde-la é necessário duas etapas. A primeira busca todos os pallets registrados no sistema, e após identificado qual o item mais comum presente nos \textit{Pallets} registrados, a segunda etapa detalha este item, extraindo a descrição dele por exemplo.
+Embora necessite de buscas mais simples, através da Questão 1 já é possível observar as diferenças em termos de desempenho entre a aplicação REST e a aplicação GraphQL. A Questão 1 busca o Item com a maior quantidade de \textit{pallets} alocados no armazém, e para responde-la é necessário duas etapas. A primeira busca todos os \textit{pallets} registrados no sistema, e após identificado qual o item mais comum presente nos \textit{pallets} registrados, a segunda etapa detalha este item, extraindo a descrição dele por exemplo.
 
 \subsection{Utilização da CPU}
 
@@ -121,7 +121,7 @@ A API REST respondeu as requisições da Questão 1 com um tamanho de resposta d
 
 \section{Questão 2}
 
-Para as repostas da questão 2, as consultas foram mais complexas na API GraphQL, e mais numerosas na API REST. 
+Para as repostas da questão 2, as consultas foram mais complexas na API GraphQL, e mais numerosas na API REST. Estas consultas visaram responder quais são os endereços que contém o Item 22B12, e foi analisando os resultados que é possível identificar a maior diferença de desempenho das APIs, com destaque ao tamanho da resposta obtida.
 
 \subsection{Utilização da CPU}
 
