@@ -48,18 +48,18 @@
 \contentsline {subsection}{\numberline {5.1.1}Utiliza\IeC {\c c}\IeC {\~a}o da CPU}{51}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Consumo de mem\IeC {\'o}ria}{52}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Tempo de resposta}{52}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Tamanho da resposta}{53}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.4}Tamanho da resposta}{54}{subsection.5.1.4}
 \contentsline {section}{\numberline {5.2}Quest\IeC {\~a}o 2}{54}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Utiliza\IeC {\c c}\IeC {\~a}o da CPU}{54}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Consumo de mem\IeC {\'o}ria}{54}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Tempo de resposta}{55}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Tamanho da resposta}{56}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.2}Consumo de mem\IeC {\'o}ria}{55}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Tempo de resposta}{56}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Tamanho da resposta}{57}{subsection.5.2.4}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{58}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{59}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{59}{section*.24}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{60}{section*.24}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

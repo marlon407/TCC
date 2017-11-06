@@ -17,7 +17,7 @@ Normalmente, os aplicativos que fazer parte de uma comunicação através de IPC
 
 A figura \ref{fig:how-communication-works} mostra como ocorre a comunicação entre processos (P1 e P2). Esta troca de informação pode acontecer de duas maneiras: em duas etapas, ou de forma direta. A comunicação em duas etapas envolve um processo coordenador, que pode ser um interpretador em Python utilizado para dar início ao \textit{workflow} por exemplo. A comunicação direta é ilustrada na figura ligada por linhas pontilhadas e não necessita de intermediação de nenhum processo. Esta maneira de comunicação pode ser executada através de diversas formas, entre elas: \textit{Pipes}, \textit{Shared Memory}, \textit{Mapped Memory} e Arquivos compartilhados.
 
-\begin{figure}[htbp]
+\begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{figuras/ipc.png}
     \legend{Características dos mecanismos de comunicação \citeonline{sistemas-op-mazierro}}

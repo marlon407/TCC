@@ -79,7 +79,7 @@ Os dados do resultado da comparação do consumo de memória expõem que a API R
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figuras/q1-mem.png}
+    \includegraphics[width=0.8\textwidth]{figuras/q1-memory.png}
     \caption{Comparação do Consumo de Memória}
     \label{fig:q1-mem}
     \author{fonte: Autor}
@@ -93,7 +93,7 @@ Como esperado, a API implementada com GraphQL realmente respondeu as consultas e
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figuras/Q1-result-request-time.png}
+    \includegraphics[width=0.8\textwidth]{figuras/q1-time.png}
     \caption{Comparação do tempo de resposta}
     \label{fig:q1-time}
     \author{fonte: Autor}
@@ -101,13 +101,25 @@ Como esperado, a API implementada com GraphQL realmente respondeu as consultas e
 
 Nas requisições de C1, a API REST teve como resultado um tempo de resposta de 147.23 ms, enquanto a API GraphQL respondeu a consulta em 115.63 ms, representando uma diferença de 21\% por cento. Ao analizar as consultas de C2, a API REST respondeu as consultas em 1108.13 ms e a API GraphQL devolveu os resultados em 925.63 ms, uma diferença de 16\% por cento. Por último, as consultas de C3 foram respondidas em 2261.1 ms na API REST e 1725.7 ms na API GraphQL, o que representa uma diferença de 23\% por cento.
 
+Para o tempo de respota foi extraido mais um gráfico, que pode ser obersavado na figura \ref{fig:q1-time-line}, que ilustra o tempo que resposta para cada umas das 30 requisições nas duas APIs. Esse gráfico é baseados nas consultas para o cenário C1, e ajuda a explicar o comportamento de tempo resposta de cada uma das APIs.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/q1-time-line.png}
+    \caption{Tempo de resposta}
+    \label{fig:q1-time-line}
+    \author{fonte: Autor}
+\end{figure}
+
+É possivel observar em ambos os protótipos que a primeira requisição leva um tempo bem superior que a média do protótipo. Isso se explica pois na primeira requisição a API precisa de um tempo de \textit{warmup}, necessário para estar em pleno desempenho. Esse periodo de \textit{warmup} ocorre apenas a primeira requisição e as próximas requisições já se mostram muito mais rápidas.
+
 \subsection{Tamanho da resposta}
 
 Outro resultado esperado era que o tamanho da resposta da API GraphQL fosse menor do que o tamanho da resposta da API REST. Essa hipótese se confirmou como pode ser visto da figura \ref{fig:q1-size}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figuras/Q1-size.png}
+    \includegraphics[width=0.8\textwidth]{figuras/q1-size.png}
     \caption{Comparação do tamanho de resposta}
     \label{fig:q1-size}
     \author{fonte: Autor}
@@ -143,7 +155,7 @@ Os dados referentes ao consumo de memória estão ilustrados na figura \ref{fig:
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figuras/q2-mem.png}
+    \includegraphics[width=0.8\textwidth]{figuras/q2-memory.png}
     \caption{Comparação do Consumo de memória Q2}
     \label{fig:q2-mem}
     \author{fonte: Autor}
@@ -157,7 +169,7 @@ Como mostra a figura \ref{fig:q2-time}, é possivel identificar com clareza que 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figuras/Q2-result-request-time.png}
+    \includegraphics[width=0.8\textwidth]{figuras/q1-time.png}
     \caption{Comparação do tempo de resposta Q@}
     \label{fig:q2-time}
     \author{fonte: Autor}
@@ -165,13 +177,25 @@ Como mostra a figura \ref{fig:q2-time}, é possivel identificar com clareza que 
 
 Considerando as consultas de C1, a API REST teve como resultado um tempo de resposta de 254.56 ms, enquanto a API GraphQL respondeu a consulta em 148.5 ms, representando uma diferença de pouco mais de 40\%. Quando analisado as requisições de C2, a API REST respondeu as consultas em 2072.03 ms e a API GraphQL devolveu o resultado em 1201.3 ms, uma diferença de 42\%, muito semelhante ao C1. Por último, as consultas de C3 foram respondidas em 4770.2 ms na API REST e 2291.1 ms na API GraphQL, o que representa uma diferença de pouco mais de 50\%.
 
+Como feito na Questão 1, também foi extraido um gráfigo ilustrando o tempo de resposta para cada umas das 30 requisições, no cenário C1. Entretanto, diferente do que ocorreu na Questão 1, onde grande parte das requisições levaram tempos muito similares, para a Questão 2 obervamos uma diferença muito mais significativa. Os resultados podem ser vistos na \ref{fig:q2-time-line}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/q2-time-line.png}
+    \caption{Tempo de resposta}
+    \label{fig:q2-time-line}
+    \author{fonte: Autor}
+\end{figure}
+
+O periodo de \textit{warmup} é também facilmente oberservado na Questão 2. A API REST responde a primeira requisição em quase 500 ms, enquanto a API GraphQL responde a primeira requisição em pouco menos de 400 ms. Essa diferença de quase 100ms se mantém ao decorer das requisições, sendo que a API GraphQL se mostra um pouco mais estável do que a API GraphQL, sem grandes ocilações.
+
 \subsection{Tamanho da resposta}
 
 A API GraphQL também mostrou-se mais vantajosa em termos de tamanho da resposta na Questão 2. A figura \ref{fig:q2-size} mostra a comparação entre os protótipos quando comparados esta métrica.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figuras/Q1-size.png}
+    \includegraphics[width=0.8\textwidth]{figuras/q1-size.png}
     \caption{Comparação do tamanho da resposta}
     \label{fig:q2-size}
     \author{fonte: Autor}

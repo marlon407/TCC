@@ -3,11 +3,11 @@ LIVRO=TCC-IFC
 all:	pdf
 
 pdf:
-	pdflatex $(LIVRO).tex
+	#pdflatex $(LIVRO).tex
 	pdflatex $(LIVRO).tex
 	bibtex $(LIVRO)
-	pdflatex $(LIVRO).tex
-	pdflatex $(LIVRO).tex
+	#pdflatex $(LIVRO).tex
+	#pdflatex $(LIVRO).tex
 	pdflatex $(LIVRO).tex
 
 clean:
