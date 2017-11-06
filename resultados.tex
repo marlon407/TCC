@@ -5,7 +5,7 @@
 
 Neste capítulo, os resultados e a análise dos experimentos realizados durante o trabalho são reportados. Os resultados obtidos nos testes de validação apresentam a média dos valores coletados após diversas execuções dos cenários de forma sequencial.
 
-Foram executadas 30 interações para cada requisição necessária a fim de obeter as respostas das questões levandas no capítulo anterior. Os dados necessários puderam ser buscados em uma única requisição à API GraphQL, enquanto foram precisos à API REST duas requisições para chegar a resposta da primeira questão, e vinte e oito para obter a resposta da segunda. Os detalhes podem ser constatados nas tabelas \ref{tab:request-table1} e \ref{tab:request-table2}.
+Foram executadas 30 interações para cada requisição necessária a fim de obeter as respostas das questões levandas no capítulo anterior. Os dados necessários puderam ser buscados em uma única requisição à API GraphQL, enquanto foi necessário a API REST duas requisições para chegar a resposta da primeira questão, e vinte e oito para obter a resposta da segunda. Os detalhes podem ser constatados nas tabelas \ref{tab:request-table1} e \ref{tab:request-table2}.
 
 \begin{table}[htbp]
     \centering
@@ -37,13 +37,13 @@ Foram executadas 30 interações para cada requisição necessária a fim de obe
     \label{tab:request-table2}
 \end{table}
 
-Além das 30 interações feitas para cada requisição, foi montado também três cenários para melhor analise dos resultados. Estes cenários possuem quantidade de registros diferentes para as entidades \textup{Item} e \textup{Pallet}, pois são estas que afetam de maneira mais significativa o quão eficiente será a resposta das APIs. Estes três cenários estão descritos na tabela \ref{tab:cenarios} com suas respectivas quantidades.
+Além das 30 interações feitas para cada requisição, foi montado também três cenários para melhor análise dos resultados. Estes cenários possuem quantidade de registros diferentes para as entidades \textup{Item} e \textup{Pallet}, pois são estas que afetam de maneira mais significativa o quão eficiente será o desempenho das APIs. Estes três cenários estão descritos na tabela \ref{tab:cenarios} com suas respectivas quantidades.
 
 \begin{table}[htbp]
     \centering
     \begin{tabular}{| l | l | l | l|}
         \hline
-        \textbf{Recurso} & \textbf{C1} & \textbf{C2} & \textbf{C3} \\ \hline
+        \textbf{Recurso} & \textbf{Cenário 1 (C1)} & \textbf{Cenário 2 (C2)} & \textbf{Cenário 3 (C3)} \\ \hline
         Item & 1000 & 10000 & 30000 \\ \hline
         Pallet & 1000 & 10000 & 30000 \\ \hline
         Address & 156 & 156 & 156 \\ \hline
@@ -57,21 +57,20 @@ Além das 30 interações feitas para cada requisição, foi montado também tr�
 
 \section{Questão 1}
 
-Embora necessite de buscas mais simples, através da Questão 1 já é possível observar as diferenças em termos de desempenho entre a aplicação REST e a aplicação GraphQL. A Questão 1 busca o Item com a maior quantidade de \textit{pallets} alocados no armazém, e para responde-la é necessário duas etapas. A primeira busca todos os \textit{pallets} registrados no sistema, e após identificado qual o item mais comum presente nos \textit{pallets} registrados, a segunda etapa detalha este item, extraindo a descrição dele por exemplo.
+Embora necessite de buscas mais simples, através da Questão 1 já é possível observar as diferenças em termos de desempenho entre a aplicação REST e a aplicação GraphQL. A Questão 1 busca o item com a maior quantidade de \textit{pallets} alocados no armazém, e para responde-la é necessário duas etapas. A primeira busca todos os \textit{pallets} registrados no sistema, e após identificado qual o item mais comum presente nos \textit{pallets} registrados, a segunda etapa detalha este item, extraindo a descrição dele por exemplo.
 
 \subsection{Utilização da CPU}
 
-Ao analisarmos a utilização da CPU, ilustrada na figura \ref{fig:q1-cpu}, percebemos que as APIs REST e GraphQL tem desempenho similares nos cenários C1 e C2. Por outro lado, as consultas para o cenário C3, mostram a API REST muito menos eficiente ao utilizar a CPU.
+Ao analisar a utilização da CPU, ilustrada na figura \ref{fig:q1-cpu}, percebe-se que as APIs REST e GraphQL tem desempenho similares nos cenários C1 e C2. Por outro lado, as consultas para o cenário C3, mostram a API REST muito menos eficiente ao utilizar a CPU.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{figuras/q1-cpu.png}
     \caption{Comparação da Utilização de CPU}
     \label{fig:q1-cpu}
-    \author{fonte: Autor}
 \end{figure}
 
-As consultas de C1 exigiram 133.8 ms de CPU na API REST e apenas 111.10 ms na API GraphQL. Executando o cenário C2, a API REST foi processada em 1042.52 ms enquanto a API GraphQL levou 1065.45 ms, e é neste cenário que notamos a maior similaridade no tempo de utilização da CPU entre as APIs. No entanto, quando analisado os resultados de C3, nota-se uma grande desvantagem para API REST, que utilizou 3177.6 ms da CPU enquanto a API GraphQL usou apenas 2382.1 ms uma diferença de cerca de 25\%.
+As consultas de C1 exigiram 133.80 ms de CPU na API REST e apenas 111.10 ms na API GraphQL. Executando o cenário C2, a API REST foi processada em 1042.52 ms enquanto a API GraphQL levou 1065.45 ms, e é neste cenário que notamos a maior similaridade no tempo de utilização da CPU entre as APIs. No entanto, quando analisado os resultados de C3, nota-se uma grande desvantagem para API REST, que utilizou 3177.6 ms da CPU enquanto a API GraphQL usou apenas 2382.1 ms uma diferença de cerca de 25\%.
     
 \subsection{Consumo de memória}
 
@@ -82,7 +81,6 @@ Os dados do resultado da comparação do consumo de memória expõem que a API R
     \includegraphics[width=0.8\textwidth]{figuras/q1-memory.png}
     \caption{Comparação do Consumo de Memória}
     \label{fig:q1-mem}
-    \author{fonte: Autor}
 \end{figure}
 
 Ao compararmos os resultados de C1 e C3, a API REST se mostrou cerca de 15\% menos eficiente que a API GraphQL. O que se destaca é quando comparamos os resultados de C3, em que a API GraphQL consumiu 127.71 megabytes de memória e a API REST consumiu 178.01 megabytes, uma diferença de quase 30\%.

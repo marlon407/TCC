@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 NOV 2017 09:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 NOV 2017 21:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1243,51 +1243,51 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ] [17])
-(./historico.tex [18] <figuras/ipc.png, id=304, 448.67625pt x 346.29375pt>
+(./historico.tex [18] <figuras/ipc.png, id=309, 448.67625pt x 346.29375pt>
 File: figuras/ipc.png Graphic file (type png)
 
 <use figuras/ipc.png>
-Package pdftex.def Info: figuras/ipc.png used on input line 22.
+Package pdftex.def Info: figuras/ipc.png used on input line 25.
 (pdftex.def)             Requested size: 318.49861pt x 245.828pt.
  [19
 
 ]
-<figuras/client-server.png, id=316, 527.9725pt x 402.50375pt>
+<figuras/client-server.png, id=322, 527.9725pt x 402.50375pt>
 File: figuras/client-server.png Graphic file (type png)
 
 <use figuras/client-server.png>
-Package pdftex.def Info: figuras/client-server.png used on input line 39.
+Package pdftex.def Info: figuras/client-server.png used on input line 42.
 (pdftex.def)             Requested size: 318.49861pt x 242.80615pt.
  [20 <./figuras/ipc.png>] [21 <./figuras/client-server.png>] <figuras/monolithi
-c-3-tier.png, id=333, 654.445pt x 436.63126pt>
+c-3-tier.png, id=342, 654.445pt x 436.63126pt>
 File: figuras/monolithic-3-tier.png Graphic file (type png)
 
 <use figuras/monolithic-3-tier.png>
-Package pdftex.def Info: figuras/monolithic-3-tier.png used on input line 58.
+Package pdftex.def Info: figuras/monolithic-3-tier.png used on input line 61.
 (pdftex.def)             Requested size: 318.49861pt x 212.49211pt.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 66.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 69.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 66.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 69.
  [22 <./figuras/monolithic-3-tier.png>]
-<figuras/monolithic-2-tier.png, id=343, 588.1975pt x 440.64626pt>
+<figuras/monolithic-2-tier.png, id=353, 588.1975pt x 440.64626pt>
 File: figuras/monolithic-2-tier.png Graphic file (type png)
 
 <use figuras/monolithic-2-tier.png>
-Package pdftex.def Info: figuras/monolithic-2-tier.png used on input line 78.
+Package pdftex.def Info: figuras/monolithic-2-tier.png used on input line 81.
 (pdftex.def)             Requested size: 318.49861pt x 238.60435pt.
  [23 <./figuras/monolithic-2-tier.png>]
-<figuras/soa.png, id=357, 609.27625pt x 360.34625pt>
+[24] <figuras/soa.png, id=379, 609.27625pt x 360.34625pt>
 File: figuras/soa.png Graphic file (type png)
- <use figuras/soa.png>
-Package pdftex.def Info: figuras/soa.png used on input line 101.
-(pdftex.def)             Requested size: 318.49861pt x 188.37634pt.
 
-[24 <./figuras/soa.png>]) (./comunicacao.tex [25]
-<figuras/rpc.png, id=383, 515.9275pt x 380.42125pt>
+<use figuras/soa.png>
+Package pdftex.def Info: figuras/soa.png used on input line 106.
+(pdftex.def)             Requested size: 318.49861pt x 188.37634pt.
+) (./comunicacao.tex [25 <./figuras/soa.png>]
+<figuras/rpc.png, id=393, 515.9275pt x 380.42125pt>
 File: figuras/rpc.png Graphic file (type png)
  <use figuras/rpc.png>
 Package pdftex.def Info: figuras/rpc.png used on input line 20.
@@ -1296,27 +1296,27 @@ Package pdftex.def Info: figuras/rpc.png used on input line 20.
 [26
 
 ] [27 <./figuras/rpc.png>]
-<figuras/soap.png, id=411, 720.6925pt x 443.6575pt>
+<figuras/soap.png, id=421, 720.6925pt x 443.6575pt>
 File: figuras/soap.png Graphic file (type png)
  <use figuras/soap.png>
 Package pdftex.def Info: figuras/soap.png used on input line 68.
 (pdftex.def)             Requested size: 455.0pt x 280.09465pt.
 
 [28] [29 <./figuras/soap.png>] [30] [31] [32]
-<figuras/modelo-maturidade.png, id=463, 534.99875pt x 489.83pt>
+<figuras/modelo-maturidade.png, id=473, 534.99875pt x 489.83pt>
 File: figuras/modelo-maturidade.png Graphic file (type png)
 
 <use figuras/modelo-maturidade.png>
 Package pdftex.def Info: figuras/modelo-maturidade.png used on input line 144.
 (pdftex.def)             Requested size: 318.49861pt x 291.62064pt.
  [33 <./figuras/modelo-maturidade.png>]
-[34] [35] [36] <figuras/cache-http.png, id=498, 350.30875pt x 253.94875pt>
+[34] [35] [36] <figuras/cache-http.png, id=508, 350.30875pt x 253.94875pt>
 File: figuras/cache-http.png Graphic file (type png)
 
 <use figuras/cache-http.png>
 Package pdftex.def Info: figuras/cache-http.png used on input line 235.
 (pdftex.def)             Requested size: 227.5pt x 164.92522pt.
- [37]) (./estudo.tex [38 <./figuras/cache-http.png>] <figuras/model.png, id=517
+ [37]) (./estudo.tex [38 <./figuras/cache-http.png>] <figuras/model.png, id=527
 , 734.745pt x 462.72874pt>
 File: figuras/model.png Graphic file (type png)
  <use figuras/model.png>
@@ -1326,7 +1326,7 @@ Package pdftex.def Info: figuras/model.png used on input line 16.
 [39
 
  <./figuras/model.png>]
-<figuras/rack.png, id=526, 428.60126pt x 223.83624pt>
+<figuras/rack.png, id=536, 428.60126pt x 223.83624pt>
 File: figuras/rack.png Graphic file (type png)
  <use figuras/rack.png>
 Package pdftex.def Info: figuras/rack.png used on input line 29.
@@ -1349,7 +1349,7 @@ Package microtype Info: Loading generic settings for font family
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 ) [42] [43]
-<figuras/uml-rest.png, id=586, 488.82625pt x 287.0725pt>
+<figuras/uml-rest.png, id=596, 488.82625pt x 287.0725pt>
 File: figuras/uml-rest.png Graphic file (type png)
 
 <use figuras/uml-rest.png>
@@ -1361,7 +1361,7 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [45 <./figuras/uml-rest.png>] <figuras/uml-graph.png, id=605, 517.935pt x 299
+) [45 <./figuras/uml-rest.png>] <figuras/uml-graph.png, id=615, 517.935pt x 299
 .1175pt>
 File: figuras/uml-graph.png Graphic file (type png)
 
@@ -1369,7 +1369,7 @@ File: figuras/uml-graph.png Graphic file (type png)
 Package pdftex.def Info: figuras/uml-graph.png used on input line 218.
 (pdftex.def)             Requested size: 455.0pt x 262.78148pt.
  [46 <./figuras/uml-graph.png>] [47]
-<figuras/metricas.png, id=631, 596.2275pt x 360.34625pt>
+<figuras/metricas.png, id=641, 596.2275pt x 360.34625pt>
 File: figuras/metricas.png Graphic file (type png)
 
 <use figuras/metricas.png>
@@ -1383,70 +1383,70 @@ Overfull \hbox (23.29352pt too wide) in paragraph at lines 24--36
 
 [50
 
-] <figuras/q1-cpu.png, id=653, 401.5pt x 247.92625pt>
+] <figuras/q1-cpu.png, id=663, 401.5pt x 247.92625pt>
 File: figuras/q1-cpu.png Graphic file (type png)
 
 <use figuras/q1-cpu.png>
 Package pdftex.def Info: figuras/q1-cpu.png used on input line 68.
 (pdftex.def)             Requested size: 364.00139pt x 224.78474pt.
  [51 <./figuras/q1-cpu.png (PNG copy)>]
-<figuras/q1-memory.png, id=659, 484.81125pt x 299.1175pt>
+<figuras/q1-memory.png, id=669, 484.81125pt x 299.1175pt>
 File: figuras/q1-memory.png Graphic file (type png)
 
 <use figuras/q1-memory.png>
-Package pdftex.def Info: figuras/q1-memory.png used on input line 82.
+Package pdftex.def Info: figuras/q1-memory.png used on input line 81.
 (pdftex.def)             Requested size: 364.00139pt x 224.59315pt.
 
-<figuras/q1-time.png, id=661, 559.08875pt x 345.29pt>
+<figuras/q1-time.png, id=671, 559.08875pt x 345.29pt>
 File: figuras/q1-time.png Graphic file (type png)
 
 <use figuras/q1-time.png>
-Package pdftex.def Info: figuras/q1-time.png used on input line 96.
+Package pdftex.def Info: figuras/q1-time.png used on input line 94.
 (pdftex.def)             Requested size: 364.00139pt x 224.8099pt.
  [52 <./figuras/q1-memory.png (PNG copy)>]
-<figuras/q1-time-line.png, id=667, 602.25pt x 372.39125pt>
+<figuras/q1-time-line.png, id=678, 602.25pt x 372.39125pt>
 File: figuras/q1-time-line.png Graphic file (type png)
 
 <use figuras/q1-time-line.png>
-Package pdftex.def Info: figuras/q1-time-line.png used on input line 108.
+Package pdftex.def Info: figuras/q1-time-line.png used on input line 106.
 (pdftex.def)             Requested size: 364.00139pt x 225.0843pt.
  [53 <./figuras/q1-time.png (PNG copy)> <./figuras/q1-time-line.png (PNG copy)>
 ]
-<figuras/q1-size.png, id=674, 519.9425pt x 321.2pt>
+<figuras/q1-size.png, id=684, 519.9425pt x 321.2pt>
 File: figuras/q1-size.png Graphic file (type png)
  <use figuras/q1-size.png>
-Package pdftex.def Info: figuras/q1-size.png used on input line 122.
+Package pdftex.def Info: figuras/q1-size.png used on input line 120.
 (pdftex.def)             Requested size: 364.00139pt x 224.86298pt.
 
-<figuras/q2-cpu.png, id=676, 499.8675pt x 309.155pt>
+<figuras/q2-cpu.png, id=686, 499.8675pt x 309.155pt>
 File: figuras/q2-cpu.png Graphic file (type png)
  <use figuras/q2-cpu.png>
-Package pdftex.def Info: figuras/q2-cpu.png used on input line 144.
+Package pdftex.def Info: figuras/q2-cpu.png used on input line 142.
 (pdftex.def)             Requested size: 364.00139pt x 225.13405pt.
 
 [54 <./figuras/q1-size.png (PNG copy)>]
-<figuras/q2-memory.png, id=683, 401.5pt x 247.92625pt>
+<figuras/q2-memory.png, id=693, 401.5pt x 247.92625pt>
 File: figuras/q2-memory.png Graphic file (type png)
 
 <use figuras/q2-memory.png>
-Package pdftex.def Info: figuras/q2-memory.png used on input line 158.
+Package pdftex.def Info: figuras/q2-memory.png used on input line 156.
 (pdftex.def)             Requested size: 364.00139pt x 224.78474pt.
  [55 <./figuras/q2-cpu.png (PNG copy)>]
 File: figuras/q1-time.png Graphic file (type png)
 
 <use figuras/q1-time.png>
-Package pdftex.def Info: figuras/q1-time.png used on input line 172.
+Package pdftex.def Info: figuras/q1-time.png used on input line 170.
 (pdftex.def)             Requested size: 364.00139pt x 224.8099pt.
  [56 <./figuras/q2-memory.png (PNG copy)>]
-<figuras/q2-time-line.png, id=694, 602.25pt x 372.39125pt>
+<figuras/q2-time-line.png, id=704, 602.25pt x 372.39125pt>
 File: figuras/q2-time-line.png Graphic file (type png)
 
 <use figuras/q2-time-line.png>
-Package pdftex.def Info: figuras/q2-time-line.png used on input line 184.
+Package pdftex.def Info: figuras/q2-time-line.png used on input line 182.
 (pdftex.def)             Requested size: 364.00139pt x 225.0843pt.
 File: figuras/q1-size.png Graphic file (type png)
  <use figuras/q1-size.png>
-Package pdftex.def Info: figuras/q1-size.png used on input line 198.
+Package pdftex.def Info: figuras/q1-size.png used on input line 196.
 (pdftex.def)             Requested size: 364.00139pt x 224.86298pt.
 ) (./conclusao.tex
 [57 <./figuras/q2-time-line.png (PNG copy)>] [58]) (./TCC-IFC.bbl [59
@@ -1488,10 +1488,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 15969 strings out of 492995
- 234101 string characters out of 6132704
- 572945 words of memory out of 5000000
- 18789 multiletter control sequences out of 15000+600000
+ 15982 strings out of 492995
+ 234364 string characters out of 6132704
+ 573319 words of memory out of 5000000
+ 18799 multiletter control sequences out of 15000+600000
  101107 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,13n,42p,1039b,2292s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1514,10 +1514,10 @@ exlive/2017/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/201
 t/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
 ic/lm/lmtt10.pfb>
-Output written on TCC-IFC.pdf (63 pages, 803707 bytes).
+Output written on TCC-IFC.pdf (63 pages, 805366 bytes).
 PDF statistics:
- 1048 PDF objects out of 1200 (max. 8388607)
- 918 compressed objects within 10 object streams
- 270 named destinations out of 1000 (max. 500000)
+ 1061 PDF objects out of 1200 (max. 8388607)
+ 931 compressed objects within 10 object streams
+ 273 named destinations out of 1000 (max. 500000)
  31791 words of extra memory for PDF output out of 35830 (max. 10000000)
 
