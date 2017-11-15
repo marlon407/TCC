@@ -236,8 +236,6 @@ INPUT ./figuras/client-server.png
 INPUT figuras/monolithic-3-tier.png
 INPUT ./figuras/monolithic-3-tier.png
 INPUT ./figuras/monolithic-3-tier.png
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
 INPUT figuras/monolithic-2-tier.png
 INPUT ./figuras/monolithic-2-tier.png
 INPUT ./figuras/monolithic-2-tier.png

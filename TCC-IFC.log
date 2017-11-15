@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  7 NOV 2017 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 NOV 2017 16:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1185,31 +1185,31 @@ l.159
 
 
 ] (./fichacatalografica.tex
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
 
  []
 
 
-Overfull \hbox (16.6597pt too wide) in paragraph at lines 29--29
+Overfull \hbox (16.6597pt too wide) in paragraph at lines 30--30
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 29.
+(Font)              <10> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 29.
+(Font)              <5> on input line 30.
 ) [2] [3
 
 ] (./dedicatoria.tex [4
@@ -1221,22 +1221,90 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]) (./resumo.tex
 
-LaTeX Warning: Citation `NBR6028:2003' on page 7 undefined on input line 5.
+./resumo.tex:8: Package inputenc Error: Unicode char ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...municação entre aplicações Web. També
+                                                  m é realizado neste trab...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./resumo.tex:8: Package inputenc Error: Unicode char ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...ação entre aplicações Web. Também é
+                                                   realizado neste trabalho ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./resumo.tex:8: Package inputenc Error: Unicode char ̂ (U+302)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...um experimento, tendo como principal parâ
+                                                  metro de comparação o ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./resumo.tex:8: Package inputenc Error: Unicode char ̧ (U+327)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...do como principal parâmetro de comparaç
+                                                  ão o desempenho de APIs ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./resumo.tex:8: Package inputenc Error: Unicode char ̃ (U+303)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...como principal parâmetro de comparaçã
+                                                  o o desempenho de APIs imp...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 [7
 
 ] [8
 
-]) (./indices-siglas.tex (./TCC-IFC.lof
-
-LaTeX Warning: Citation `sistemas-op-mazierro' on page 9 undefined on input lin
-e 3.
-
-) [9
+]) (./indices-siglas.tex (./TCC-IFC.lof) [9
 
 ] (./TCC-IFC.lot) [10
 
-] (./TCC-IFC.lol) [11
+]
+(./TCC-IFC.lol) [11
 
 ] [12
 
@@ -1244,267 +1312,99 @@ e 3.
 ] [13
 
 
-] (./TCC-IFC.toc
-[14
+] (./TCC-IFC.toc [14
 
 ]) [15]) (./introducao.tex
-
-LaTeX Warning: Citation `cisco-network-report' on page 16 undefined on input li
-ne 10.
-
-
-LaTeX Warning: Citation `load-time-effects' on page 16 undefined on input line 
-12.
-
-
-LaTeX Warning: Citation `tcc-ufsc' on page 16 undefined on input line 16.
-
-
-LaTeX Warning: Citation `programmableweb-rest-losing' on page 16 undefined on i
-nput line 16.
-
 [16
 
 
-]
-
-LaTeX Warning: Citation `rest-webservice' on page 17 undefined on input line 18
-.
-
-[17]) (./historico.tex [18]
-
-LaTeX Warning: Citation `sistemas-op-mazierro' on page 19 undefined on input li
-ne 13.
-
-
-LaTeX Warning: Citation `microsoft-ipc' on page 19 undefined on input line 15.
-
-
-LaTeX Warning: Citation `microsoft-ipc' on page 19 undefined on input line 19.
-
-<figuras/ipc.png, id=280, 448.67625pt x 346.29375pt>
+] [17]) (./historico.tex [18]
+<figuras/ipc.png, id=299, 448.67625pt x 346.29375pt>
 File: figuras/ipc.png Graphic file (type png)
  <use figuras/ipc.png>
-Package pdftex.def Info: figuras/ipc.png used on input line 25.
+Package pdftex.def Info: figuras/ipc.png used on input line 23.
 (pdftex.def)             Requested size: 318.49861pt x 245.828pt.
-
-
-LaTeX Warning: Citation `sistemas-op-mazierro' on page 19 undefined on input li
-ne 26.
-
-
-LaTeX Warning: Citation `sistemas-op-mazierro' on page 19 undefined on input li
-ne 26.
 
 [19
 
-]
-
-LaTeX Warning: Citation `two-tier' on page 20 undefined on input line 34.
-
-<figuras/client-server.png, id=286, 527.9725pt x 402.50375pt>
+] [20 <./figuras/ipc.png>]
+<figuras/client-server.png, id=320, 527.9725pt x 402.50375pt>
 File: figuras/client-server.png Graphic file (type png)
 
 <use figuras/client-server.png>
-Package pdftex.def Info: figuras/client-server.png used on input line 42.
+Package pdftex.def Info: figuras/client-server.png used on input line 43.
 (pdftex.def)             Requested size: 318.49861pt x 242.80615pt.
- [20 <./figuras/ipc.png>]
-
-LaTeX Warning: Citation `two-tier-differences' on page 21 undefined on input li
-ne 49.
-
-
-LaTeX Warning: Citation `monolithic-definition' on page 21 undefined on input l
-ine 55.
-
-[21 <./figuras/client-server.png>]
-<figuras/monolithic-3-tier.png, id=299, 654.445pt x 436.63126pt>
+ [21 <./figuras/client-server.png>]
+<figuras/monolithic-3-tier.png, id=333, 654.445pt x 436.63126pt>
 File: figuras/monolithic-3-tier.png Graphic file (type png)
 
 <use figuras/monolithic-3-tier.png>
-Package pdftex.def Info: figuras/monolithic-3-tier.png used on input line 61.
+Package pdftex.def Info: figuras/monolithic-3-tier.png used on input line 60.
 (pdftex.def)             Requested size: 318.49861pt x 212.49211pt.
-
-
-LaTeX Warning: Citation `monolithic-extinction' on page 22 undefined on input l
-ine 66.
-
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 69.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 69.
  [22 <./figuras/monolithic-3-tier.png>]
-<figuras/monolithic-2-tier.png, id=306, 588.1975pt x 440.64626pt>
+<figuras/monolithic-2-tier.png, id=345, 588.1975pt x 440.64626pt>
 File: figuras/monolithic-2-tier.png Graphic file (type png)
 
 <use figuras/monolithic-2-tier.png>
-Package pdftex.def Info: figuras/monolithic-2-tier.png used on input line 81.
+Package pdftex.def Info: figuras/monolithic-2-tier.png used on input line 80.
 (pdftex.def)             Requested size: 318.49861pt x 238.60435pt.
-
-
-LaTeX Warning: Citation `soa-cbdi' on page 23 undefined on input line 88.
-
-
-LaTeX Warning: Citation `soa-tech-target' on page 23 undefined on input line 90
-.
-
-[23 <./figuras/monolithic-2-tier.png>]
-
-LaTeX Warning: Citation `soa-book' on page 24 undefined on input line 100.
-
-
-LaTeX Warning: Citation `soa-intel' on page 24 undefined on input line 102.
-
-<figuras/soa.png, id=314, 609.27625pt x 360.34625pt>
+ [23 <./figuras/monolithic-2-tier.png>]
+<figuras/soa.png, id=365, 609.27625pt x 360.34625pt>
 File: figuras/soa.png Graphic file (type png)
  <use figuras/soa.png>
-Package pdftex.def Info: figuras/soa.png used on input line 106.
+Package pdftex.def Info: figuras/soa.png used on input line 105.
 (pdftex.def)             Requested size: 318.49861pt x 188.37634pt.
 
-
-LaTeX Warning: Citation `soa-webservice' on page 24 undefined on input line 111
-.
-
-) (./comunicacao.tex [24] [25 <./figuras/soa.png>]
-
-LaTeX Warning: Citation `merrick2006xml' on page 26 undefined on input line 14.
-
-
-
-LaTeX Warning: Citation `rfc1831:rpc' on page 26 undefined on input line 16.
-
-<figuras/rpc.png, id=328, 515.9275pt x 380.42125pt>
+[24]) (./comunicacao.tex [25 <./figuras/soa.png>]
+<figuras/rpc.png, id=391, 515.9275pt x 380.42125pt>
 File: figuras/rpc.png Graphic file (type png)
  <use figuras/rpc.png>
 Package pdftex.def Info: figuras/rpc.png used on input line 20.
 (pdftex.def)             Requested size: 318.49861pt x 234.8545pt.
 
-
-LaTeX Warning: Citation `rfc1831:rpc' on page 26 undefined on input line 25.
-
 [26
 
-]
-
-LaTeX Warning: Citation `rpc-limitations' on page 27 undefined on input line 43
-.
-
-[27 <./figuras/rpc.png>]
-
-LaTeX Warning: Citation `soap2000' on page 28 undefined on input line 57.
-
-
-LaTeX Warning: Citation `soap-tech-target' on page 28 undefined on input line 6
-0.
-
-
-LaTeX Warning: Citation `soap-microsoft' on page 28 undefined on input line 62.
-
-
-<figuras/soap.png, id=343, 720.6925pt x 443.6575pt>
+] [27 <./figuras/rpc.png>]
+<figuras/soap.png, id=420, 720.6925pt x 443.6575pt>
 File: figuras/soap.png Graphic file (type png)
  <use figuras/soap.png>
 Package pdftex.def Info: figuras/soap.png used on input line 68.
 (pdftex.def)             Requested size: 455.0pt x 280.09465pt.
 
-
-LaTeX Warning: Citation `soap-benefits' on page 28 undefined on input line 74.
-
-[28]
-
-LaTeX Warning: Citation `soap-limitations' on page 29 undefined on input line 9
-2.
-
-[29 <./figuras/soap.png>]
-
-LaTeX Warning: Citation `rest-intro' on page 30 undefined on input line 106.
-
-
-LaTeX Warning: Citation `programmableweb-rest-losing' on page 30 undefined on i
-nput line 108.
-
-
-LaTeX Warning: Citation `rest-book-intro:61' on page 30 undefined on input line
- 110.
-
-[30]
-
-LaTeX Warning: Citation `rest-thesis' on page 31 undefined on input line 118.
-
-
-LaTeX Warning: Citation `rest-thesis' on page 31 undefined on input line 120.
-
-[31] [32] <figuras/modelo-maturidade.png, id=372, 534.99875pt x 489.83pt>
+[28] [29 <./figuras/soap.png>] [30] [31] [32]
+<figuras/modelo-maturidade.png, id=476, 534.99875pt x 489.83pt>
 File: figuras/modelo-maturidade.png Graphic file (type png)
 
 <use figuras/modelo-maturidade.png>
 Package pdftex.def Info: figuras/modelo-maturidade.png used on input line 144.
 (pdftex.def)             Requested size: 318.49861pt x 291.62064pt.
  [33 <./figuras/modelo-maturidade.png>]
-
-LaTeX Warning: Citation `graph-intro' on page 34 undefined on input line 172.
-
-
-LaTeX Warning: Citation `efficient-data-communication' on page 34 undefined on 
-input line 174.
-
-
-LaTeX Warning: Citation `api-versioning' on page 34 undefined on input line 176
-.
-
-[34]
-
-LaTeX Warning: Citation `graphQl-overview' on page 35 undefined on input line 1
-86.
-
-[35] [36]
-
-LaTeX Warning: Citation `rfc2977' on page 37 undefined on input line 225.
-
-
-LaTeX Warning: Citation `graph-cache' on page 37 undefined on input line 231.
-
-<figuras/cache-http.png, id=392, 350.30875pt x 253.94875pt>
+[34] [35] [36] <figuras/cache-http.png, id=524, 350.30875pt x 253.94875pt>
 File: figuras/cache-http.png Graphic file (type png)
 
 <use figuras/cache-http.png>
-Package pdftex.def Info: figuras/cache-http.png used on input line 235.
+Package pdftex.def Info: figuras/cache-http.png used on input line 250.
 (pdftex.def)             Requested size: 227.5pt x 164.92522pt.
- [37]
-
-LaTeX Warning: Citation `graph-limitation' on page 38 undefined on input line 2
-47.
-
-) (./estudo.tex [38 <./figuras/cache-http.png>]
-
-LaTeX Warning: Citation `wms-definition' on page 39 undefined on input line 8.
-
-<figuras/model.png, id=403, 734.745pt x 462.72874pt>
+ [37]) (./estudo.tex [38 <./figuras/cache-http.png>] <figuras/model.png, id=546
+, 734.745pt x 462.72874pt>
 File: figuras/model.png Graphic file (type png)
  <use figuras/model.png>
-Package pdftex.def Info: figuras/model.png used on input line 16.
+Package pdftex.def Info: figuras/model.png used on input line 18.
 (pdftex.def)             Requested size: 409.49722pt x 257.89777pt.
+
+<figuras/rack.png, id=547, 428.60126pt x 223.83624pt>
+File: figuras/rack.png Graphic file (type png)
+ <use figuras/rack.png>
+Package pdftex.def Info: figuras/rack.png used on input line 28.
+(pdftex.def)             Requested size: 318.49861pt x 166.3364pt.
 
 [39
 
- <./figuras/model.png>]
-<figuras/rack.png, id=411, 428.60126pt x 223.83624pt>
-File: figuras/rack.png Graphic file (type png)
- <use figuras/rack.png>
-Package pdftex.def Info: figuras/rack.png used on input line 29.
-(pdftex.def)             Requested size: 318.49861pt x 166.3364pt.
-
-[40 <./figuras/rack.png>]
-
-LaTeX Warning: Citation `node-definition' on page 41 undefined on input line 62
-.
-
-[41] (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+] [40 <./figuras/model.png> <./figuras/rack.png>] [41]
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 77.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 76.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1513,66 +1413,65 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
+ [42]
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [42] [43]
-<figuras/uml-rest.png, id=468, 488.82625pt x 287.0725pt>
+) [43] [44]
+<figuras/uml-rest.png, id=622, 488.82625pt x 287.0725pt>
 File: figuras/uml-rest.png Graphic file (type png)
 
 <use figuras/uml-rest.png>
 Package pdftex.def Info: figuras/uml-rest.png used on input line 172.
 (pdftex.def)             Requested size: 455.0pt x 267.2112pt.
- [44]
+ [45 <./figuras/uml-rest.png>]
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [45 <./figuras/uml-rest.png>] <figuras/uml-graph.png, id=487, 517.935pt x 299
-.1175pt>
+)
+<figuras/uml-graph.png, id=630, 517.935pt x 299.1175pt>
 File: figuras/uml-graph.png Graphic file (type png)
 
 <use figuras/uml-graph.png>
 Package pdftex.def Info: figuras/uml-graph.png used on input line 218.
 (pdftex.def)             Requested size: 455.0pt x 262.78148pt.
- [46 <./figuras/uml-graph.png>] [47]
-<figuras/metricas.png, id=513, 596.2275pt x 360.34625pt>
+ [46] [47 <./figuras/uml-graph.png>] [48]
+<figuras/metricas.png, id=673, 596.2275pt x 360.34625pt>
 File: figuras/metricas.png Graphic file (type png)
 
 <use figuras/metricas.png>
 Package pdftex.def Info: figuras/metricas.png used on input line 270.
 (pdftex.def)             Requested size: 364.00139pt x 219.99234pt.
-) (./resultados.tex [48 <./figuras/metricas.png>]
-[49]
+) (./resultados.tex [49 <./figuras/metricas.png>]
 Overfull \hbox (23.29352pt too wide) in paragraph at lines 24--36
  [][] 
  []
 
 [50
 
-] <figuras/q1-cpu.png, id=536, 401.5pt x 247.92625pt>
+] <figuras/q1-cpu.png, id=690, 401.5pt x 247.92625pt>
 File: figuras/q1-cpu.png Graphic file (type png)
 
 <use figuras/q1-cpu.png>
 Package pdftex.def Info: figuras/q1-cpu.png used on input line 68.
 (pdftex.def)             Requested size: 364.00139pt x 224.78474pt.
  [51 <./figuras/q1-cpu.png (PNG copy)>]
-<figuras/q1-memory.png, id=542, 484.81125pt x 299.1175pt>
+<figuras/q1-memory.png, id=696, 484.81125pt x 299.1175pt>
 File: figuras/q1-memory.png Graphic file (type png)
 
 <use figuras/q1-memory.png>
 Package pdftex.def Info: figuras/q1-memory.png used on input line 81.
 (pdftex.def)             Requested size: 364.00139pt x 224.59315pt.
 
-<figuras/q1-time.png, id=544, 559.08875pt x 345.29pt>
+<figuras/q1-time.png, id=698, 559.08875pt x 345.29pt>
 File: figuras/q1-time.png Graphic file (type png)
 
 <use figuras/q1-time.png>
 Package pdftex.def Info: figuras/q1-time.png used on input line 94.
 (pdftex.def)             Requested size: 364.00139pt x 224.8099pt.
  [52 <./figuras/q1-memory.png (PNG copy)>]
-<figuras/q1-time-line.png, id=550, 602.25pt x 372.39125pt>
+<figuras/q1-time-line.png, id=704, 602.25pt x 372.39125pt>
 File: figuras/q1-time-line.png Graphic file (type png)
 
 <use figuras/q1-time-line.png>
@@ -1580,44 +1479,43 @@ Package pdftex.def Info: figuras/q1-time-line.png used on input line 106.
 (pdftex.def)             Requested size: 364.00139pt x 225.0843pt.
  [53 <./figuras/q1-time.png (PNG copy)> <./figuras/q1-time-line.png (PNG copy)>
 ]
-<figuras/q1-size.png, id=556, 519.9425pt x 321.2pt>
+<figuras/q1-size.png, id=710, 519.9425pt x 321.2pt>
 File: figuras/q1-size.png Graphic file (type png)
  <use figuras/q1-size.png>
-Package pdftex.def Info: figuras/q1-size.png used on input line 120.
+Package pdftex.def Info: figuras/q1-size.png used on input line 118.
 (pdftex.def)             Requested size: 364.00139pt x 224.86298pt.
 
-<figuras/q2-cpu.png, id=558, 499.8675pt x 309.155pt>
+<figuras/q2-cpu.png, id=712, 499.8675pt x 309.155pt>
 File: figuras/q2-cpu.png Graphic file (type png)
  <use figuras/q2-cpu.png>
-Package pdftex.def Info: figuras/q2-cpu.png used on input line 142.
+Package pdftex.def Info: figuras/q2-cpu.png used on input line 140.
 (pdftex.def)             Requested size: 364.00139pt x 225.13405pt.
 
 [54 <./figuras/q1-size.png (PNG copy)>]
-<figuras/q2-memory.png, id=565, 401.5pt x 247.92625pt>
+<figuras/q2-memory.png, id=719, 401.5pt x 247.92625pt>
 File: figuras/q2-memory.png Graphic file (type png)
 
 <use figuras/q2-memory.png>
-Package pdftex.def Info: figuras/q2-memory.png used on input line 156.
+Package pdftex.def Info: figuras/q2-memory.png used on input line 154.
 (pdftex.def)             Requested size: 364.00139pt x 224.78474pt.
  [55 <./figuras/q2-cpu.png (PNG copy)>]
 File: figuras/q1-time.png Graphic file (type png)
 
 <use figuras/q1-time.png>
-Package pdftex.def Info: figuras/q1-time.png used on input line 170.
+Package pdftex.def Info: figuras/q1-time.png used on input line 168.
 (pdftex.def)             Requested size: 364.00139pt x 224.8099pt.
  [56 <./figuras/q2-memory.png (PNG copy)>]
-<figuras/q2-time-line.png, id=576, 602.25pt x 372.39125pt>
+<figuras/q2-time-line.png, id=730, 602.25pt x 372.39125pt>
 File: figuras/q2-time-line.png Graphic file (type png)
 
 <use figuras/q2-time-line.png>
-Package pdftex.def Info: figuras/q2-time-line.png used on input line 182.
+Package pdftex.def Info: figuras/q2-time-line.png used on input line 180.
 (pdftex.def)             Requested size: 364.00139pt x 225.0843pt.
 File: figuras/q1-size.png Graphic file (type png)
  <use figuras/q1-size.png>
-Package pdftex.def Info: figuras/q1-size.png used on input line 196.
+Package pdftex.def Info: figuras/q1-size.png used on input line 194.
 (pdftex.def)             Requested size: 364.00139pt x 224.86298pt.
-) (./conclusao.tex
-[57 <./figuras/q2-time-line.png (PNG copy)>] [58]
+) [57 <./figuras/q2-time-line.png (PNG copy)>] (./conclusao.tex [58]
 
 ./conclusao.tex:9: Package inputenc Error: Unicode char ́ (U+301)
 (inputenc)                not set up for use with LaTeX.
@@ -1671,7 +1569,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ...oi realizado para comparálos. A realizaç
+l.9 ...i realizado para compará-los. A realizaç
                                                   ão do experimento mensur...
 
 Your command was ignored.
@@ -1686,21 +1584,22 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ...realizado para comparálos. A realizaçã
-                                                  o do experimento mensurou o
+l.9 ...ealizado para compará-los. A realizaçã
+                                                  o do experimento mensurou ...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./conclusao.tex:16: Package inputenc Error: Unicode char ̧ (U+327)
+./conclusao.tex:15: Package inputenc Error: Unicode char ̧ (U+327)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 ...ipótese afirmanva que tempo de utilizaç
+l.15 ...pótese afirmava que o tempo de utilizaç
                                                   ão da CPU para as requis...
 
 Your command was ignored.
@@ -1708,14 +1607,14 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./conclusao.tex:16: Package inputenc Error: Unicode char ̃ (U+303)
+./conclusao.tex:15: Package inputenc Error: Unicode char ̃ (U+303)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 ...�tese afirmanva que tempo de utilizaçã
+l.15 ...tese afirmava que o tempo de utilizaçã
                                                   o da CPU para as requisiç...
 
 Your command was ignored.
@@ -1723,30 +1622,30 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./conclusao.tex:16: Package inputenc Error: Unicode char ̧ (U+327)
+./conclusao.tex:15: Package inputenc Error: Unicode char ̧ (U+327)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 ... em objetos maiores, o tempo de utilizaç
-                                                  ão da CPU pela API REST ...
+l.15 ... em objetos maiores, o tempo de utilizaç
+                                                  ão da CPU da API REST au...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./conclusao.tex:16: Package inputenc Error: Unicode char ̃ (U+303)
+./conclusao.tex:15: Package inputenc Error: Unicode char ̃ (U+303)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 ... objetos maiores, o tempo de utilizaçã
-                                                  o da CPU pela API REST aum...
+l.15 ... objetos maiores, o tempo de utilizaçã
+                                                  o da CPU da API REST aumen...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1756,14 +1655,14 @@ or  <return>  to continue without it.
 
 ]
 
-./conclusao.tex:20: Package inputenc Error: Unicode char ́ (U+301)
+./conclusao.tex:19: Package inputenc Error: Unicode char ́ (U+301)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 ...tanto o GraphQL apresentam-se como uma ó
+l.19 ...etanto o GraphQL apresenta-se como uma ó
                                                   tima alternativa como meca...
 
 Your command was ignored.
@@ -1771,28 +1670,28 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./conclusao.tex:20: Package inputenc Error: Unicode char ̧ (U+327)
+./conclusao.tex:19: Package inputenc Error: Unicode char ̧ (U+327)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 ...to utilizada futuramente pelas organizaç
+l.19 ...to utilizada futuramente pelas organizaç
                                                   ões e desenvolvedores.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./conclusao.tex:20: Package inputenc Error: Unicode char ̃ (U+303)
+./conclusao.tex:19: Package inputenc Error: Unicode char ̃ (U+303)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 ...utilizada futuramente pelas organizaçõ
+l.19 ...utilizada futuramente pelas organizaçõ
                                                   es e desenvolvedores.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1830,21 +1729,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 304.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 15984 strings out of 492995
- 234360 string characters out of 6132704
- 567029 words of memory out of 5000000
- 18802 multiletter control sequences out of 15000+600000
- 100978 words of font info for 148 fonts, out of 8000000 for 9000
+ 15983 strings out of 492995
+ 234099 string characters out of 6132704
+ 566191 words of memory out of 5000000
+ 18771 multiletter control sequences out of 15000+600000
+ 101365 words of font info for 151 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,13n,42p,1039b,2292s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,13n,42p,1059b,1828s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
 17/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-d
@@ -1864,10 +1760,10 @@ exlive/2017/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/201
 t/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
 ic/lm/lmtt10.pfb>
-Output written on TCC-IFC.pdf (64 pages, 804789 bytes).
+Output written on TCC-IFC.pdf (64 pages, 810611 bytes).
 PDF statistics:
- 975 PDF objects out of 1000 (max. 8388607)
- 847 compressed objects within 9 object streams
- 274 named destinations out of 1000 (max. 500000)
- 31791 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1094 PDF objects out of 1200 (max. 8388607)
+ 963 compressed objects within 10 object streams
+ 301 named destinations out of 1000 (max. 500000)
+ 31783 words of extra memory for PDF output out of 35830 (max. 10000000)
 
