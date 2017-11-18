@@ -12,7 +12,7 @@
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{16}{chapter.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Fundamentos}}{19}{chapter.2}
-\contentsline {section}{\numberline {2.1}IPC - Interprocess Communication}{19}{section.2.1}
+\contentsline {section}{\numberline {2.1}IPC - Comunica\IeC {\c c}\IeC {\~a}o entre processos}{19}{section.2.1}
 \contentsline {section}{\numberline {2.2}Cliente/Servidor}{20}{section.2.2}
 \contentsline {section}{\numberline {2.3}Aplica\IeC {\c c}\IeC {\~o}es Monol\IeC {\'\i }ticas}{22}{section.2.3}
 \contentsline {section}{\numberline {2.4}SOA - Service Oriented Architecture}{23}{section.2.4}
@@ -28,10 +28,9 @@
 \contentsline {subsection}{\numberline {3.3.3}Limita\IeC {\c c}\IeC {\~o}es}{34}{subsection.3.3.3}
 \contentsline {section}{\numberline {3.4}Arquiteturas baseadas em JSON/Graphs}{35}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Opera\IeC {\c c}\IeC {\~o}es}{36}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Schemas e Tipos}{36}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Autoriza\IeC {\c c}\IeC {\~a}o}{37}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Caching}{37}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Limita\IeC {\c c}\IeC {\~o}es}{38}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.2}Schemas e Tipos}{37}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Caching}{37}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Limita\IeC {\c c}\IeC {\~o}es}{38}{subsection.3.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Estudo de Caso}}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Hip\IeC {\'o}teses}{41}{section.4.1}
@@ -58,7 +57,7 @@
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{59}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{61}{section*.24}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{61}{section*.23}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

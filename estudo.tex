@@ -7,8 +7,6 @@
 
 Para obter um exemplo do mundo real, um estudo de caso foi projetado com base em uma aplicação de WMS (\textit{Warehouse Management System}). \citeonline{wms-definition} explica que um sistema de WMS é um software que auxilia as operações do dia-a-dia em um armazém. Os sistemas WMS permitem o gerenciamento centralizado de tarefas, como o rastreamento de níveis de inventário e locais de estoque. Tais sistemas WMS podem ser um aplicativo independente ou parte de um sistema de ERP.
 
-Baseado em um sistema de WMS, dois protótipos de APIs serão implementados para uma análise. A primeira API será implementada seguindo as melhores práticas do \textit{design} do REST, descritas na sessão \ref{sec:rest}. A segunda será desenvolvida utilizando o GraphQL, e o seu desempenho será comparado com a API REST.
-
 Com o intuito de realizar consultas relevantes, foi modelado um esquema contendo seis entidades capazes de representar consultas reais, e ainda produzirem informações pertinentes para comparar o desempenho dos protótipos. A construção das APIs seguiram os princípios do ciclo tradicional do desenvolvimento de \textit{software}, portanto a modelagem foi elaborada antes do início da implementação das APIs. Isso assegura que nenhuma decisão de tecnologia tenha afetado a modelagem das entidades.
 
 A modelagem da figura \ref{fig:modelagem}, representa o gerenciamento de um armazém com capacidade de armazenar diversos itens. Os itens são dispostos em \textit{pallets}, e alocados em endereços dentro do armazém. Como pode ser observado na figura \ref{fig:rack}, os endereços do armazém são formados a partir de uma combinação de três dimensões: \textbf{Prateleira}, \textbf{Linha} e \textbf{Nível}. Cada combinação dessas três propriedades é capaz de alocar \textit{pallets}, que por sua vez podem conter diversas unidades de um mesmo item.
@@ -18,7 +16,7 @@ A modelagem da figura \ref{fig:modelagem}, representa o gerenciamento de um arma
 \includegraphics[width=0.9\textwidth]{figuras/model.png}
 \caption{Modelagem WMS}
 \label{fig:modelagem}
-\author{fonte: Autor}
+\legend{Fonte: Autor}
 \end{figure}
 
 Imagine um item de código 22B12, por exemplo, que representa um dado produto X. Este produto é disposto em um \textit{pallet} com capacidade de armazenar 30 unidades do item 22B12. O armazém é composto por 26 prateleiras, sequenciadas de 'A' a 'Z'. Cada prateleira possui 2 linhas de profundidade e 3 níveis de altura. Um \textit{pallet} com o código 001 contém 30 unidade do item 22B12, e precisa ser alocado dentro armazém, para isso é utilizado um sistema de códigos envolvendo as 3 dimensões do armazém.
@@ -26,12 +24,14 @@ Imagine um item de código 22B12, por exemplo, que representa um dado produto X.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{figuras/rack.png}
-\caption{Diagrama de dimensões do armazém (REFAZER)}
+\caption{Diagrama de dimensões do armazém}
+\legend{Fonte: \citeonline{wms-rack}}
 \label{fig:rack}
-\author{fonte: Autor}
 \end{figure}
 
 Desta forma, 60 unidades do item 22B12 estão dispostos em dois \textit{pallets}(001, 002) existentes no armazém, e cada um dos \textit{pallets} será destinado a um endereço. O \textit{pallet} 001 será alocado na terceira prateleira, no segundo nível e na primeira linha. Após a formação do endereço, o \textit{pallet} 001 estará localizado no endereço C0201, prateleira C, nível 02 e linha 01.
+
+Baseado em um sistema de WMS, dois protótipos de APIs serão implementados para uma análise. A primeira API será implementada seguindo as melhores práticas do \textit{design} do REST, descritas na sessão \ref{sec:rest}. A segunda será desenvolvida utilizando o GraphQL, e o seu desempenho será comparado com a API REST.
 
 \section{Hipóteses} \label{sechHipóteses}
 
@@ -42,7 +42,7 @@ As hipóteses deste trabalho são:
 \begin{enumerate}[label=\alph*)]
 \item O tamanho da resposta será menor utilizando GraphQL;
 \item O tempo de resposta será menor utilizando GraphQL;
-\item A utilização da CPU será menor utilizando REST;
+\item O tempo de utilização da CPU será menor utilizando REST;
 \item O consumo de memória será menor Utilizando REST;
 \end{enumerate}
 
@@ -170,7 +170,7 @@ No presente trabalho, como o objetivo é apenas medir o desempenho de consultas 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1\textwidth]{figuras/uml-rest.png}
-\caption{UML sequence REST}
+\caption{Fluxo REST}
 \label{fig:rest-uml}
 \author{fonte: Autor}
 \end{figure}
@@ -189,22 +189,22 @@ query RootQuery {
 
 \end{lstlisting}
 
- A consulta ilustrada do trecho de código \ref{lst:query-graph} retorna como resposta lista a de todos os itens cadastrados na base de dados. Note que a resposta contém apenas os atributos que a consulta requisitou:
+ A consulta ilustrada do trecho de código \ref{lst:query-graph} solicita ao servidor GraphQL a lista a de todos os itens cadastrados na base de dados. Note no trecho de código \ref{lst:response-graph} que a resposta contém apenas os atributos que a consulta requisitou, ou seja, o \textup{id} e a descrição dos itens:
 
 \begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Listagem dos itens (Validar), label=lst:response-graph, language=JavaScript]]
 {
     "data": [
          {
-        	"id": 22B12
-            "description": "Flat screen",
+        	"id": 22B12,
+            "description": "Flat screen"
         },
         {
-        	"id": 21C44
-            "description": "Computer screen",
+        	"id": 21C44,
+            "description": "Computer screen"
         },
         {
-        	"id": 43F12
-            "description": "Smartphone screen",
+        	"id": 43F12,
+            "description": "Smartphone screen"
         },
     ]
 }
@@ -216,7 +216,7 @@ Para recuperar alguma informação na API GraphQL, é necessária realizar uma r
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1\textwidth]{figuras/uml-graph.png}
-\caption{UML sequence GraphQL (REFAZER)}
+\caption{Fluxo GraphQL}
 \label{fig:graph-uml}
 \author{fonte: Autor}
 \end{figure}
@@ -225,43 +225,41 @@ Para recuperar alguma informação na API GraphQL, é necessária realizar uma r
 
 A fim de comparar as medidas de desempenho de APIs desenvolvidas em REST com APIs desenvolvidas em GraphQL, algumas métricas precisam ser definidas. O desempenho de cada API vai depender de sua implementação, porém, escolhendo as métricas corretas, o efeito da implementação pode ser reduzido. Focando em medições corretas, as diferenças relevantes das APIs podem ser destacadas e melhor ponderadas.
 
-Para o presente trabalho, serão utilizadas quatro métricas diferentes: Utilização da CPU, Consumo de memória, Tempo de resposta e o Tamanho da resposta. É importante ressaltar que cada métrica foi medida separadamente, para que \textit{logs} e \textit{outputs} pertinentes a uma métrica específica não interfira no resultado das demais.
+Para o presente trabalho, serão utilizadas quatro métricas diferentes: O tempo de utilização da CPU, Consumo de memória, Tempo de resposta e o Tamanho da resposta. É importante ressaltar que cada métrica foi medida separadamente, para que \textit{logs} e \textit{outputs} pertinentes a uma métrica específica não interfira no resultado das demais.
 
-\subsection*{Utilização da CPU}
+\subsection*{Tempo de utilização da CPU}
 
-A utilização da CPU é uma medida do percentual de ciclos que representa uma porcentagem em que as unidades de processamento ficam dedicadas a executar um processo em particular. No contexto do presente trabalho, é a porcentagem de processamento dentro da CPU utilizada em cada requisição.
+O tempo de utilização da CPU é uma medida do percentual de ciclos que representa uma porcentagem em que as unidades de processamento ficam dedicadas a executar um processo em particular. No contexto do presente trabalho, é a porcentagem de processamento dentro da CPU utilizada em cada requisição.
 
 Esta métrica será extraída atraves do módulo \textit{OS} presente no \textit{core} do Node.Js. A função \textit{os.loadavg()} trás como resultado uma medida da atividade do sistema, calculada pelo sistema operacional e expressa como um número fracionário. A média será a medida de comparação entre as duas abordagens. A seguinte fórmula será usada para calcular esta métrica: 
 
-$$S=mrs1+mrz2..+mrsn$$
+$$ CPU = \frac{\sum\limits_{1}^{n} \Delta cpu}{n} $$
 
-Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ representa a soma dos tempos, resultando do 
+Onde $n$ é o número de CPUs e $\Delta cpu$ é o tempo de uso de CPU pela aplicação, sendo $\Delta cpu = T1 - T2$, em que $T1$ é o tempo final da execução e $T2$ é o tempo inicial. Nos resultados, esta métrica será apresentada na unidade de milissegundos (ms).
 
 \subsection*{Consumo de memória}
 
 O consumo de memória, junto com a utilização da CPU, é uma das medidas mais importantes pois são nesses pontos que observamos o verdadeiro custo por trás da escolha da ferramenta. O consumo de memória é a quantidade de em bytes utilizada pela API, e será medido através da soma da utilização de memória em cada consulta necessária para atender os cenários propostos. A seguinte fórmula será usada para calcular esta métrica: 
 
-$$S=mrs1+mrz2..+mrsn$$
+$$ Mem = \frac{m}{M}*100 $$
 
-Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ representa a soma dos tempos, resultando do 
+Onde $m$ é a quantidade de memória usada pela aplicação e $M$ é o total de memória. Nos resultados, esta métrica será apresentada na unidade de megabytes.
 
 \subsection*{Tempo de resposta}
 
 É o tempo que cada requisição levou para realizar a consulta. Esse tempo é calculado a partir do início da requisição, até o retorno da resposta completa. No caso da API REST, esta métrica será cumulativa, ou seja, a soma do tempo de todas as requisições necessárias. A seguinte fórmula será usada para calcular esta métrica: 
 
-$$S=mrs1+mrz2..+mrsn$$
+$$ \Delta t = T1 - T2 $$
 
-Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ representa a soma dos tempos, resultando do 
+Onde $T1$ representa o tempo que a requisição respondeu a consulta, e $T2$ o tempo que foi solicitado a requisição. Nos resultados, esta métrica também será apresentada na unidade de milissegundos (ms).
 
 \subsection*{Tamanho da resposta}
 
 O tamanho da resposta será calculada baseado no tamanho em \textit{bytes} da resposta. Essa métrica será calcula a partir da média de 30 consultas. Novamente, para a API REST será usada a média das somas de todas as consultas necessárias para obter a resposta desejada. A seguinte fórmula será usada para calcular esta métrica: 
 
-$$S=mrs1+mrz2..+mrsn$$
+$$ Tam = \sum\limits_{1}^{n} ti $$
 
-Onde $MRS$ é o tempo total para obtido em cada requisição necessária, e $S$ representa a soma dos tempos, resultando do 
-
-\subsection*{Conclusão}
+Onde $ti$ é o tamanha da resposta de uma requisição, d $n$ é o número total de requisições. Nos resultados, esta métrica será apresentada na unidade de kilobytes.
 
 A figura \ref{fig:my-metrics} mostra como as métricas serão extraidas. A utlização do CPU e o consumo de memória serão medidas utilizando ferramentas do próprio Node.js. Ambas serão medidas via \textit{logs} no código fonte dos protótipos implementados. O tamanho da resposta e o tempo de resposta serão extraídos utilizando a ferramenta Postman, ao final de cada consulta.
 
@@ -272,3 +270,5 @@ A figura \ref{fig:my-metrics} mostra como as métricas serão extraidas. A utliz
 \label{fig:my-metrics}
 \author{fonte: Autor}
 \end{figure}
+
+Após a realização dos testes, os dados provenientes de cada uma das métricas foram coletados, analisados e os resultados serão apresentados no próximo capítulo. 

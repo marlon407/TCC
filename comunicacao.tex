@@ -18,7 +18,7 @@ A RPC é similar ao modelo de  chamadas de procedimentos locais (IPC). Nas chama
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{figuras/rpc.png}
-\caption{RPC fluxo de dados.(refazer)}
+\caption{RPC fluxo de dados.}
 \label{fig:rpc}
 \end{figure}
 
@@ -48,7 +48,7 @@ Diferentes implementações de RPC são, geralmente, incompatíveis. Assim sendo
 
 \item \textbf{Falta de paralelismo}: com RPC, em um determinado momento, ou o servidor ou o cliente está ativo. Como cliente e servidor são co-rotinas, a prática de paralelismo presente em outros modelos de comunicação não é possível de ser implementada.
 
-\item \textbf{Ferramentas de padronizaçào}: as ferramentas padronizadas tornam-se muito mais difíceis de construir. Construir estas ferramentas geralmente requer o redesenho de convenções de tipo HTTP baseado sistema RPC escolhido, por consequencia da especialidade de cada sistema RPC.
+\item \textbf{Ferramentas de padronização}: as ferramentas padronizadas tornam-se muito mais difíceis de construir, devido ao grande número de implementações diferentes. Construir estas ferramentas geralmente requer o redesenho de convenções de tipo HTTP baseado sistema RPC escolhido, por consequencia da especialidade de cada sistema RPC.
 
 \end{enumerate}
 
@@ -66,7 +66,7 @@ A figura \ref{fig:soap} ilustra como é realizada a troca de mensagens entre uma
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1\textwidth]{figuras/soap.png}
-\caption{SOAP fluxo de dados. (refazer)}
+\caption{SOAP fluxo de dados.}
 \label{fig:soap}
 \author{https://msdn.microsoft.com/en-us/library/x05s00wz(v=vs.80).aspx}
 \end{figure}
@@ -141,8 +141,8 @@ O Modelo de Maturidade de Richardson é um modelo criado por Leonard Richardson 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.7\textwidth]{figuras/modelo-maturidade.png}
-\caption{Modelo de maturidade de Richardson. (refazer)}
+\includegraphics[width=0.93\textwidth]{figuras/modelo-maturidade.png}
+\caption{Modelo de maturidade de Richardson.}
 \label{fig:rest-maturity-model}
 \end{figure}
 
@@ -172,7 +172,7 @@ Contudo, com a evolução e o aumento da complexidade das APIs, a comunicação 
 
 \begin{enumerate}[label=\alph*)]
 
-\item a necessidade de executar múltiplas requisições entre o cliente e o servidor a fim de obter objetos complexos e com atributos aninhados  Para aplicações móveis operando em condições variáveis de rede, essas múltiplas viagens de ida e volta são indesejáveis, pois geram atrasos e maior tráfego na rede \cite{graph-intro};
+\item a necessidade de executar múltiplas requisições entre o cliente e o servidor a fim de obter objetos complexos e com atributos aninhados  Para aplicações móveis operando em condições variáveis de rede, essas múltiplas viagens de ida e volta são indesejáveis, pois geram atrasos e maior tráfego na rede \cite{graphQl-overview};
 
 \item a prática de \textit{over-fetching}, ou seja, quando o cliente busca alguma informação do servidor e a resposta contém mais informação que o cliente precisa. Esse tipo de problema acarreta no uso desnecessário de recursos de comunicação  \cite{efficient-data-communication};
 
@@ -234,13 +234,6 @@ Todos os tipos até agora são considerados nulos e singulares, por exemplo,  um
 
 Finalmente, muitas vezes é útil fornecer estruturas complexas como entradas para consultas GraphQL; o tipo \textit{\textbf{Input Object}} permite que o \textit{schema} defina exatamente quais dados são esperados do cliente nessas consultas.
 
-
-\subsection{Autorização}
-
-Segundo \citeonline{rfc2977}, Autorização é o ato de determinar se um direito particular, como acesso a algum recurso, pode ser concedido a uma determinada credencial. Nos sistemas de informação multiusuários, o administrador do sistema define quais usuários podem ter acesso ao sistema e quais são os privilégios de uso.
-
-Normalmente, o GraphQL não controla diretamente o controle de acesso, em vez disso, delega essa responsabilidade para a camada de lógica de negócio da aplicação. 
-
 \subsection{Caching}
 
 De acordo com \citeonline{graph-cache}, consultas de dados através da internet podem ser lentas e custosas, e por esse motivo, a capacidade de armazenar em cache e reutilizar os recursos obtidos anteriormente é um aspecto crítico da otimização para o desempenho.
@@ -248,9 +241,9 @@ De acordo com \citeonline{graph-cache}, consultas de dados através da internet 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{figuras/cache-http.png}
-\caption{HTTP Caching. (refazer)}
+\caption{HTTP Caching.}
+\legend{Fonte: \citeonline{graph-cache}}
 \label{fig:cache-http}
-\author{https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching}
 \end{figure}
 
 Em uma API baseada em \textit{end-points}, os clientes podem usar o armazenamento em cache do protocolo HTTP, ilustrado na figura \ref{fig:cache-http} para evitar buscas desnecessárias identificando quando dois recursos são iguais. A URL nessas APIs é o identificador globalmente exclusivo que o cliente pode aproveitar para criar um cache. No GraphQL, porém, não existe uma primitiva semelhante a uma URL que forneça esse identificador globalmente exclusivo para um determinado objeto. Entretanto, existem várias práticas que podem ser aplicadas a um servidor GraphQL para atingir o mesmo objetivo.

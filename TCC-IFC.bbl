@@ -27,6 +27,11 @@ Dispon{\'\i}vel em: \url{https://goo.gl/KB2CGw}. Acesso em: 17 mai 2017.}
 {BUNA, S. \emph{REST APIs are REST-in-Peace APIs. Long Live GraphQL.} 2017.
 Dispon{\'\i}vel em: \url{https://goo.gl/3NDGrq}. Acesso em: 15 abr 2017.}
 
+\bibitem[Cisco 2017]{cisco-network-report}
+\abntrefinfo{Cisco}{CISCO}{2017}
+{CISCO. \emph{Cisco Visual Networking Index}. 2017.
+Dispon{\'\i}vel em: \url{https://goo.gl/MHsDgQ}. Acesso em: 15 out 2017.}
+
 \bibitem[Class 2013]{two-tier}
 \abntrefinfo{Class}{CLASS}{2013}
 {CLASS, S.~T. \emph{What is Difference Between Two-Tier and Three-Tier
@@ -45,13 +50,6 @@ Dispon{\'\i}vel em: \url{https://goo.gl/Cy8dWp}. Acesso em: 15 abr 2017.}
 \emph{Architectural Styles and the Design of Network-based Software
   Architectures}.
 Tese (Doutorado) --- University of California, Irvine, 2000. AAI9980887.}
-
-\bibitem[Glass et al. 2000]{rfc2977}
-\abntrefinfo{Glass et al.}{GLASS et al.}{2000}
-{GLASS, S. et al. \emph{{Mobile IP Authentication, Authorization, and
-  Accounting Requirements}}. RFC Editor, 2000. RFC 2977.
- (Request for Comments: 2977, 2977).
-Dispon{\'\i}vel em: \url{https://rfc-editor.org/rfc/rfc792.txt}.}
 
 \bibitem[Grigorik 2017]{graph-cache}
 \abntrefinfo{Grigorik}{GRIGORIK}{2017}
@@ -137,6 +135,12 @@ Dispon{\'\i}vel em: \url{https://goo.gl/LcBkCv}. Acesso em: 15 abr 2017.}
 {NATIS, Y.~V. \emph{Service-Oriented Architecture Scenario}. 2003.
 Dispon{\'\i}vel em: \url{https://goo.gl/NZ9aoW}. Acesso em: 15 abr 2017.}
 
+\bibitem[NECS 2010]{wms-rack}
+\abntrefinfo{NECS}{NECS}{2010}
+{NECS. \emph{NECS entrée V4 SQL and RELATED ADD-ON MODULES SOFTWARE END USER
+  LICENSE AGREEMENT}. 2010.
+Dispon{\'\i}vel em: \url{https://goo.gl/X6zg9p}. Acesso em: 15 abr 2017.}
+
 \bibitem[Paliari 2012]{rest-webservice}
 \abntrefinfo{Paliari}{PALIARI}{2012}
 {PALIARI, M. \emph{COMO FUNCIONA UM WEBSERVICE REST}. 2012.
@@ -152,23 +156,13 @@ Dispon{\'\i}vel em: \url{https://goo.gl/sgh88Y}. Acesso em: 15 abr 2017.}
 {ROUSE, M. \emph{service-oriented architecture (SOA)}. 2014.
 Dispon{\'\i}vel em: \url{https://goo.gl/VeAeTw}. Acesso em: 15 abr 2017.}
 
-\bibitem[Rouse 2014]{soa-intel}
-\abntrefinfo{Rouse}{ROUSE}{2014b}
-{ROUSE, M. \emph{service-oriented architecture (SOA)}. 2014.
-Dispon{\'\i}vel em: \url{https://goo.gl/yga17e}. Acesso em: 15 abr 2017.}
-
 \bibitem[Rouse 2014]{soap-tech-target}
-\abntrefinfo{Rouse}{ROUSE}{2014c}
+\abntrefinfo{Rouse}{ROUSE}{2014b}
 {ROUSE, M. \emph{SOAP (Simple Object Access Protocol)}. 2014.
 Dispon{\'\i}vel em: \url{https://goo.gl/CYyXtD}. Acesso em: 17 mai 2017.}
 
-\bibitem[Schrock 2015]{graph-intro}
-\abntrefinfo{Schrock}{SCHROCK}{2015a}
-{SCHROCK, N. \emph{GraphQL Introduction}. 2015.
-Dispon{\'\i}vel em: \url{https://goo.gl/OYsnm0}. Acesso em: 15 abr 2017.}
-
 \bibitem[Schrock 2015]{graphQl-overview}
-\abntrefinfo{Schrock}{SCHROCK}{2015b}
+\abntrefinfo{Schrock}{SCHROCK}{2015}
 {SCHROCK, N. \emph{GraphQL Overview}. 2015.
 Dispon{\'\i}vel em: \url{https://goo.gl/wX2VJ8}. Acesso em: 15 abr 2017.}
 
@@ -188,11 +182,6 @@ Dispon{\'\i}vel em: \url{https://goo.gl/1G2yiz}. Acesso em: 17 mai 2017.}
 {THATIKONDA, S.~K. \emph{Difference Between Two Tier Architecture and Three
   Tier Architecture}. 2011.
 Dispon{\'\i}vel em: \url{https://goo.gl/9cSbBg}. Acesso em: 15 abr 2017.}
-
-\bibitem[VNI 2017]{cisco-network-report}
-\abntrefinfo{VNI}{VNI}{2017}
-{VNI, C.~M. \emph{Cisco Visual Networking Index}. 2017.
-Dispon{\'\i}vel em: \url{https://goo.gl/MHsDgQ}. Acesso em: 15 out 2017.}
 
 \bibitem[Work 2011]{load-time-effects}
 \abntrefinfo{Work}{WORK}{2011}
