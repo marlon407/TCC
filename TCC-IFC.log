@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 NOV 2017 22:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 NOV 2017 21:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1280,11 +1280,11 @@ File: figuras/soa.png Graphic file (type png)
 Package pdftex.def Info: figuras/soa.png used on input line 105.
 (pdftex.def)             Requested size: 318.49861pt x 188.37634pt.
 ) (./comunicacao.tex [25 <./figuras/soa.png>]
-<figuras/rpc.png, id=388, 515.9275pt x 380.42125pt>
+<figuras/rpc.png, id=386, 428.60126pt x 349.305pt>
 File: figuras/rpc.png Graphic file (type png)
  <use figuras/rpc.png>
-Package pdftex.def Info: figuras/rpc.png used on input line 20.
-(pdftex.def)             Requested size: 318.49861pt x 234.8545pt.
+Package pdftex.def Info: figuras/rpc.png used on input line 18.
+(pdftex.def)             Requested size: 318.49861pt x 259.57428pt.
 
 [26
 
@@ -1307,7 +1307,7 @@ Package pdftex.def Info: figuras/modelo-maturidade.png used on input line 144.
 File: figuras/cache-http.png Graphic file (type png)
 
 <use figuras/cache-http.png>
-Package pdftex.def Info: figuras/cache-http.png used on input line 243.
+Package pdftex.def Info: figuras/cache-http.png used on input line 241.
 (pdftex.def)             Requested size: 227.5pt x 164.92522pt.
  [37]) (./estudo.tex [38 <./figuras/cache-http.png>] <figuras/model.png, id=542
 , 734.745pt x 462.72874pt>
@@ -1449,11 +1449,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 bibitemlist
 [61
 
-])
+] [62])
 No file TCC-IFC.ind.
 
 AED: lastpage setting LastPage
-[62]
+[63]
 \tf@lof=\write4
 \openout4 = `TCC-IFC.lof'.
 
@@ -1479,8 +1479,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
  15968 strings out of 492995
- 233898 string characters out of 6132704
- 566728 words of memory out of 5000000
+ 233922 string characters out of 6132704
+ 566751 words of memory out of 5000000
  18756 multiletter control sequences out of 15000+600000
  101581 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1506,10 +1506,10 @@ pe1/public/lm/lmss17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
 /lm/lmss8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx1
 0.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on TCC-IFC.pdf (63 pages, 814697 bytes).
+Output written on TCC-IFC.pdf (64 pages, 816913 bytes).
 PDF statistics:
  1097 PDF objects out of 1200 (max. 8388607)
- 961 compressed objects within 10 object streams
+ 960 compressed objects within 10 object streams
  297 named destinations out of 1000 (max. 500000)
  31775 words of extra memory for PDF output out of 35830 (max. 10000000)
 

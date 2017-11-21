@@ -27,10 +27,11 @@ Dispon{\'\i}vel em: \url{https://goo.gl/KB2CGw}. Acesso em: 17 mai 2017.}
 {BUNA, S. \emph{REST APIs are REST-in-Peace APIs. Long Live GraphQL.} 2017.
 Dispon{\'\i}vel em: \url{https://goo.gl/3NDGrq}. Acesso em: 15 abr 2017.}
 
-\bibitem[Cisco 2017]{cisco-network-report}
-\abntrefinfo{Cisco}{CISCO}{2017}
-{CISCO. \emph{Cisco Visual Networking Index}. 2017.
-Dispon{\'\i}vel em: \url{https://goo.gl/MHsDgQ}. Acesso em: 15 out 2017.}
+\bibitem[{Cisco} 2017]{cisco-network-report}
+\abntrefinfo{{Cisco}}{{Cisco}}{2017}
+{{Cisco}. \emph{Cisco Visual Networking Index: Global Mobile Data Traffic
+  Forecast Update, 2016–2021 White Paper}.
+[S.l.], 2017.}
 
 \bibitem[Class 2013]{two-tier}
 \abntrefinfo{Class}{CLASS}{2013}
@@ -58,9 +59,11 @@ Dispon{\'\i}vel em: \url{https://goo.gl/nGfQ4x}. Acesso em: 15 abr 2017.}
 
 \bibitem[Gustavsson 2016]{efficient-data-communication}
 \abntrefinfo{Gustavsson}{GUSTAVSSON}{2016}
-{GUSTAVSSON, K. \emph{Efficient data communication between a webclient and a
-  cloud environment}. 2016.
-Dispon{\'\i}vel em: \url{https://goo.gl/Z07LrK}. Acesso em: 15 abr 2017.}
+{GUSTAVSSON, K.
+\emph{Efficient data communication between a webclient and a cloud
+  environment}.
+Disserta\c{c}\~{a}o (Mestrado) --- Faculty of Engineering (LTH), Lund
+  University, jun 2016.}
 
 \bibitem[Hicks 2017]{monolithic-extinction}
 \abntrefinfo{Hicks}{HICKS}{2017}
@@ -109,9 +112,10 @@ Dispon{\'\i}vel em: \url{https://goo.gl/SGQuT2}. Acesso em: 15 abr 2017.}
 
 \bibitem[Maso 2016]{tcc-ufsc}
 \abntrefinfo{Maso}{MASO}{2016}
-{MASO, M. \emph{Um Modelo de Comunicação para Automação na Execução de
-  Consultas de Dados sobre APIs Web}. 2016.
-Dispon{\'\i}vel em: \url{https://goo.gl/mlMYso}. Acesso em: 15 abr 2017.}
+{MASO, M.
+\emph{Um Modelo de Comunicação para Automação na Execução de Consultas de
+  Dados sobre APIs Web}.
+Tese (Doutorado) --- Universidade Federal de Santa Catarina, 2016. AAI9980887.}
 
 \bibitem[Maziero 2013]{sistemas-op-mazierro}
 \abntrefinfo{Maziero}{MAZIERO}{2013}
@@ -125,10 +129,10 @@ Dispon{\'\i}vel em: \url{https://goo.gl/mlMYso}. Acesso em: 15 abr 2017.}
 US Patent 7,028,312.
 Dispon{\'\i}vel em: \url{https://www.google.com/patents/US7028312}.}
 
-\bibitem[Microsoft 2008]{microsoft-ipc}
-\abntrefinfo{Microsoft}{MICROSOFT}{2008}
-{MICROSOFT. \emph{Interprocess Communications}. 2008.
-Dispon{\'\i}vel em: \url{https://goo.gl/LcBkCv}. Acesso em: 15 abr 2017.}
+\bibitem[{Microsoft} 2008]{microsoft-ipc}
+\abntrefinfo{{Microsoft}}{{Microsoft}}{2008}
+{{Microsoft}. \emph{Interprocess Communications}.
+[S.l.], 2008.}
 
 \bibitem[Natis 2003]{soa-webservice}
 \abntrefinfo{Natis}{NATIS}{2003}
@@ -171,11 +175,12 @@ Dispon{\'\i}vel em: \url{https://goo.gl/wX2VJ8}. Acesso em: 15 abr 2017.}
 {SKONNARD, A. \emph{Understanding SOAP}. 2003.
 Dispon{\'\i}vel em: \url{https://goo.gl/1G2yiz}. Acesso em: 17 mai 2017.}
 
-\bibitem[Srinivasan 1995]{rfc1831:rpc}
-\abntrefinfo{Srinivasan}{SRINIVASAN}{1995}
-{SRINIVASAN, R. \emph{RPC: Remote Procedure Call Protocol Specification Version
-  2}.
-[S.l.], 1995. Rev. 3.}
+\bibitem[TANENBAUM e Steen 2007]{van2007sistemas}
+\abntrefinfo{TANENBAUM e Steen}{TANENBAUM; STEEN}{2007}
+{TANENBAUM, A. V.~S.; STEEN, M. V. \emph{Sistemas distribu{\'\i}dos:
+  princ{\'\i}pios e paradgmas}. Pearson Educaci{\'o}n, 2007.
+ISBN 9788576051428. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=r2SGPgAACAAJ}.}
 
 \bibitem[Thatikonda 2011]{two-tier-differences}
 \abntrefinfo{Thatikonda}{THATIKONDA}{2011}

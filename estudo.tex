@@ -229,9 +229,9 @@ Para o presente trabalho, serão utilizadas quatro métricas diferentes: O tempo
 
 \subsection*{Tempo de utilização da CPU}
 
-O tempo de utilização da CPU é uma medida do percentual de ciclos que representa uma porcentagem em que as unidades de processamento ficam dedicadas a executar um processo em particular. No contexto do presente trabalho, é a porcentagem de processamento dentro da CPU utilizada em cada requisição.
+O tempo de utilização da CPU é a quantidade de tempo para o qual uma unidade de processamento central (CPU) foi usada para processar instruções de um programa de computador ou sistema operacional
 
-Esta métrica será extraída atraves do módulo \textit{OS} presente no \textit{core} do Node.Js. A função \textit{os.loadavg()} trás como resultado uma medida da atividade do sistema, calculada pelo sistema operacional e expressa como um número fracionário. A média será a medida de comparação entre as duas abordagens. A seguinte fórmula será usada para calcular esta métrica: 
+Esta métrica será extraída através do módulo \textit{process} presente no \textit{core} do Node.Js. A função utilizada será a \textit{process.cpuUsage()} que trás como resultado o tempo gasto por um processo dentro da CPU, calculado pelo sistema operacional. A seguinte fórmula será usada para calcular esta métrica: 
 
 $$ CPU = \frac{\sum\limits_{1}^{n} \Delta cpu}{n} $$
 
@@ -239,7 +239,7 @@ Onde $n$ é o número de CPUs e $\Delta cpu$ é o tempo de uso de CPU pela aplic
 
 \subsection*{Consumo de memória}
 
-O consumo de memória, junto com a utilização da CPU, é uma das medidas mais importantes pois são nesses pontos que observamos o verdadeiro custo por trás da escolha da ferramenta. O consumo de memória é a quantidade de em bytes utilizada pela API, e será medido através da soma da utilização de memória em cada consulta necessária para atender os cenários propostos. A seguinte fórmula será usada para calcular esta métrica: 
+O consumo de memória, junto com a utilização da CPU, é uma das medidas mais importantes pois são nesses pontos que observamos o verdadeiro custo computacional por trás da escolha da ferramenta. O consumo de memória é a quantidade de em bytes utilizada pela API, e será medido através da soma da utilização de memória em cada consulta necessária para atender os cenários propostos. A seguinte fórmula será usada para calcular esta métrica: 
 
 $$ Mem = \frac{m}{M}*100 $$
 
@@ -255,13 +255,13 @@ Onde $T1$ representa o tempo que a requisição respondeu a consulta, e $T2$ o t
 
 \subsection*{Tamanho da resposta}
 
-O tamanho da resposta será calculada baseado no tamanho em \textit{bytes} da resposta. Essa métrica será calcula a partir da média de 30 consultas. Novamente, para a API REST será usada a média das somas de todas as consultas necessárias para obter a resposta desejada. A seguinte fórmula será usada para calcular esta métrica: 
+O tamanho da resposta será calculada baseado no tamanho em \textit{bytes} da resposta. Novamente, para a API REST será usada a média das somas de todas as consultas necessárias para obter a resposta desejada. A seguinte fórmula será usada para calcular esta métrica: 
 
 $$ Tam = \sum\limits_{1}^{n} ti $$
 
 Onde $ti$ é o tamanha da resposta de uma requisição, d $n$ é o número total de requisições. Nos resultados, esta métrica será apresentada na unidade de kilobytes.
 
-A figura \ref{fig:my-metrics} mostra como as métricas serão extraidas. A utlização do CPU e o consumo de memória serão medidas utilizando ferramentas do próprio Node.js. Ambas serão medidas via \textit{logs} no código fonte dos protótipos implementados. O tamanho da resposta e o tempo de resposta serão extraídos utilizando a ferramenta Postman, ao final de cada consulta.
+A figura \ref{fig:my-metrics} mostra como as métricas serão extraídas. A utlização do CPU e o consumo de memória serão medidas utilizando ferramentas do próprio Node.js. Ambas serão medidas via \textit{logs} no código fonte dos protótipos implementados. O tamanho da resposta e o tempo de resposta serão extraídos utilizando a ferramenta Postman, ao final de cada consulta.
 
 \begin{figure}[htbp]
 \centering
@@ -270,5 +270,11 @@ A figura \ref{fig:my-metrics} mostra como as métricas serão extraidas. A utliz
 \label{fig:my-metrics}
 \author{fonte: Autor}
 \end{figure}
+
+Afim de obter resultados mais precisos, serão feitas diversas iterações para medição de cada umas das métricas. A média destas medições será calculada através da segunte fórmula: 
+
+$$ Avg = \frac{\sum\limits_{1}^{n} X}{n} $$
+
+Onde $n$ é numero de iterações realizadas para cada métrica, e $X$ é o resultado de cada uma destas iterações.
 
 Após a realização dos testes, os dados provenientes de cada uma das métricas foram coletados, analisados e os resultados serão apresentados no próximo capítulo. 

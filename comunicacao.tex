@@ -11,29 +11,29 @@ Serão apresentados as principais características desses protocolos, como tamb�
 
 \section{Remote Procedure Call}\label{sec:rpc}
 
-Remote Procedure Call (RPC), ou Chamada de Procedimento Remoto, é um mecanismo em que uma aplicação solicita o serviço de uma outra aplicação que se encontra em um outro computador, geralmente conectados por uma rede. Uma RPC exige que uma aplicação X envie uma ou mais mensagens para outra aplicação Y a fim de invocar um procedimento da aplicação Y. A aplicação Y responde enviando uma ou mais mensagens de volta para a aplicação X. O termo RPC identifica todo o processo de comunicação entre as aplicações \cite{merrick2006xml}.
-
-A RPC é similar ao modelo de  chamadas de procedimentos locais (IPC). Nas chamadas locais, a aplicação remetente envia argumentos para um procedimento localização no mesmo computador e transfere o controle da CPU para o procedimento. Logo após o término da execução, os resultados do procedimento são extraídos de uma localização compartilhada, e a aplicação remetente continua a sua execução \cite{rfc1831:rpc}. As chamadas remotas, por outro lado, aguardam a os resultados do procedimento diretamente da aplicação requisitada, como é ilustrado na figura \ref{fig:rpc}
+Remote Procedure Call (RPC), ou Chamada de Procedimento Remoto, é um mecanismo em que uma aplicação solicita o serviço de uma outra aplicação que se encontra em um outro computador, geralmente conectados por uma rede. Uma RPC exige que uma aplicação X envie uma ou mais mensagens para outra aplicação Y a fim de invocar um procedimento da aplicação Y. A aplicação Y responde enviando uma ou mais mensagens de volta para a aplicação X. Este fluxo de informação pode ser observado na figura \ref{fig:rpc}. O termo RPC identifica todo o processo de comunicação entre as aplicações \cite{merrick2006xml}.
 
 \begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figuras/rpc.png}
-\caption{RPC fluxo de dados.}
-\label{fig:rpc}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/rpc.png}
+    \caption{Fluxo de informações RPC}
+    \label{fig:rpc}
 \end{figure}
 
-Ainda, segundo a especificação da RPC \cite{rfc1831:rpc}, há alguns aspectos importantes em que as chamadas remotas se diferem das chamadas locais:
+Conforme \citeonline{van2007sistemas} assinala, a ideia fundamental da RPC é fazer com que a chamada de procedimeto remoto pareça o mais possível uma chamada local. Em outras palavras, é necessário que RPC seja transparente, fazendo com que o procedimento cliente não deva estar ciente que o procedimento chamado está executando em uma máquina diferente ou vice e versa.
+
+Ainda, segundo \cite{van2007sistemas}, há alguns desafios importantes a serem considerados ao utilizar as chamadas remotas em comparação as chamadas locais. Alguns destes desafios são:
 
 \begin{enumerate}[label=\alph*)]
-\item \textbf{Tratamento de erros}: Falhas no servidor remoto ou da rede devem ser tratadas quando usando uma RPC.
+    \item o procedimento chamado e o procedimento cliente rodam em máquinas diferentes e sào executados em espaços de endereço diferentes, o que pode causar complicação ao implementar a RPC; 
 
-\item \textbf{Variáveis globais}: Uma vez que o servidor não tem acesso ao espaço de endereço do cliente, argumentos ocultos não podem ser passados como variáveis globais. Todos os argumentos devem ser passados com a requisição.
+\item é necessários a passagem de parâmetros e resultados através da rede, o que pode ser complicado, em especial se as máquinas não forem idênticas;
 
-\item \textbf{Desempenho}: Chamadas remotas geralmente operam uma ou mais ordens mais lentos do que chamadas de procedimentos locais.
-
-\item \textbf{Autenticação}: Uma vez que as chamadas remotas podem ser transportadas através de redes insegurar, autenticação pode ser necessária.
+\item qualuer uma das máquinas podem falhar e cada uma das possíveis falhas causa problemas diferentes;
 
 \end{enumerate}
+
+Ainda assim, é possivel lidar com muitos destes desafios, e a RPC é uma técnica de ampla utilização subjacente a muitos sistemas distribuídos.
 
 \subsection{Limitações}
 
@@ -221,8 +221,6 @@ Como GraphQL não se limita apenas em consultas de dados, as APIs também podem 
 Os aplicativos em tempo real precisam de uma maneira de enviar dados do servidor. As \textit{subscriptions} permitem que aplicações publiquem eventos em tempo real através de um servidor de assinaturas GraphQL. Com o modelo de subscriptions baseado em eventos no GraphQL - muito parecido com as \textit{queries} e \textit{mutations} - um cliente pode dizer ao servidor exatamente quais dados devem ser enviados e como esses dados devem ser encontrados. Isso leva a menos eventos rastreados no servidor e notificados para o cliente.
 
 \subsection{Schemas e Tipos}
-
-%https://facebook.github.io/graphql
 
 O sistema de tipos do GraphQL descreve as capacidades de um servidor GraphQL e é usado para determinar se uma consulta é válida. O sistema de tipos também descreve os formatos de entrada de variáveis de consulta para determinar se os valores fornecidos em tempo de execução são válidos. As capacidades do servidor GraphQL são referidas como \textit{schema} do servidor. Um \textit{schema} é definido baseado nos tipos que ele suporta.
 
