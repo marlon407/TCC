@@ -1,13 +1,13 @@
 % ----------------------------------------------------------
 % Protocolos de comunicaçào
 % ----------------------------------------------------------
-\chapter[evolucao]{Evolução da comunicação entre aplicações}
+\chapter[Evolução da comunicação entre aplicações]{Evolução da comunicação entre aplicações}
 %\addcontentsline{toc}{chapter}{Protocolos de Comunicação}
 % ----------------------------------------------------------
 
 Neste capítulo serão apresentados alguns dos principais protocolos para a comunicação entre aplicações. Serão conduzidas breves abordagens dos protocolos RPC e SOAP, que hoje vêm perdendo espaço no mercado, mas tiveram um papel muito importante para a evolução dos sistemas baseados em SOA. Em seguida, será mostrada uma descrição mais detalhada dos modelos de comunicação REST e GraphQL, uma vez que estes são os dois modelos a serem seguidos no estudo de caso.
 
-Serão apresentados as principais características desses protocolos, como também as suas limitações. Nenhum dos protocolos pode ser descardado na hora de tomada de decisão sobre qual modelo utilizar para a comunicação entre clientes e serviços remotos ou APIs. Todos eles possuem limitações, porém cumprem bem o papel para que foram desenhados e é possível notar como eles evoluíram à medida que novas demandas se tornaram necessárias no desenvolvimento de \textit{software}.
+Serão apresentados as principais características desses protocolos, como também as suas limitações. Nenhum protocolo pode ser descardado na hora de tomada de decisão sobre qual modelo utilizar para a comunicação entre clientes e serviços remotos ou APIs Web. Todos eles possuem limitações, porém cumprem bem o papel para que foram desenhados e é possível notar como eles evoluíram à medida que novas demandas se tornaram necessárias no desenvolvimento de \textit{software}.
 
 \section{Remote Procedure Call}\label{sec:rpc}
 
@@ -20,20 +20,20 @@ Remote Procedure Call (RPC), ou Chamada de Procedimento Remoto, é um mecanismo 
     \label{fig:rpc}
 \end{figure}
 
-Conforme \citeonline{van2007sistemas} assinala, a ideia fundamental da RPC é fazer com que a chamada de procedimeto remoto pareça o mais possível uma chamada local. Em outras palavras, é necessário que RPC seja transparente, fazendo com que o procedimento cliente não deva estar ciente que o procedimento chamado está executando em uma máquina diferente ou vice e versa.
+Conforme \citeonline{van2007sistemas} assinala, a ideia fundamental da RPC é fazer com que a chamada de procedimento remoto pareça o mais possível uma chamada local. Em outras palavras, é necessário que RPC seja transparente, fazendo com que o procedimento cliente não deva estar ciente que o procedimento chamado está executando em uma máquina diferente ou vice e versa.
 
-Ainda, segundo \cite{van2007sistemas}, há alguns desafios importantes a serem considerados ao utilizar as chamadas remotas em comparação as chamadas locais. Alguns destes desafios são:
+Ainda, segundo \citeonline{van2007sistemas}, há alguns desafios importantes a serem considerados ao utilizar as chamadas remotas em comparação as chamadas locais. Alguns destes desafios são:
 
 \begin{enumerate}[label=\alph*)]
-    \item o procedimento chamado e o procedimento cliente rodam em máquinas diferentes e sào executados em espaços de endereço diferentes, o que pode causar complicação ao implementar a RPC; 
+    \item o procedimento chamado e o procedimento cliente rodam em máquinas diferentes e são executados em espaços de endereço diferentes, o que pode causar complicação ao implementar a RPC; 
 
 \item é necessários a passagem de parâmetros e resultados através da rede, o que pode ser complicado, em especial se as máquinas não forem idênticas;
 
-\item qualuer uma das máquinas podem falhar e cada uma das possíveis falhas causa problemas diferentes;
+\item qualquer uma das máquinas pode falhar e cada uma das possíveis falhas causa problemas diferentes;
 
 \end{enumerate}
 
-Ainda assim, é possivel lidar com muitos destes desafios, e a RPC é uma técnica de ampla utilização subjacente a muitos sistemas distribuídos.
+Ainda assim, é possível lidar com muitos destes desafios, e a RPC é uma técnica de ampla utilização subjacente a muitos sistemas distribuídos.
 
 \subsection{Limitações}
 
@@ -48,7 +48,7 @@ Diferentes implementações de RPC são, geralmente, incompatíveis. Assim sendo
 
 \item \textbf{Falta de paralelismo}: com RPC, em um determinado momento, ou o servidor ou o cliente está ativo. Como cliente e servidor são co-rotinas, a prática de paralelismo presente em outros modelos de comunicação não é possível de ser implementada.
 
-\item \textbf{Ferramentas de padronização}: as ferramentas padronizadas tornam-se muito mais difíceis de construir, devido ao grande número de implementações diferentes. Construir estas ferramentas geralmente requer o redesenho de convenções de tipo HTTP baseado sistema RPC escolhido, por consequencia da especialidade de cada sistema RPC.
+\item \textbf{Ferramentas de padronização}: as ferramentas padronizadas tornam-se muito mais difíceis de construir, devido ao grande número de implementações diferentes. Construir estas ferramentas geralmente requer o redesenho de convenções de tipo HTTP baseado sistema RPC escolhido, por consequência da especialidade de cada sistema RPC.
 
 \end{enumerate}
 
@@ -66,7 +66,7 @@ A figura \ref{fig:soap} ilustra como é realizada a troca de mensagens entre uma
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1\textwidth]{figuras/soap.png}
-\caption{SOAP fluxo de dados.}
+\caption{SOAP fluxo de dados}
 \label{fig:soap}
 \author{https://msdn.microsoft.com/en-us/library/x05s00wz(v=vs.80).aspx}
 \end{figure}
@@ -107,7 +107,7 @@ REpresentational State Transfer (REST) é um \textit{design} de arquitetura base
 
 \citeonline{programmableweb-rest-losing} assinala que a adoção do REST como o método predominante para construir APIs públicas tem ofuscado qualquer outra tecnologia ou abordagem nos últimos anos. Embora várias alternativas (principalmente SOAP) ainda estejam presentes no mercado, adeptos do modelo SOA, descrito da seção 2.4,  para construção de aplicações tomaram uma posição definitiva contra eles e optaram por REST como sua abordagem e JSON como seu formato de mensagem .
 
-Segundo \citeonline{rest-book-intro:61}, REST é um padrão de operações de recursos que emergiu como a principal alternativa ao SOAP para o \textit{design} de serviços em aplicativos Web 2.0. Considerando que a abordagem tradicional baseada em SOAP para Web Services usa objetos remotos completos com invocação de método remoto e funcionalidade encapsulada, o REST trata apenas de estruturas de dados e da transferência de seu estado. A simplicidade do REST, juntamente com seu ajuste natural sobre o HTTP, contribuiu para o seu \textit{status} como um método de escolha para aplicativos da Web 2.0 expondo seus dados.
+Segundo \citeonline{rest-book-intro:61}, REST é um padrão de operações de recursos que emergiu como a principal alternativa ao SOAP para o \textit{design} de serviços em aplicativos Web 2.0. Considerando que a abordagem tradicional baseada em SOAP para \textit{Web Services} usa objetos remotos completos com invocação de método remoto e funcionalidade encapsulada, o REST trata apenas de estruturas de dados e da transferência de seu estado. A simplicidade do REST, juntamente com seu ajuste natural sobre o HTTP, contribuiu para o seu \textit{status} como um método de escolha para aplicativos da Web 2.0 expondo seus dados.
 
 \subsection{Restrições}
 
@@ -142,7 +142,7 @@ O Modelo de Maturidade de Richardson é um modelo criado por Leonard Richardson 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.93\textwidth]{figuras/modelo-maturidade.png}
-\caption{Modelo de maturidade de Richardson.}
+\caption{Modelo de maturidade de Richardson}
 \label{fig:rest-maturity-model}
 \end{figure}
 
@@ -182,7 +182,7 @@ Contudo, com a evolução e o aumento da complexidade das APIs, a comunicação 
 
 \section{Arquiteturas baseadas em JSON/Graphs}\label{sec:graph}
 
-Recentemente, um novo design de arquitetura vem ganhando espaço, preenchendo algumas lacunas que arquiteturas anteriores deixaram. Lideradas pelo Facebook com seu GraphQL e Netflix com o Falcor, esta nova arquitetura da um passo para trás comparando-se ao REST, atingindo apenas o nivel 0 no Modelo de Maturidade de Richardson. 
+Recentemente, um novo design de arquitetura vem ganhando espaço, preenchendo algumas lacunas que arquiteturas anteriores deixaram. Lideradas pelo Facebook com seu GraphQL e Netflix com o Falcor, esta nova arquitetura da um passo para trás comparando-se ao REST, atingindo apenas o nível 0 no Modelo de Maturidade de Richardson. 
 
 Os principais problemas que essa arquitetura ajuda a resolver são: 
 
@@ -239,7 +239,7 @@ De acordo com \citeonline{graph-cache}, consultas de dados através da internet 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{figuras/cache-http.png}
-\caption{HTTP Caching.}
+\caption{HTTP Caching}
 \legend{Fonte: \citeonline{graph-cache}}
 \label{fig:cache-http}
 \end{figure}
@@ -250,9 +250,6 @@ Um padrão possível para isso é reservar um campo, como \textup{id}, para ser 
 
 \subsection{Limitações}
 
-Segundo aponta \citeonline{graph-limitation}, uma ameaça importante que o GraphQL \emph{facilita} são os ataques de negação de serviço. Um servidor GraphQL pode ser atacado com consultas excessivamente complexas que irão consumir todos os recursos do servidor. Esse tipo de ataque não é específico do GraphQL, mas é preciso um cuidado redobrado para evitá-los.
+Segundo aponta \citeonline{graph-limitation}, uma ameaça importante que o GraphQL facilita são os ataques de negação de serviço. Um servidor GraphQL pode ser atacado com consultas excessivamente complexas que irão consumir todos os recursos do servidor. Esse tipo de ataque não é específico do GraphQL, mas é preciso um cuidado redobrado para evitá-los.
 
-Há, entretanto, alguns procedimento que, se implementados, podem mitigar a ameaça de negação de serviço. É possível fazer uma análise de custos na consulta com antecedência e impor \emph{um certo tipo} de limites na quantidade de dados que uma requisição pode consumir. Também é possível implementar um tempo limite para que requisições que levam muito tempo para serem resolvidas, sejam excluídas da fila de execução .
-
-%https://arxiv.org/pdf/1701.00626.pdf
-
+Há, entretanto, alguns procedimento que, se implementados, podem mitigar a ameaça de negação de serviço. É possível fazer uma análise de custos na consulta com antecedência e impor determinado limite na quantidade de dados que uma requisição pode consumir. Também é possível implementar um tempo limite, para que requisições que levam muito tempo para serem resolvidas, sejam excluídas da fila de execução.

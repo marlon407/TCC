@@ -7,7 +7,7 @@
 
 Para obter um exemplo do mundo real, um estudo de caso foi projetado com base em uma aplicação de WMS (\textit{Warehouse Management System}). \citeonline{wms-definition} explica que um sistema de WMS é um software que auxilia as operações do dia-a-dia em um armazém. Os sistemas WMS permitem o gerenciamento centralizado de tarefas, como o rastreamento de níveis de inventário e locais de estoque. Tais sistemas WMS podem ser um aplicativo independente ou parte de um sistema de ERP.
 
-Com o intuito de realizar consultas relevantes, foi modelado um esquema contendo seis entidades capazes de representar consultas reais, e ainda produzirem informações pertinentes para comparar o desempenho dos protótipos. A construção das APIs seguiram os princípios do ciclo tradicional do desenvolvimento de \textit{software}, portanto a modelagem foi elaborada antes do início da implementação das APIs. Isso assegura que nenhuma decisão de tecnologia tenha afetado a modelagem das entidades.
+Com o intuito de realizar consultas relevantes, foi modelado um esquema contendo seis entidades capazes de representar consultas reais, e ainda produzirem informações pertinentes para uma análise de desempenho. A construção das APIs seguiram os princípios do ciclo tradicional do desenvolvimento de \textit{software}, portanto a modelagem foi elaborada antes do início da implementação das APIs. Isso assegura que nenhuma decisão de tecnologia tenha afetado a modelagem das entidades.
 
 A modelagem da figura \ref{fig:modelagem}, representa o gerenciamento de um armazém com capacidade de armazenar diversos itens. Os itens são dispostos em \textit{pallets}, e alocados em endereços dentro do armazém. Como pode ser observado na figura \ref{fig:rack}, os endereços do armazém são formados a partir de uma combinação de três dimensões: \textbf{Prateleira}, \textbf{Linha} e \textbf{Nível}. Cada combinação dessas três propriedades é capaz de alocar \textit{pallets}, que por sua vez podem conter diversas unidades de um mesmo item.
 
@@ -16,7 +16,6 @@ A modelagem da figura \ref{fig:modelagem}, representa o gerenciamento de um arma
 \includegraphics[width=0.9\textwidth]{figuras/model.png}
 \caption{Modelagem WMS}
 \label{fig:modelagem}
-\legend{Fonte: Autor}
 \end{figure}
 
 Imagine um item de código 22B12, por exemplo, que representa um dado produto X. Este produto é disposto em um \textit{pallet} com capacidade de armazenar 30 unidades do item 22B12. O armazém é composto por 26 prateleiras, sequenciadas de 'A' a 'Z'. Cada prateleira possui 2 linhas de profundidade e 3 níveis de altura. Um \textit{pallet} com o código 001 contém 30 unidade do item 22B12, e precisa ser alocado dentro armazém, para isso é utilizado um sistema de códigos envolvendo as 3 dimensões do armazém.
@@ -64,7 +63,7 @@ As APIs foram escritas na linguagem de programação JavaScript, utilizando a es
 
 Node.js dispõe de inúmeros recursos e ferramentas que possibilitam a construção de APIs. Mesmo assim, o ecosistema de bibliotecas no Node.js conta com ferramentas que simplificam ainda mais a construção de aplicações para servidores Web. Abaixo são citadas algumas bibliotecas que foram utilizadas para desenvolver tanto a API REST quando a API GraphQL. 
 
-\subsubsection*{Expess.js}
+\subsubsection*{Express.js}
 
 Express.js é um \textit{framework} para Node.js extremamente flexível, que fornece um conjunto robusto de ferramentas para a construção de aplicações Web e Móveis. Conta com um robusto sistema de roteamento, facilitando o desenvolvimento de APIs. O Express.js fornece uma fina camada de abstração nas principais funcionalidades do Node.js, sem sobrepor seus recursos.
 
@@ -72,7 +71,7 @@ Nos protótipos desenvolvidos para executar o experimento, o Express.js atua com
 
 O código \ref{lst:load-rest} ilustra como os \textit{Controllers} enviam as informações da requisição para o modelo, que é o responsável na API REST em executar as consultas no banco de dados. No exemplo abaixo, o trecho de código é o responsável por retornar um \textit{Item} baseado no \textup{id} recebido como parâmetro da requisição. É possível observar que na linha 2 o modelo da entidade \textit{Item} é importado para ser utilizado no \textit{Controller}, e na linha 8, o método \textup{get}, cujo a lógica está implementada dentro do modelo, é invocado passando como parâmetro o \textup{id}.
 
-\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption={Controller para carregar um item}, label=lst:load-rest,language=JavaScript]
+\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption={Controller para buscar um item}, label=lst:load-rest,language=JavaScript]
 //item.controller.js
 import Item from '../models/item.model';
 
@@ -92,7 +91,7 @@ function load(req, res, next, id) {
 
 Já o código \ref{lst:express-graph} mostra como o Express.js gerencia a requisição recebida via método GET, e delega a responsabilidade para o \textup{schema.js}, onde está contida a lógica para a interpretação dos parâmetros da requisição, e retorna um objeto JSON com a devida resposta.
 
-\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption={Expess gerenciando rotas para GraphQL}, label=lst:express-graph,language=JavaScript]
+\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption={Express gerenciando rotas para GraphQL}, label=lst:express-graph,language=JavaScript]
 //server.js
 import express from 'express';
 let app = express();
@@ -115,7 +114,7 @@ MongoDB é um banco de dados \textit{open source} que utilizada um modelo de dad
 
 \subsubsection*{Ferramentas clientes}
 
-Algumas ferramentas foram utlizadas para se comportaram como clientes das APIs construídas, e foram responsáveis por executar as consultas nas APIs. O foco deste trabalho não é em cima das aplicação clientes, entretanto é importante conhecê-las pois são elas que invocarão as consultas como também é através delas que algumas métricas serão extraídas. O software Postman será usado fundamentalmente para a execução das buscas nas APIs.
+Algumas ferramentas foram utilizadas para se comportaram como clientes das APIs construídas, e foram responsáveis por executar as consultas nas APIs. O foco deste trabalho não é em cima das aplicação clientes, entretanto é importante conhecê-las pois são elas que invocarão as consultas como também é através delas que algumas métricas serão extraídas. O software Postman será usado fundamentalmente para a execução das buscas nas APIs.
 
 O Postman é uma cadeia completa de ferramentas para desenvolvedores de APIs. Ele é uma ferramenta elegante e flexível usada para construir softwares conectados via APIs, de forma rápida, fácil e precisa.
 
@@ -140,7 +139,7 @@ A configuração da máquina utilizada para o teste de desempenho local é descr
     \caption{Especificação da máquina utilizada} \label{tab:computers}
 \end{table}
 
-\subsection{Detalhes implementação REST}
+\subsection{Detalhes da implementação REST}
 
 O servidor REST consiste em um servidor HTTP escrito em Node.js que recebe as requisições HTTP. Dependendo do método e URL da requisição, roteia-o para o \textit{controller} correspondente. O \textit{controller} faz a consulta na base de dados do MongoDB. Ao realizar o gerenciamento das rotas, o servidor realiza os devidos registros de latência. Após a consulta, a resposta desejada é enviada de volta para o cliente. Esse fluxo acontece em qualquer cenário, independente do número de requisições desejadas.
 
@@ -169,13 +168,13 @@ No presente trabalho, como o objetivo é apenas medir o desempenho de consultas 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=1\textwidth]{figuras/uml-rest.png}
+\includegraphics[width=0.8\textwidth]{figuras/uml-rest.png}
 \caption{Fluxo REST}
 \label{fig:rest-uml}
 \author{fonte: Autor}
 \end{figure}
 
-\subsection{Detalhes implementação GraphQL}
+\subsection{Detalhes da implementação GraphQL}
 
 O servidor GraphQL foi implementado também usando Node.js. A diferença em comparação com a implementação do servidor REST é que o servidor GraphQL envia todos os pedidos ao seu núcleo, ao invés de rotear as requisições recebidas para vários \textit{controllers} diferentes. O GraphQL analisa a consulta e envia os parâmetros para os \textit{resolvers} responsáveis, localizados nos \textit{schemas}. \textit{Resolvers} são funções definidas para todos os campos no \textit{schema}, cada um retorna os dados para o campo específico. Estas funções são executadas quando os campos correspondentes são consultados e os resultados são retornados na resposta.
 
@@ -191,19 +190,19 @@ query RootQuery {
 
  A consulta ilustrada do trecho de código \ref{lst:query-graph} solicita ao servidor GraphQL a lista a de todos os itens cadastrados na base de dados. Note no trecho de código \ref{lst:response-graph} que a resposta contém apenas os atributos que a consulta requisitou, ou seja, o \textup{id} e a descrição dos itens:
 
-\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Listagem dos itens (Validar), label=lst:response-graph, language=JavaScript]]
+\begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Listagem dos itens, label=lst:response-graph, language=JavaScript]]
 {
     "data": [
          {
-        	"id": 22B12,
+            "id": 22B12,
             "description": "Flat screen"
         },
         {
-        	"id": 21C44,
+            "id": 21C44,
             "description": "Computer screen"
         },
         {
-        	"id": 43F12,
+            "id": 43F12,
             "description": "Smartphone screen"
         },
     ]
@@ -211,14 +210,13 @@ query RootQuery {
 
 \end{lstlisting}
 
-Para recuperar alguma informação na API GraphQL, é necessária realizar uma requisição utilizando o método HTTP GET, passando como parâmetro a consulta desejada. A API irá então processar a consulta, e retornar um objeto JSON como a resposta da requisição. Detalhes deste fluxo esta ilustrado na figura \ref{fig:graph-uml}
+Para recuperar alguma informação na API GraphQL, é necessária realizar uma requisição utilizando o método HTTP GET, passando como parâmetro a consulta desejada. A API irá então processar a consulta, e retornar um objeto JSON como a resposta da requisição. Detalhes deste fluxo estão ilustrados na figura \ref{fig:graph-uml}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=1\textwidth]{figuras/uml-graph.png}
+\includegraphics[width=0.8\textwidth]{figuras/uml-graph.png}
 \caption{Fluxo GraphQL}
 \label{fig:graph-uml}
-\author{fonte: Autor}
 \end{figure}
 
 \section{Métricas}\label{sec:metrics}
@@ -231,7 +229,7 @@ Para o presente trabalho, serão utilizadas quatro métricas diferentes: O tempo
 
 O tempo de utilização da CPU é a quantidade de tempo para o qual uma unidade de processamento central (CPU) foi usada para processar instruções de um programa de computador ou sistema operacional
 
-Esta métrica será extraída através do módulo \textit{process} presente no \textit{core} do Node.Js. A função utilizada será a \textit{process.cpuUsage()} que trás como resultado o tempo gasto por um processo dentro da CPU, calculado pelo sistema operacional. A seguinte fórmula será usada para calcular esta métrica: 
+Esta métrica será extraída através do módulo \textit{process} presente no \textit{core} do Node.js. A função utilizada será a \textit{process.cpuUsage()} que trás como resultado o tempo gasto por um processo dentro da CPU, calculado pelo sistema operacional. A seguinte fórmula será usada para calcular esta métrica: 
 
 $$ CPU = \frac{\sum\limits_{1}^{n} \Delta cpu}{n} $$
 
@@ -261,7 +259,7 @@ $$ Tam = \sum\limits_{1}^{n} ti $$
 
 Onde $ti$ é o tamanha da resposta de uma requisição, d $n$ é o número total de requisições. Nos resultados, esta métrica será apresentada na unidade de kilobytes.
 
-A figura \ref{fig:my-metrics} mostra como as métricas serão extraídas. A utlização do CPU e o consumo de memória serão medidas utilizando ferramentas do próprio Node.js. Ambas serão medidas via \textit{logs} no código fonte dos protótipos implementados. O tamanho da resposta e o tempo de resposta serão extraídos utilizando a ferramenta Postman, ao final de cada consulta.
+A figura \ref{fig:my-metrics} mostra como as métricas serão extraídas. A utilização do CPU e o consumo de memória serão medidas utilizando ferramentas do próprio Node.js. Ambas serão medidas via \textit{logs} no código fonte dos protótipos implementados. O tamanho da resposta e o tempo de resposta serão extraídos utilizando a ferramenta Postman, ao final de cada consulta.
 
 \begin{figure}[htbp]
 \centering

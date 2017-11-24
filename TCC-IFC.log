@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 NOV 2017 21:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  23 NOV 2017 22:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1316,19 +1316,20 @@ File: figuras/model.png Graphic file (type png)
 Package pdftex.def Info: figuras/model.png used on input line 16.
 (pdftex.def)             Requested size: 409.49722pt x 257.89777pt.
 
-<figuras/rack.png, id=543, 428.60126pt x 223.83624pt>
-File: figuras/rack.png Graphic file (type png)
- <use figuras/rack.png>
-Package pdftex.def Info: figuras/rack.png used on input line 26.
-(pdftex.def)             Requested size: 318.49861pt x 166.3364pt.
-
 [39
 
-] [40 <./figuras/model.png> <./figuras/rack.png>] [41]
+ <./figuras/model.png>]
+<figuras/rack.png, id=549, 428.60126pt x 223.83624pt>
+File: figuras/rack.png Graphic file (type png)
+ <use figuras/rack.png>
+Package pdftex.def Info: figuras/rack.png used on input line 25.
+(pdftex.def)             Requested size: 318.49861pt x 166.3364pt.
+
+[40 <./figuras/rack.png>] [41]
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 76.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 75.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1337,37 +1338,37 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [42]
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [43] [44]
-<figuras/uml-rest.png, id=624, 488.82625pt x 287.0725pt>
+) [42] [43]
+<figuras/uml-rest.png, id=620, 488.82625pt x 287.0725pt>
 File: figuras/uml-rest.png Graphic file (type png)
 
 <use figuras/uml-rest.png>
-Package pdftex.def Info: figuras/uml-rest.png used on input line 172.
-(pdftex.def)             Requested size: 455.0pt x 267.2112pt.
- [45 <./figuras/uml-rest.png>]
+Package pdftex.def Info: figuras/uml-rest.png used on input line 171.
+(pdftex.def)             Requested size: 364.00139pt x 213.7707pt.
+ [44]
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+) [45 <./figuras/uml-rest.png>] (/usr/local/texlive/2017/texmf-dist/tex/latex/b
+ase/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-<figuras/uml-graph.png, id=633, 517.935pt x 299.1175pt>
+<figuras/uml-graph.png, id=639, 517.935pt x 299.1175pt>
 File: figuras/uml-graph.png Graphic file (type png)
 
 <use figuras/uml-graph.png>
-Package pdftex.def Info: figuras/uml-graph.png used on input line 218.
-(pdftex.def)             Requested size: 455.0pt x 262.78148pt.
- [46] [47 <./figuras/uml-graph.png>] [48]
-<figuras/metricas.png, id=682, 596.2275pt x 360.34625pt>
+Package pdftex.def Info: figuras/uml-graph.png used on input line 217.
+(pdftex.def)             Requested size: 364.00139pt x 210.22517pt.
+ [46 <./figuras/uml-graph.png>] [47]
+<figuras/metricas.png, id=674, 596.2275pt x 360.34625pt>
 File: figuras/metricas.png Graphic file (type png)
 
 <use figuras/metricas.png>
-Package pdftex.def Info: figuras/metricas.png used on input line 268.
+Package pdftex.def Info: figuras/metricas.png used on input line 266.
 (pdftex.def)             Requested size: 364.00139pt x 219.99234pt.
-) (./resultados.tex [49 <./figuras/metricas.png>]
+ [48]) (./resultados.tex [49 <./figuras/metricas.png>]
 Overfull \hbox (23.29352pt too wide) in paragraph at lines 24--36
  [][] 
  []
@@ -1406,13 +1407,13 @@ Package pdftex.def Info: figuras/q1-time-line.png used on input line 106.
 <figuras/q1-size.png, id=717, 519.9425pt x 321.2pt>
 File: figuras/q1-size.png Graphic file (type png)
  <use figuras/q1-size.png>
-Package pdftex.def Info: figuras/q1-size.png used on input line 118.
+Package pdftex.def Info: figuras/q1-size.png used on input line 117.
 (pdftex.def)             Requested size: 364.00139pt x 224.86298pt.
 
 <figuras/q2-cpu.png, id=719, 499.8675pt x 309.155pt>
 File: figuras/q2-cpu.png Graphic file (type png)
  <use figuras/q2-cpu.png>
-Package pdftex.def Info: figuras/q2-cpu.png used on input line 140.
+Package pdftex.def Info: figuras/q2-cpu.png used on input line 139.
 (pdftex.def)             Requested size: 364.00139pt x 225.13405pt.
 
 [54 <./figuras/q1-size.png (PNG copy)>]
@@ -1420,24 +1421,24 @@ Package pdftex.def Info: figuras/q2-cpu.png used on input line 140.
 File: figuras/q2-memory.png Graphic file (type png)
 
 <use figuras/q2-memory.png>
-Package pdftex.def Info: figuras/q2-memory.png used on input line 154.
+Package pdftex.def Info: figuras/q2-memory.png used on input line 153.
 (pdftex.def)             Requested size: 364.00139pt x 224.78474pt.
  [55 <./figuras/q2-cpu.png (PNG copy)>]
 File: figuras/q1-time.png Graphic file (type png)
 
 <use figuras/q1-time.png>
-Package pdftex.def Info: figuras/q1-time.png used on input line 168.
+Package pdftex.def Info: figuras/q1-time.png used on input line 167.
 (pdftex.def)             Requested size: 364.00139pt x 224.8099pt.
  [56 <./figuras/q2-memory.png (PNG copy)>]
 <figuras/q2-time-line.png, id=737, 602.25pt x 372.39125pt>
 File: figuras/q2-time-line.png Graphic file (type png)
 
 <use figuras/q2-time-line.png>
-Package pdftex.def Info: figuras/q2-time-line.png used on input line 180.
+Package pdftex.def Info: figuras/q2-time-line.png used on input line 179.
 (pdftex.def)             Requested size: 364.00139pt x 225.0843pt.
 File: figuras/q1-size.png Graphic file (type png)
  <use figuras/q1-size.png>
-Package pdftex.def Info: figuras/q1-size.png used on input line 194.
+Package pdftex.def Info: figuras/q1-size.png used on input line 192.
 (pdftex.def)             Requested size: 364.00139pt x 224.86298pt.
  [57 <./figuras/q2-time-line.png (PNG copy)>]) (./conclusao.tex [58] [59
 
@@ -1480,11 +1481,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
 Here is how much of TeX's memory you used:
  15968 strings out of 492995
  233922 string characters out of 6132704
- 566751 words of memory out of 5000000
+ 556703 words of memory out of 5000000
  18756 multiletter control sequences out of 15000+600000
  101581 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,13n,42p,1065b,1828s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,13n,42p,1065b,2350s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
 cal/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
 17/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-d
@@ -1506,7 +1507,7 @@ pe1/public/lm/lmss17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
 /lm/lmss8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx1
 0.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on TCC-IFC.pdf (64 pages, 816913 bytes).
+Output written on TCC-IFC.pdf (64 pages, 817244 bytes).
 PDF statistics:
  1097 PDF objects out of 1200 (max. 8388607)
  960 compressed objects within 10 object streams

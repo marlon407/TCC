@@ -15,9 +15,9 @@
 \contentsline {section}{\numberline {2.1}IPC - Comunica\IeC {\c c}\IeC {\~a}o entre processos}{19}{section.2.1}
 \contentsline {section}{\numberline {2.2}Cliente/Servidor}{20}{section.2.2}
 \contentsline {section}{\numberline {2.3}Aplica\IeC {\c c}\IeC {\~o}es Monol\IeC {\'\i }ticas}{22}{section.2.3}
-\contentsline {section}{\numberline {2.4}SOA - Service Oriented Architecture}{23}{section.2.4}
+\contentsline {section}{\numberline {2.4}SOA - Service Oriented Architecture}{24}{section.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {evolucao}}{26}{chapter.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Evolu\IeC {\c c}\IeC {\~a}o da comunica\IeC {\c c}\IeC {\~a}o entre aplica\IeC {\c c}\IeC {\~o}es}}{26}{chapter.3}
 \contentsline {section}{\numberline {3.1}Remote Procedure Call}{26}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Limita\IeC {\c c}\IeC {\~o}es}{27}{subsection.3.1.1}
 \contentsline {section}{\numberline {3.2}Simple Object Access Protocol}{28}{section.3.2}
@@ -33,12 +33,12 @@
 \contentsline {subsection}{\numberline {3.4.4}Limita\IeC {\c c}\IeC {\~o}es}{38}{subsection.3.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Estudo de Caso}}{39}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hip\IeC {\'o}teses}{41}{section.4.1}
+\contentsline {section}{\numberline {4.1}Hip\IeC {\'o}teses}{40}{section.4.1}
 \contentsline {section}{\numberline {4.2}Ferramentas utilizadas}{41}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Ferramentas servidor}{42}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Ferramentas servidor}{41}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Ambiente}{44}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Detalhes implementa\IeC {\c c}\IeC {\~a}o REST}{44}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Detalhes implementa\IeC {\c c}\IeC {\~a}o GraphQL}{45}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.3}Detalhes da implementa\IeC {\c c}\IeC {\~a}o REST}{44}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Detalhes da implementa\IeC {\c c}\IeC {\~a}o GraphQL}{44}{subsection.4.2.4}
 \contentsline {section}{\numberline {4.3}M\IeC {\'e}tricas}{47}{section.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Resultados}}{50}{chapter.5}
