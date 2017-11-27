@@ -18,7 +18,7 @@ A modelagem da figura \ref{fig:modelagem}, representa o gerenciamento de um arma
 \label{fig:modelagem}
 \end{figure}
 
-Imagine um item de código 22B12, por exemplo, que representa um dado produto X. Este produto é disposto em um \textit{pallet} com capacidade de armazenar 30 unidades do item 22B12. O armazém é composto por 26 prateleiras, sequenciadas de 'A' a 'Z'. Cada prateleira possui 2 linhas de profundidade e 3 níveis de altura. Um \textit{pallet} com o código 001 contém 30 unidade do item 22B12, e precisa ser alocado dentro armazém, para isso é utilizado um sistema de códigos envolvendo as 3 dimensões do armazém.
+Imagine um item de código 22B12, por exemplo, que representa um dado produto X. Este produto é disposto em um \textit{pallet} com capacidade de armazenar 30 unidades do item 22B12. O armazém é composto por 26 prateleiras, sequenciadas de "A" a "Z". Cada prateleira possui 2 linhas de profundidade e 3 níveis de altura. Um \textit{pallet} com o código 001 contém 30 unidades do item 22B12, e precisa ser alocado dentro armazém, para isso é utilizado um sistema de códigos envolvendo as 3 dimensões do armazém.
 
 \begin{figure}[htbp]
 \centering
@@ -34,7 +34,7 @@ Baseado em um sistema de WMS, dois protótipos de APIs serão implementados para
 
 \section{Hipóteses} \label{sechHipóteses}
 
-As hipóteses na diferença de desempenho entre as APIs derivaram dos fundamentos teóricos. Elas baseiam-se no entendimento de que os protocolos utilizados possibilitam a implementação de uma combinação de técnicas afim de afetar positivamento o desempenho da API. Portanto, ambas as implementações devem ter as mesmas propriedades, seguindo suas melhores práticas, modelos de maturidade e documentação.
+As hipóteses na diferença de desempenho entre as APIs derivaram dos fundamentos teóricos. Elas baseiam-se no entendimento de que os protocolos utilizados possibilitam a implementação de uma combinação de técnicas afim de afetar positivamente o desempenho da API. Portanto, ambas as implementações devem ter as mesmas propriedades, seguindo suas melhores práticas, modelos de maturidade e documentação.
 
 As hipóteses deste trabalho são: 
 
@@ -42,7 +42,7 @@ As hipóteses deste trabalho são:
 \item O tamanho da resposta será menor utilizando GraphQL;
 \item O tempo de resposta será menor utilizando GraphQL;
 \item O tempo de utilização da CPU será menor utilizando REST;
-\item O consumo de memória será menor Utilizando REST;
+\item O consumo de memória será menor utilizando REST;
 \end{enumerate}
 
 Com o propósito de validar as hipóteses definidas, foram determinadas duas perguntas que envolvessem todas as entidades. Para cada pergunta existe apenas uma resposta correta e sua lógica é baseada em campos das estruturas de dados de retorno.
@@ -51,7 +51,7 @@ Com o propósito de validar as hipóteses definidas, foram determinadas duas per
 
 \textbf{Questão 2}: O item com o código 22B12 está armazenado em quais endereços?
 
-Desta forma, buscas serão realizadas tanto na API REST quanto na API GraphQL afim de recuperar as informações necessárias para a formulação das respostas. Para realizar estas buscas, medir o desempenho das APIs processando suas respostas e compara-los, algumas ferramentas foram utilizadas durante este trabalho. Estas ferramentas estão descritas na sessão \ref{sec:ferramentas}.
+Desta forma, buscas serão realizadas tanto na API REST quanto na API GraphQL afim de recuperar as informações necessárias para a formulação das respostas. Para realizar estas buscas, medir o desempenho das APIs processando suas respostas e compará-los, algumas ferramentas foram utilizadas durante este trabalho. Estas ferramentas estão descritas na sessão \ref{sec:ferramentas}.
 
 \section{Ferramentas utilizadas} \label{sec:ferramentas}
 
@@ -61,7 +61,7 @@ As APIs foram escritas na linguagem de programação JavaScript, utilizando a es
 
 \subsection{Ferramentas servidor}
 
-Node.js dispõe de inúmeros recursos e ferramentas que possibilitam a construção de APIs. Mesmo assim, o ecosistema de bibliotecas no Node.js conta com ferramentas que simplificam ainda mais a construção de aplicações para servidores Web. Abaixo são citadas algumas bibliotecas que foram utilizadas para desenvolver tanto a API REST quando a API GraphQL. 
+Node.js dispõe de inúmeros recursos e ferramentas que possibilitam a construção de APIs. Mesmo assim, o ecosistema de bibliotecas no Node.js conta com ferramentas que simplificam ainda mais a construção de aplicações para servidores Web. Abaixo são citadas algumas bibliotecas que foram utilizadas para desenvolver tanto a API REST quanto a API GraphQL. 
 
 \subsubsection*{Express.js}
 
@@ -114,13 +114,13 @@ MongoDB é um banco de dados \textit{open source} que utilizada um modelo de dad
 
 \subsubsection*{Ferramentas clientes}
 
-Algumas ferramentas foram utilizadas para se comportaram como clientes das APIs construídas, e foram responsáveis por executar as consultas nas APIs. O foco deste trabalho não é em cima das aplicação clientes, entretanto é importante conhecê-las pois são elas que invocarão as consultas como também é através delas que algumas métricas serão extraídas. O software Postman será usado fundamentalmente para a execução das buscas nas APIs.
+Algumas ferramentas foram utilizadas para se comportaram como clientes das APIs construídas, e foram responsáveis por executar as consultas nas APIs. O foco deste trabalho não é em cima das aplicações clientes, entretanto é importante conhecê-las pois são elas que invocarão as consultas, como também é através delas que algumas métricas serão extraídas. O software Postman será usado fundamentalmente para a execução das buscas nas APIs.
 
 O Postman é uma cadeia completa de ferramentas para desenvolvedores de APIs. Ele é uma ferramenta elegante e flexível usada para construir softwares conectados via APIs, de forma rápida, fácil e precisa.
 
-Ele funciona como uma emulador para execução de consultas em APIs. Com ele é possível executar buscas utilizando qualquer dos métodos do protocolo HTTP, possibilitando personalização tando do corpo quanto dos \textit{headers} das requisições, se preciso. Junto com a resposta da consulta, o Postman traz também informações extremamente relevantes, como tempo que a API levou para responder e o tamanho em bytes contido na resposta. Estas funcionalidades, aliadas com a opção de executar um número personalizável de iterações para cada requisição, será a base para avaliar o desempenho das APIs REST e GraphQL.
+Ele funciona como um emulador para execução de consultas em APIs. Com ele é possível executar buscas utilizando qualquer dos métodos do protocolo HTTP, possibilitando personalização tanto do corpo quanto dos \textit{headers} das requisições, se preciso. Junto com a resposta da consulta, o Postman traz também informações extremamente relevantes, como tempo que a API levou para responder e o tamanho em bytes contido na resposta. Estas funcionalidades, aliadas com a opção de executar um número personalizável de iterações para cada requisição, será a base para avaliar o desempenho das APIs REST e GraphQL.
 
-\subsection{Ambiente}
+\section{Ambiente}
 
 A configuração da máquina utilizada para o teste de desempenho local é descrita na Tabela \ref{tab:computers}. As APIs REST e GraphQL foram construídas para responder às requisições recebidas, retornando respostas no formato JSON, a fim de gerar um fator de medição de desempenho da execução dos testes. Para a execução do experimento, apenas os softwares necessários estavam ativos. Portanto, ao executar as buscas, o servidor REST ou GraphQL estará ativo, além do servidor de banco de dados MongoDB, e a aplicação cliente Postman.
 
@@ -143,7 +143,7 @@ A configuração da máquina utilizada para o teste de desempenho local é descr
 
 O servidor REST consiste em um servidor HTTP escrito em Node.js que recebe as requisições HTTP. Dependendo do método e URL da requisição, roteia-o para o \textit{controller} correspondente. O \textit{controller} faz a consulta na base de dados do MongoDB. Ao realizar o gerenciamento das rotas, o servidor realiza os devidos registros de latência. Após a consulta, a resposta desejada é enviada de volta para o cliente. Esse fluxo acontece em qualquer cenário, independente do número de requisições desejadas.
 
-No presente trabalho, como o objetivo é apenas medir o desempenho de consultas utilizando REST, todas as requisições utilizarão o método HTTP GET. Para as medições da API REST, a aplicação cliente enviará, por exemplo, uma requisição para recuperar todos os itens cadastrados. Como pode ser observado da tabela \ref{tab:rest-url}, é necessário executar uma busca do tipo \textup{/item}, que será interpretada pelo servidor REST, identificando qual é a rota responsável por essa requisição. O servidor consultará a base de dados retornando uma resposta no formato JSON, com todos os itens cadastrados na API. Esse fluxo é ilustrado na figura \ref{fig:rest-uml}
+No presente trabalho, como o objetivo é apenas medir o desempenho de consultas utilizando REST, todas as requisições utilizarão o método HTTP GET. Para as medições da API REST, a aplicação cliente enviará, por exemplo, uma requisição para recuperar todos os itens cadastrados. Como pode ser observado da tabela \ref{tab:rest-url}, é necessário executar uma busca do tipo \textup{/item}, que será interpretada pelo servidor REST, identificando qual é a rota responsável por essa requisição. O servidor consultará a base de dados retornando uma resposta no formato JSON, com todos os itens cadastrados na API. Esse fluxo é ilustrado na figura \ref{fig:rest-uml}.
 
 \begin{table}[htbp]
     \centering
@@ -188,7 +188,7 @@ query RootQuery {
 
 \end{lstlisting}
 
- A consulta ilustrada do trecho de código \ref{lst:query-graph} solicita ao servidor GraphQL a lista a de todos os itens cadastrados na base de dados. Note no trecho de código \ref{lst:response-graph} que a resposta contém apenas os atributos que a consulta requisitou, ou seja, o \textup{id} e a descrição dos itens:
+ A consulta ilustrada do trecho de código \ref{lst:query-graph} solicita ao servidor GraphQL a lista de todos os itens cadastrados na base de dados. Note no trecho de código \ref{lst:response-graph} que a resposta contém apenas os atributos que a consulta requisitou, ou seja, o \textup{id} e a descrição dos itens:
 
 \begin{lstlisting}[escapeinside={(*}{*)}, numbers=left, caption=Listagem dos itens, label=lst:response-graph, language=JavaScript]]
 {
@@ -210,7 +210,7 @@ query RootQuery {
 
 \end{lstlisting}
 
-Para recuperar alguma informação na API GraphQL, é necessária realizar uma requisição utilizando o método HTTP GET, passando como parâmetro a consulta desejada. A API irá então processar a consulta, e retornar um objeto JSON como a resposta da requisição. Detalhes deste fluxo estão ilustrados na figura \ref{fig:graph-uml}
+Para recuperar alguma informação na API GraphQL, é necessário realizar uma requisição utilizando o método HTTP GET, passando como parâmetro a consulta desejada. A API irá então processar a consulta, e retornar um objeto JSON como a resposta da requisição. Detalhes deste fluxo estão ilustrados na figura \ref{fig:graph-uml}.
 
 \begin{figure}[htbp]
 \centering
@@ -227,7 +227,7 @@ Para o presente trabalho, serão utilizadas quatro métricas diferentes: O tempo
 
 \subsection*{Tempo de utilização da CPU}
 
-O tempo de utilização da CPU é a quantidade de tempo para o qual uma unidade de processamento central (CPU) foi usada para processar instruções de um programa de computador ou sistema operacional
+O tempo de utilização da CPU é a quantidade de tempo para o qual uma unidade de processamento central (CPU) foi usada para processar instruções de um programa de computador ou sistema operacional.
 
 Esta métrica será extraída através do módulo \textit{process} presente no \textit{core} do Node.js. A função utilizada será a \textit{process.cpuUsage()} que trás como resultado o tempo gasto por um processo dentro da CPU, calculado pelo sistema operacional. A seguinte fórmula será usada para calcular esta métrica: 
 
@@ -237,7 +237,7 @@ Onde $n$ é o número de CPUs e $\Delta cpu$ é o tempo de uso de CPU pela aplic
 
 \subsection*{Consumo de memória}
 
-O consumo de memória, junto com a utilização da CPU, é uma das medidas mais importantes pois são nesses pontos que observamos o verdadeiro custo computacional por trás da escolha da ferramenta. O consumo de memória é a quantidade de em bytes utilizada pela API, e será medido através da soma da utilização de memória em cada consulta necessária para atender os cenários propostos. A seguinte fórmula será usada para calcular esta métrica: 
+O consumo de memória, junto com a utilização da CPU, é uma das medidas mais importantes pois são nesses pontos que observamos o verdadeiro custo computacional por trás da escolha da ferramenta. O consumo de memória é a quantidade em bytes utilizada pela API, e será medido através da soma da utilização de memória em cada consulta necessária para atender os cenários propostos. A seguinte fórmula será usada para calcular esta métrica: 
 
 $$ Mem = \frac{m}{M}*100 $$
 
@@ -257,7 +257,7 @@ O tamanho da resposta será calculada baseado no tamanho em \textit{bytes} da re
 
 $$ Tam = \sum\limits_{1}^{n} ti $$
 
-Onde $ti$ é o tamanha da resposta de uma requisição, d $n$ é o número total de requisições. Nos resultados, esta métrica será apresentada na unidade de kilobytes.
+Onde $ti$ é o tamanho da resposta de uma requisição, e $n$ é o número total de requisições. Nos resultados, esta métrica será apresentada na unidade de kilobytes.
 
 A figura \ref{fig:my-metrics} mostra como as métricas serão extraídas. A utilização do CPU e o consumo de memória serão medidas utilizando ferramentas do próprio Node.js. Ambas serão medidas via \textit{logs} no código fonte dos protótipos implementados. O tamanho da resposta e o tempo de resposta serão extraídos utilizando a ferramenta Postman, ao final de cada consulta.
 
@@ -266,10 +266,9 @@ A figura \ref{fig:my-metrics} mostra como as métricas serão extraídas. A util
 \includegraphics[width=0.8\textwidth]{figuras/metricas.png}
 \caption{Arquitetura das APIs e diferentes pontos de medidas}
 \label{fig:my-metrics}
-\author{fonte: Autor}
 \end{figure}
 
-Afim de obter resultados mais precisos, serão feitas diversas iterações para medição de cada umas das métricas. A média destas medições será calculada através da segunte fórmula: 
+Afim de obter resultados mais precisos, serão feitas diversas iterações para medição de cada umas das métricas. A média destas medições será calculada através da seguinte fórmula: 
 
 $$ Avg = \frac{\sum\limits_{1}^{n} X}{n} $$
 

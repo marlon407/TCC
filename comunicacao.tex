@@ -7,7 +7,7 @@
 
 Neste capítulo serão apresentados alguns dos principais protocolos para a comunicação entre aplicações. Serão conduzidas breves abordagens dos protocolos RPC e SOAP, que hoje vêm perdendo espaço no mercado, mas tiveram um papel muito importante para a evolução dos sistemas baseados em SOA. Em seguida, será mostrada uma descrição mais detalhada dos modelos de comunicação REST e GraphQL, uma vez que estes são os dois modelos a serem seguidos no estudo de caso.
 
-Serão apresentados as principais características desses protocolos, como também as suas limitações. Nenhum protocolo pode ser descardado na hora de tomada de decisão sobre qual modelo utilizar para a comunicação entre clientes e serviços remotos ou APIs Web. Todos eles possuem limitações, porém cumprem bem o papel para que foram desenhados e é possível notar como eles evoluíram à medida que novas demandas se tornaram necessárias no desenvolvimento de \textit{software}.
+Serão apresentados as principais características desses protocolos, como também as suas limitações. Nenhum protocolo pode ser descartado na hora de tomada de decisão sobre qual modelo utilizar para a comunicação entre clientes e serviços remotos ou APIs Web. Todos eles possuem limitações, porém cumprem bem o papel para que foram desenhados e é possível notar como eles evoluíram à medida que novas demandas se tornaram necessárias no desenvolvimento de \textit{software}.
 
 \section{Remote Procedure Call}\label{sec:rpc}
 
@@ -20,14 +20,14 @@ Remote Procedure Call (RPC), ou Chamada de Procedimento Remoto, é um mecanismo 
     \label{fig:rpc}
 \end{figure}
 
-Conforme \citeonline{van2007sistemas} assinala, a ideia fundamental da RPC é fazer com que a chamada de procedimento remoto pareça o mais possível uma chamada local. Em outras palavras, é necessário que RPC seja transparente, fazendo com que o procedimento cliente não deva estar ciente que o procedimento chamado está executando em uma máquina diferente ou vice e versa.
+Conforme \citeonline{van2007sistemas} assinalam, a ideia fundamental da RPC é fazer com que a chamada de procedimento remoto pareça o mais possível uma chamada local. Em outras palavras, é necessário que RPC seja transparente, fazendo com que o procedimento cliente não deva estar ciente que o procedimento chamado está executando em uma máquina diferente ou vice e versa.
 
 Ainda, segundo \citeonline{van2007sistemas}, há alguns desafios importantes a serem considerados ao utilizar as chamadas remotas em comparação as chamadas locais. Alguns destes desafios são:
 
 \begin{enumerate}[label=\alph*)]
     \item o procedimento chamado e o procedimento cliente rodam em máquinas diferentes e são executados em espaços de endereço diferentes, o que pode causar complicação ao implementar a RPC; 
 
-\item é necessários a passagem de parâmetros e resultados através da rede, o que pode ser complicado, em especial se as máquinas não forem idênticas;
+\item é necessário a passagem de parâmetros e resultados através da rede, o que pode ser complicado, em especial se as máquinas não forem idênticas;
 
 \item qualquer uma das máquinas pode falhar e cada uma das possíveis falhas causa problemas diferentes;
 
@@ -48,7 +48,7 @@ Diferentes implementações de RPC são, geralmente, incompatíveis. Assim sendo
 
 \item \textbf{Falta de paralelismo}: com RPC, em um determinado momento, ou o servidor ou o cliente está ativo. Como cliente e servidor são co-rotinas, a prática de paralelismo presente em outros modelos de comunicação não é possível de ser implementada.
 
-\item \textbf{Ferramentas de padronização}: as ferramentas padronizadas tornam-se muito mais difíceis de construir, devido ao grande número de implementações diferentes. Construir estas ferramentas geralmente requer o redesenho de convenções de tipo HTTP baseado sistema RPC escolhido, por consequência da especialidade de cada sistema RPC.
+\item \textbf{Ferramentas de padronização}: as ferramentas padronizadas tornam-se muito mais difíceis de construir, devido ao grande número de implementações diferentes. Construir estas ferramentas geralmente requer o redesenho de convenções de tipo HTTP baseadon no sistema RPC escolhido, por consequência da especialidade de cada sistema RPC.
 
 \end{enumerate}
 
@@ -57,7 +57,7 @@ Diferentes implementações de RPC são, geralmente, incompatíveis. Assim sendo
 Simple Object Access Protocol (SOAP) é um protocolo para troca de mensagens em ambientes descentralizados e distribuídos. \citeonline{soap2000} definem o SOAP como 
 um protocolo baseado em XML que consiste em três partes: um envelope que defina um \textit{framework} para descrever o conteúdo das mensagens trafegadas e como processar este conteúdo, um conjunto de regras de codificação para expressar instâncias de tipos de dados definidos por uma aplicação, e uma convenção para representar chamadas remotas e suas respostas.
 
-\citeonline{soap-tech-target} argumenta que o SOAP pode ser considerado parecido com as Chamadas de Procedimento Remoto (RPC), porém eliminando algumas das complexidades frequentemente encontradas nas implementações de RPCs. Utilizando o SOAP, é possível chamar serviços de outras aplicações que estão sendo executadas em qualquer \textit{hardware}, independente do sistemas operacional ou da linguagem de programação.
+\citeonline{soap-tech-target} argumenta que o SOAP pode ser considerado parecido com as Chamadas de Procedimento Remoto (RPC), porém eliminando algumas das complexidades frequentemente encontradas nas implementações de RPCs. Utilizando o SOAP, é possível chamar serviços de outras aplicações que estão sendo executadas em qualquer \textit{hardware}, independente do sistema operacional ou da linguagem de programação.
 
 Embora a especificação do SOAP tenha evoluído para longe da necessidade de acessar objetos, como ocorre com as Chamadas de Procedimentos Remoto, existem ainda convenções para o encapsulamento e o envio de chamadas RPC utilizando uma representação uniforme de chamadas e repostas. Definindo um padrão para o mapeamento das chamadas RPC para SOAP, torna-se possível para infraestrutura traduzir as invocações de serviços em mensagens com o protocolo SOAP em tempo de execução, sem a necessidade de redesenhar todo o serviço Web presente na plataforma \cite{soap-microsoft}.
 
@@ -105,7 +105,7 @@ Como é possível notar, as maiores limitações encontradas na utilização do 
 
 REpresentational State Transfer (REST) é um \textit{design} de arquitetura baseado em um conjunto de princípios que descrevem como os recursos em rede são definidos e abordados. Estes princípios foram descritos pela primeira vez em 2000 por Roy Fielding, como parte de sua dissertação de doutorado \cite{rest-intro}.
 
-\citeonline{programmableweb-rest-losing} assinala que a adoção do REST como o método predominante para construir APIs públicas tem ofuscado qualquer outra tecnologia ou abordagem nos últimos anos. Embora várias alternativas (principalmente SOAP) ainda estejam presentes no mercado, adeptos do modelo SOA, descrito da seção 2.4,  para construção de aplicações tomaram uma posição definitiva contra eles e optaram por REST como sua abordagem e JSON como seu formato de mensagem .
+\citeonline{programmableweb-rest-losing} assinala que a adoção do REST como o método predominante para construir APIs públicas tem ofuscado qualquer outra tecnologia ou abordagem nos últimos anos. Embora várias alternativas (principalmente SOAP) ainda estejam presentes no mercado, adeptos do modelo SOA, descrito da seção 2.4,  para construção de aplicações tomaram uma posição definitiva contra elas e optaram por REST como sua abordagem e JSON como seu formato de mensagem.
 
 Segundo \citeonline{rest-book-intro:61}, REST é um padrão de operações de recursos que emergiu como a principal alternativa ao SOAP para o \textit{design} de serviços em aplicativos Web 2.0. Considerando que a abordagem tradicional baseada em SOAP para \textit{Web Services} usa objetos remotos completos com invocação de método remoto e funcionalidade encapsulada, o REST trata apenas de estruturas de dados e da transferência de seu estado. A simplicidade do REST, juntamente com seu ajuste natural sobre o HTTP, contribuiu para o seu \textit{status} como um método de escolha para aplicativos da Web 2.0 expondo seus dados.
 
@@ -119,7 +119,7 @@ A primeira restrição estabelecida é a da arquitetura \textbf{cliente-servidor
 
 Em seguida, foi adicionada ao REST uma restrição à interação cliente-servidor: a comunicação deve ser totalmente \textbf{stateless}, ou seja, independente de estado, de modo que cada solicitação do cliente deve conter todas as informações necessárias para entender o pedido e não pode tirar proveito de nenhum contexto armazenado no servidor. O estado da sessão é, portanto, mantido inteiramente no cliente \cite{rest-thesis}.
 
-Essa restrição induz as propriedades de visibilidade, confiabilidade e escalabilidade. A visibilidade é melhorada porque um sistema de monitoramento não precisa olhar além de um único dado de solicitação para determinar a natureza completa da solicitação. A confiabilidade é melhorada porque facilita a tarefa de recuperação de falhas parciais. A escalabilidade é melhorada porque não precisar armazenar o estado das solicitações permite que o servidor rapidamente libere recursos, simplificando a implementação.
+Essa restrição induz as propriedades de visibilidade, confiabilidade e escalabilidade. A visibilidade é melhorada porque um sistema de monitoramento não precisa olhar além de um único dado de solicitação para determinar a natureza completa da solicitação. A confiabilidade é melhorada porque facilita a tarefa de recuperação de falhas parciais. A escalabilidade é melhorada porque não precisa armazenar o estado das solicitações, e permite que o servidor libere rapidamente recursos, simplificando a implementação.
 
 A restrição de \textbf{cache} foi criada para melhorar a eficiência da rede. Ela exige que os dados dentro de uma resposta a uma solicitação sejam rotulados de forma implícita ou explícita como cacheáveis ou não armazenáveis em cache. Se uma resposta for armazenada em cache, um cache do cliente terá o direito de reutilizar esses dados de resposta para solicitações equivalentes posteriores.
 
@@ -150,7 +150,7 @@ Os níveis do modelo de maturidade de Richardson são:
 
 \begin{enumerate}[label=\alph*)]
 
-\item Nível 0: O ponto de partida para o modelo é usar HTTP como um sistema de transporte para iterações remotas, mas sem usar nenhum dos mecanismos da web. Essencialmente, o que está sendo feito é utilizar o HTTP como um mecanismo de tunelamento para seu próprio mecanismo de interação remota, geralmente com base em Chamadas de Procedimento Remotas. 
+\item Nível 0: O ponto de partida para o modelo é usar HTTP como um sistema de transporte para interações remotas, mas sem usar nenhum dos mecanismos da web. Essencialmente, o que está sendo feito é utilizar o HTTP como um mecanismo de tunelamento para seu próprio mecanismo de interação remota, geralmente com base em Chamadas de Procedimento Remotas. 
 
 É como se estivesse sendo chamado funções, porém através do uso do HTTP. Todos os serviços são centralizados em um único \textit{endpoint}, ou seja, todas as solicitações são feitas em uma única URI.
 
@@ -158,7 +158,7 @@ Os níveis do modelo de maturidade de Richardson são:
 
 \item Nível 2: Esse nível indica que a API deve usar as propriedades do protocolo para lidar com escalabilidade e falhas. Não é recomendado que se use um único método POST para todas as chamadas, mas faça uso do GET quando estiver solicitando recursos e use o método DELETE quando desejar excluir recursos. Além disso, o uso dos códigos de resposta do protocolo de aplicação também é recomendado. Não deve ser usado, por exemplo, o código 200 (OK) quando algo der errado.
 
-\item Nível 3: O nível três de maturidade faz uso de todos os três fatores, isto é, URIs, métodos HTTP e HATEOAS. Esse é o nível em que a maioria das APIs menos implementam e pois não seguem o princípio de HATEOAS.
+\item Nível 3: O nível três de maturidade faz uso de todos os três fatores, isto é, URIs, métodos HTTP e HATEOAS. Esse é o nível em que a maioria das APIs menos implementam, pois não seguem o princípio de HATEOAS.
 
 \end{enumerate}
 
@@ -172,7 +172,7 @@ Contudo, com a evolução e o aumento da complexidade das APIs, a comunicação 
 
 \begin{enumerate}[label=\alph*)]
 
-\item a necessidade de executar múltiplas requisições entre o cliente e o servidor a fim de obter objetos complexos e com atributos aninhados  Para aplicações móveis operando em condições variáveis de rede, essas múltiplas viagens de ida e volta são indesejáveis, pois geram atrasos e maior tráfego na rede \cite{graphQl-overview};
+\item a necessidade de executar múltiplas requisições entre o cliente e o servidor a fim de obter objetos complexos e com atributos aninhados. Para aplicações móveis operando em condições variáveis de rede, essas múltiplas viagens de ida e volta são indesejáveis, pois geram atrasos e maior tráfego na rede \cite{graphQl-overview};
 
 \item a prática de \textit{over-fetching}, ou seja, quando o cliente busca alguma informação do servidor e a resposta contém mais informação que o cliente precisa. Esse tipo de problema acarreta no uso desnecessário de recursos de comunicação  \cite{efficient-data-communication};
 
@@ -198,7 +198,7 @@ Os principais problemas que essa arquitetura ajuda a resolver são:
 
 O presente trabalho irá apenas focar no GraphQL como representante das arquiteturas baseadas em JSON/Graph.
 
-GraphQL é uma linguagem de consulta, criada pelo Facebook em 2012, que fornece uma interface comum entre o cliente e o servidor para manipulação e busca de dados. GraphQL utiliza de um sistemas chamado \textit{cliente-specified queries}, onde o formato de resposta de uma requisição é definida pelo cliente. \citeonline{graphQl-overview} afirma que uma vez que a estrutura de dados não é codificada, como nas APIs tradicionais, a consulta de dados do servidor se torna mais eficiente para o cliente.
+GraphQL é uma linguagem de consulta, criada pelo Facebook em 2012, que fornece uma interface comum entre o cliente e o servidor para manipulação e busca de dados. GraphQL utiliza um sistemas chamado \textit{cliente-specified queries}, onde o formato de resposta de uma requisição é definida pelo cliente. \citeonline{graphQl-overview} afirma que uma vez que a estrutura de dados não é codificada, como nas APIs tradicionais, a consulta de dados do servidor se torna mais eficiente para o cliente.
 
 Consultas utilizando GraphQL sempre retornam apenas o que foi pré definido pela requisição, fazendo suas respostas sempre serem previsíveis. As consultas com GraphQL acessam não apenas as propriedades de um único recurso, mas também seguem as referências entre eles. Enquanto as APIs REST típicas exigem o carregamento de múltiplas URLs, as APIs GraphQL obtêm todos os dados que precisam em uma única requisição.
 
@@ -246,10 +246,10 @@ De acordo com \citeonline{graph-cache}, consultas de dados através da internet 
 
 Em uma API baseada em \textit{end-points}, os clientes podem usar o armazenamento em cache do protocolo HTTP, ilustrado na figura \ref{fig:cache-http} para evitar buscas desnecessárias identificando quando dois recursos são iguais. A URL nessas APIs é o identificador globalmente exclusivo que o cliente pode aproveitar para criar um cache. No GraphQL, porém, não existe uma primitiva semelhante a uma URL que forneça esse identificador globalmente exclusivo para um determinado objeto. Entretanto, existem várias práticas que podem ser aplicadas a um servidor GraphQL para atingir o mesmo objetivo.
 
-Um padrão possível para isso é reservar um campo, como \textup{id}, para ser o identificador globalmente exclusivo. Da mesma forma que os URLs de uma API baseada em recursos fornecem uma chave globalmente exclusiva, o campo \textup{id} neste sistema fornece uma chave globalmente única. Outra abordagem possível funcionaria de forma semelhante ao padrão usada nas APIs baseadas em \textit{end-points}. O texto da consulta em si pode ser usado como identificador globalmente exclusivo. 
+Um padrão possível para isso é reservar um campo, como \textup{id}, para ser o identificador globalmente exclusivo. Da mesma forma que os URLs de uma API baseada em recursos fornecem uma chave globalmente exclusiva, o campo \textup{id} neste sistema fornece uma chave globalmente única. Outra abordagem possível funcionaria de forma semelhante ao padrão usado nas APIs baseadas em \textit{end-points}. O texto da consulta em si pode ser usado como identificador globalmente exclusivo. 
 
 \subsection{Limitações}
 
 Segundo aponta \citeonline{graph-limitation}, uma ameaça importante que o GraphQL facilita são os ataques de negação de serviço. Um servidor GraphQL pode ser atacado com consultas excessivamente complexas que irão consumir todos os recursos do servidor. Esse tipo de ataque não é específico do GraphQL, mas é preciso um cuidado redobrado para evitá-los.
 
-Há, entretanto, alguns procedimento que, se implementados, podem mitigar a ameaça de negação de serviço. É possível fazer uma análise de custos na consulta com antecedência e impor determinado limite na quantidade de dados que uma requisição pode consumir. Também é possível implementar um tempo limite, para que requisições que levam muito tempo para serem resolvidas, sejam excluídas da fila de execução.
+Há, entretanto, alguns procedimentos que, se implementados, podem mitigar a ameaça de negação de serviço. É possível fazer uma análise de custos na consulta com antecedência e impor determinado limite na quantidade de dados que uma requisição pode consumir. Também é possível implementar um tempo limite, para que requisições que levam muito tempo para serem resolvidas, sejam excluídas da fila de execução.
