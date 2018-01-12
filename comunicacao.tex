@@ -44,7 +44,7 @@ Diferentes implementações de RPC são, geralmente, incompatíveis. Assim sendo
 
 \begin{enumerate}[label=\alph*)]
 
-\item \textbf{Organização dos parâmetros}: para organizar os parâmetros, o cliente precisa conhecer a quantidade e a tipagem exata dos parâmetros. Como não existe um padrão bem definido, a estruturação dos parâmetros podem variar entre diferentes implementações.
+\item \textbf{Organização dos parâmetros}: para organizar os parâmetros, o cliente precisa conhecer a quantidade e a tipagem exata dos parâmetros. Como não existe um padrão bem definido, a estruturação dos parâmetros pode variar entre diferentes implementações.
 
 \item \textbf{Falta de paralelismo}: com RPC, em um determinado momento, ou o servidor ou o cliente está ativo. Como cliente e servidor são co-rotinas, a prática de paralelismo presente em outros modelos de comunicação não é possível de ser implementada.
 
@@ -103,7 +103,7 @@ Como é possível notar, as maiores limitações encontradas na utilização do 
 
 \section{REpresentational State Transfer}\label{sec:rest}
 
-REpresentational State Transfer (REST) é um \textit{design} de arquitetura baseado em um conjunto de princípios que descrevem como os recursos em rede são definidos e abordados. Estes princípios foram descritos pela primeira vez em 2000 por Roy Fielding, como parte de sua dissertação de doutorado \cite{rest-intro}.
+\textit{REpresentational State Transfer} (REST) é um \textit{design} de arquitetura baseado em um conjunto de princípios que descrevem como os recursos em rede são definidos e abordados. Estes princípios foram descritos pela primeira vez em 2000 por Roy Fielding, como parte de sua dissertação de doutorado \cite{rest-intro}.
 
 \citeonline{programmableweb-rest-losing} assinala que a adoção do REST como o método predominante para construir APIs públicas tem ofuscado qualquer outra tecnologia ou abordagem nos últimos anos. Embora várias alternativas (principalmente SOAP) ainda estejam presentes no mercado, adeptos do modelo SOA, descrito da seção 2.4,  para construção de aplicações tomaram uma posição definitiva contra elas e optaram por REST como sua abordagem e JSON como seu formato de mensagem.
 
@@ -113,7 +113,7 @@ Segundo \citeonline{rest-book-intro:61}, REST é um padrão de operações de re
 
 As restrições do REST são regras desenhadas para estabelecer as características distintas da arquitetura REST. Cada restrição é uma decisão de projeto pré-determinada que pode ter impactos positivos e negativos. A intenção é que os aspectos positivos de cada restrição equilibrem os negativos para produzir uma arquitetura geral que se assemelhe à Web.
 
-Uma arquitetura que elimina uma das restrições de \textbf{cliente/servidor}, \textbf{stateless}, \textbf{cache}, \textbf{interface uniforme}, \textbf{sistemas em camadas} ou \textbf{código por demanda}, geralmente é considerada como não mais conforme ao REST. Isso exige que as decisões sejam tomadas para entender os potenciais \textit{trade-offs} quando se desviam deliberadamente da aplicação de restrições REST. 
+Uma arquitetura que elimina uma das restrições de \textbf{cliente/servidor}, \textbf{stateless}, \textbf{cache}, \textbf{interface uniforme}, \textbf{sistemas em camadas} ou \textbf{código por demanda}, geralmente é considerada como não mais conforme ao REST. Isso exige que as decisões sejam tomadas para entender os potenciais \textit{trade-offs}\footnote{Situações de escolha entre opções conflitantes} quando se desviam deliberadamente da aplicação de restrições REST. 
 
 A primeira restrição estabelecida é a da arquitetura \textbf{cliente-servidor}, descrita na Seção 2.2. A separação de responsabilidades é o princípio por trás das restrições cliente-servidor. Ao separar as responsabilidades da interface do usuário com as responsabilidades de armazenamento de dados, é melhorada a portabilidade da interface do usuário em várias plataformas e a escalabilidade, simplificando os componentes do servidor. Talvez, o mais importante para a Web, no entanto, é que a separação permite que os componentes evoluam de forma independente, apoiando assim o requisito de escalabilidade da Internet de múltiplos domínios organizacionais \cite{rest-thesis}
 
@@ -131,7 +131,7 @@ Para obter esta interface uniforme, são necessárias várias restrições arqui
 
 A fim de melhorar o comportamento dos requisitos de escalonamento, o REST também implementa restrições de \textbf{sistema em camadas}. O sistema em camadas permite que uma arquitetura seja composta de camadas hierárquicas ao restringir o comportamento dos componentes, de modo que cada componente não possa acessar além da camada imediata com a qual eles estão interagindo. Ao restringir o conhecimento do sistema a uma única camada, colocamos um limite na complexidade geral do sistema e promovemos a independência do componentes. As camadas podem ser usadas para encapsular serviços legados e para proteger novos serviços de clientes legados, simplificando componentes e movendo funcionalidades raramente usadas para um intermediário compartilhado. Os intermediários também podem ser usados para melhorar a escalabilidade do sistema ao permitir o balanceamento de carga de serviços em várias redes e processadores.
 
-A principal desvantagem dos sistemas em camadas é que eles adicionam sobrecarga e latência ao processamento de dados, reduzindo o desempenho perceptível pelo usuário. Para um sistema baseado em rede que suporta restrições de cache, isso pode ser compensado pelos benefícios do armazenamento em cache compartilhado em intermediários.
+\citeonline{rest-thesis} destaca que a principal desvantagem dos sistemas em camadas é que eles adicionam sobrecarga e latência ao processamento de dados, reduzindo o desempenho perceptível pelo usuário. Para um sistema baseado em rede que suporta restrições de cache, isso pode ser compensado pelos benefícios do armazenamento em cache compartilhado em intermediários.
 
 A última restrição que o REST implementa é a restrição de \textbf{código por demanda}. O REST permite que a funcionalidade do cliente seja estendida baixando e executando o código na forma de \textit{applets} ou \textit{scripts}. Isso simplifica os clientes, reduzindo o número de recursos necessários para serem pré-implementados. Permitir que os recursos sejam baixados após a implantação melhora a extensibilidade do sistema, no entanto, reduz a visibilidade e, portanto, é apenas uma restrição opcional dentro do REST.
 
@@ -152,7 +152,7 @@ Os níveis do modelo de maturidade de Richardson são:
 
 \item Nível 0: O ponto de partida para o modelo é usar HTTP como um sistema de transporte para interações remotas, mas sem usar nenhum dos mecanismos da web. Essencialmente, o que está sendo feito é utilizar o HTTP como um mecanismo de tunelamento para seu próprio mecanismo de interação remota, geralmente com base em Chamadas de Procedimento Remotas. 
 
-É como se estivesse sendo chamado funções, porém através do uso do HTTP. Todos os serviços são centralizados em um único \textit{endpoint}, ou seja, todas as solicitações são feitas em uma única URI.
+É como se estivessem sendo chamadas funções, porém através do uso do HTTP. Todos os serviços são centralizados em um único \textit{endpoint}, ou seja, todas as solicitações são feitas em uma única URI.
 
 \item Nível 1: Quando uma API faz a distinção entre recursos diferentes, pode se considerar que atingiu o nível 1. Esse nível usa vários URIs, em que cada URI é o ponto de entrada para um recurso específico. Ainda assim, esse nível usa apenas um único método, como o POST.
 
@@ -188,7 +188,7 @@ Os principais problemas que essa arquitetura ajuda a resolver são:
 
 \begin{enumerate}[label=\alph*)]
 
-\item a dependência das aplicações cliente nos servidores, eliminando a necessidade do servidor de ter que manipular as informações ou o tamanho da resposta; 
+\item a dependência das aplicações clientes nos servidores, eliminando a necessidade do servidor de ter que manipular as informações ou o tamanho da resposta; 
 
 \item a necessidade de executar diversas requisições para acessar os dados exigidos por uma \textit{view};
 
@@ -196,9 +196,9 @@ Os principais problemas que essa arquitetura ajuda a resolver são:
 
 \end{enumerate}
 
-O presente trabalho irá apenas focar no GraphQL como representante das arquiteturas baseadas em JSON/Graph.
+O presente trabalho foca apenas no GraphQL como representante das arquiteturas baseadas em JSON/Graph.
 
-GraphQL é uma linguagem de consulta, criada pelo Facebook em 2012, que fornece uma interface comum entre o cliente e o servidor para manipulação e busca de dados. GraphQL utiliza um sistemas chamado \textit{cliente-specified queries}, onde o formato de resposta de uma requisição é definida pelo cliente. \citeonline{graphQl-overview} afirma que uma vez que a estrutura de dados não é codificada, como nas APIs tradicionais, a consulta de dados do servidor se torna mais eficiente para o cliente.
+GraphQL é uma linguagem de consulta, criada pelo Facebook em 2012, que fornece uma interface comum entre o cliente e o servidor para manipulação e busca de dados. GraphQL utiliza um sistema chamado \textit{client-specified queries}, onde o formato de resposta de uma requisição é definida pelo cliente. \citeonline{graphQl-overview} afirma que uma vez que a estrutura de dados não é codificada, como nas APIs tradicionais, a consulta de dados do servidor se torna mais eficiente para o cliente.
 
 Consultas utilizando GraphQL sempre retornam apenas o que foi pré definido pela requisição, fazendo suas respostas sempre serem previsíveis. As consultas com GraphQL acessam não apenas as propriedades de um único recurso, mas também seguem as referências entre eles. Enquanto as APIs REST típicas exigem o carregamento de múltiplas URLs, as APIs GraphQL obtêm todos os dados que precisam em uma única requisição.
 
@@ -226,7 +226,7 @@ O sistema de tipos do GraphQL descreve as capacidades de um servidor GraphQL e �
 
 Cada servidor GraphQL define um conjunto de tipos que descrevem completamente o conjunto de dados possíveis que você pode consultar nesse servidor. Então, quando as consultas chegam, elas são validadas e executadas contra os \textit{schemas}. O \textit{schema} descreverá quais campos o servidor pode responder e quais tipos de objetos estarão contidos nas respostas. A informação de tipo é muito importante para o GraphQL e o cliente pode assumir de forma segura que o servidor retornará tipos consistentes de objetos para o mesmo campo.
 
-A unidade fundamental de qualquer \textit{schema} GraphQL é o tipo. Existem oito formatos de tipos suportados no GraphQL. O tipo mais básico é o \textit{\textbf{Scalar}}. Um campo do tipo \textit{Scalar} representa um valor primitivo, como uma \textit{string} ou um número inteiro. Muitas vezes, as respostas possíveis para um campo  do tipo \textit{Scalar} são enumeráveis. O GraphQL oferece um tipo \textit{\textbf{Enum}} nesses casos, onde o tipo especifica o espaço de respostas válidas. Campos do tipo \textit{\textbf{Object}} definem um conjunto de campos, onde cada campo é outro formato, permitindo a definição de hierarquias de tipos arbitrários. O GraphQL suporta dois tipos abstratos:  \textit{\textbf{Interfaces}} e  \textit{\textbf{Unions}}.
+De acordo com \citeonline{graph-docs}, a unidade fundamental de qualquer \textit{schema} GraphQL é o tipo. Existem oito formatos de tipos suportados no GraphQL. O tipo mais básico é o \textit{\textbf{Scalar}}. Um campo do tipo \textit{Scalar} representa um valor primitivo, como uma \textit{string} ou um número inteiro. Muitas vezes, as respostas possíveis para um campo  do tipo \textit{Scalar} são enumeráveis. O GraphQL oferece um tipo \textit{\textbf{Enum}} nesses casos, onde o tipo especifica o espaço de respostas válidas. Campos do tipo \textit{\textbf{Object}} definem um conjunto de campos, onde cada campo é outro formato, permitindo a definição de hierarquias de tipos arbitrários. O GraphQL suporta dois tipos abstratos:  \textit{\textbf{Interfaces}} e  \textit{\textbf{Unions}}.
 
 Todos os tipos até agora são considerados nulos e singulares, por exemplo,  uma \textit{string} retorna um valor nulo ou singular. O sistema de tipo pode querer definir que ele retorna uma lista de outros tipos. O tipo \textit{\textbf{List}} é fornecido por esse motivo e envolve outro tipo. Da mesma forma, o tipo \textit{\textbf{Non-Null}} envolve outro tipo e indica que o resultado nunca será nulo.
 

@@ -22,6 +22,11 @@ Dispon{\'\i}vel em: \url{https://goo.gl/KB2CGw}. Acesso em: 17 mai 2017.}
 {BOX, D. et al. {Simple Object Access Protocol (SOAP) 1.1}.
   Http://www.w3.org/TR/soap. 2000.}
 
+\bibitem[Brightcove 2015]{postman}
+\abntrefinfo{Brightcove}{BRIGHTCOVE}{2015}
+{BRIGHTCOVE. \emph{Use Postman for API Requests}. 2015.
+Dispon{\'\i}vel em: \url{https://goo.gl/n9beHc}. Acesso em: 15 abr 2017.}
+
 \bibitem[Buna 2017]{graph-limitation}
 \abntrefinfo{Buna}{BUNA}{2017}
 {BUNA, S. \emph{REST APIs are REST-in-Peace APIs. Long Live GraphQL.} 2017.
@@ -44,6 +49,12 @@ Dispon{\'\i}vel em: \url{https://goo.gl/7RMiie}. Acesso em: 15 abr 2017.}
 {EVERWARE-CBDI. \emph{CBDI-SAE Knowledgebase for SOA. Best Practices and
   Resources for SOA}. 2014.
 Dispon{\'\i}vel em: \url{https://goo.gl/Cy8dWp}. Acesso em: 15 abr 2017.}
+
+\bibitem[Facebook 2016]{graph-docs}
+\abntrefinfo{Facebook}{FACEBOOK}{2016}
+{FACEBOOK, G. \emph{GraphQL - Schemas and Types.} 2016.
+Dispon{\'\i}vel em: \url{http://graphql.org/learn/schema/}. Acesso em: 15 abr
+  2017.}
 
 \bibitem[Fielding 2000]{rest-thesis}
 \abntrefinfo{Fielding}{FIELDING}{2000}
@@ -134,6 +145,11 @@ Dispon{\'\i}vel em: \url{https://www.google.com/patents/US7028312}.}
 {{Microsoft}. \emph{Interprocess Communications}.
 [S.l.], 2008.}
 
+\bibitem[Mozilla 2017]{express}
+\abntrefinfo{Mozilla}{MOZILLA}{2017}
+{MOZILLA. \emph{Express web framework (Node.js/JavaScript)}. 2017.
+Dispon{\'\i}vel em: \url{https://goo.gl/29sRZT}. Acesso em: 15 abr 2017.}
+
 \bibitem[Natis 2003]{soa-webservice}
 \abntrefinfo{Natis}{NATIS}{2003}
 {NATIS, Y.~V. \emph{Service-Oriented Architecture Scenario}. 2003.
@@ -155,13 +171,18 @@ Dispon{\'\i}vel em: \url{https://goo.gl/lJgyrd}. Acesso em: 15 abr 2017.}
 {ROUSE, M. \emph{warehouse management system (WMS)}. 2009.
 Dispon{\'\i}vel em: \url{https://goo.gl/sgh88Y}. Acesso em: 15 abr 2017.}
 
-\bibitem[Rouse 2014]{soa-tech-target}
+\bibitem[Rouse 2014]{mongo}
 \abntrefinfo{Rouse}{ROUSE}{2014a}
+{ROUSE, M. \emph{MongoDB}. 2014.
+Dispon{\'\i}vel em: \url{https://goo.gl/ZVEOmy}. Acesso em: 15 abr 2017.}
+
+\bibitem[Rouse 2014]{soa-tech-target}
+\abntrefinfo{Rouse}{ROUSE}{2014b}
 {ROUSE, M. \emph{service-oriented architecture (SOA)}. 2014.
 Dispon{\'\i}vel em: \url{https://goo.gl/VeAeTw}. Acesso em: 15 abr 2017.}
 
 \bibitem[Rouse 2014]{soap-tech-target}
-\abntrefinfo{Rouse}{ROUSE}{2014b}
+\abntrefinfo{Rouse}{ROUSE}{2014c}
 {ROUSE, M. \emph{SOAP (Simple Object Access Protocol)}. 2014.
 Dispon{\'\i}vel em: \url{https://goo.gl/CYyXtD}. Acesso em: 17 mai 2017.}
 
